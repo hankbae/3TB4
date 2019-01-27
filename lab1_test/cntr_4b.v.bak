@@ -1,0 +1,19 @@
+//4-bit counter w/ reset & enable
+
+module cntr_4b(R,E,clk,Q);
+	input R,E,clk
+	output reg [3:0] Q;
+	
+	always @(posedge clk or R == 1'b1)
+	begin
+	
+		if (R==1'b1)
+			Q[3:0] <= 4'b0;
+		else
+		
+			if (E==1'b1)
+				Q[3:0] <= Q[3:0] + 4'b1
+			else
+				Q[3:0] <= Q[3:0]
+	end
+	

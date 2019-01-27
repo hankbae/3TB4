@@ -1,0 +1,81 @@
+module lab1part3(
+	input CLOCK_50,
+	input [9:0] SW,
+	input [3] KEY,
+	output [6:0] HEX0
+	);
+	
+	reg [3:0] cntr4_out, cntr30_out;
+	reg press , enable4b , enable30b , reset4b , reset30b;
+	
+	HEX0[6:0] <= 6'b1;						// init state of HEX0 off
+	
+	
+	always @(SW[9:0])
+	begin
+		case(SW[9:8])
+			2'b00: begin						// disp val of SW[3:0] on HEX0[6:0]
+				
+//				cntr_30b my_30bCntr(1'b0 , KEY[3] , cntr30_out[3:0]); // resets cntr to 0
+//				cntr_4b my_4bCntr(1'b0,KEY[3],cntr4_out[3:0]);			// resets cntr to 0
+				enable4b <= 1'b0;
+				enable30b <= 1'b0;
+				reset4b <= KEY[3];
+				reset30b <= KEY[3];
+				press <= 1'b0;
+				
+				seven_seg_decoder my_decoder(SW[3:0],HEX0[6:0]);
+			end
+			
+			2'b01: begin						// 4bit cntr to 7seg decoder
+				
+//				cntr_30b my_30bCntr(1'b0 , KEY[3] , cntr30_out[3:0]); // resets cntr to 0
+//				cntr_4b my_4bCntr(KEY[3],1'b0,cntr4_out[3:0]);			// counts keypresses
+				enable4b <= 1'b1;
+				enable30b <= 1'b0;
+				reset4b <= 1'b0;
+				reset30b <= KEY[3];
+				press <= KEY[3];
+				
+				seven_seg_decoder my_decoder3(cntr4_out[3:0], HEX0[6:0]);
+			
+			end
+			
+			2'b10: begin						//30bit cntr to 7seg decoder
+			
+//				cntr_30b my_30bCntr(CLOCK_50 , KEY[3] , cntr30_out[3:0]); // counts CLOCK_50
+//				cntr_4b my_4bCntr(1'b0,KEY[3],cntr4_out[3:0]);			// resets cntr to 0
+				enable4b <= 1'b0;
+				enable30b <= 1'b1;
+				reset4b <= KEY[3];
+				reset30b <= KEY[3];
+				press <= 1'b0;
+				
+				
+				seven_seg_decoder my_decoder2(cntr30_out[3:0], HEX0[6:0]);
+			end
+			
+			2'b11: begin
+				
+//				cntr_30b my_30bCntr(1'b0 , KEY[3] , cntr30_out[3:0]); // resets cntr to 0
+//				cntr_4b my_4bCntr(1'b0,KEY[3],cntr4_out[3:0]);			// resets cntr to 0
+				enable4b <= 1'b0;
+				enable30b <= 1'b0;
+				reset4b <= KEY[3];
+				reset30b <= KEY[3];
+				press <= 1'b0;
+				
+				
+				HEX0[6:0] <= 6'b1;		// HEX0 off
+			end
+			
+		endcase
+		
+	cntr_30b my_30bCntr(CLOCK_50 , reset ,enable30b, cntr30_out[3:0]);
+	cntr_4b my_4bCntr(press , reset , enable4b , cntr4_out[3:0]);
+	
+	end
+	
+	
+	
+endmodule 
