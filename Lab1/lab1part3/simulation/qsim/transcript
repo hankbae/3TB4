@@ -1,0 +1,35 @@
+# do lab1part3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:51:17 on Jan 24,2019
+# vlog -work work lab1part3.vo 
+# -- Compiling module cntr_30b
+# 
+# Top level modules:
+# 	cntr_30b
+# End time: 16:51:17 on Jan 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:51:17 on Jan 24,2019
+# vlog -work work Waveform_30BCntr.vwf.vt 
+# -- Compiling module cntr_30b_vlg_vec_tst
+# 
+# Top level modules:
+# 	cntr_30b_vlg_vec_tst
+# End time: 16:51:17 on Jan 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.cntr_30b_vlg_vec_tst 
+# Start time: 16:51:18 on Jan 24,2019
+# Loading work.cntr_30b_vlg_vec_tst
+# Loading work.cntr_30b
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_clkena
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#25
+# ** Note: $finish    : Waveform_30BCntr.vwf.vt(50)
+#    Time: 1 us  Iteration: 0  Instance: /cntr_30b_vlg_vec_tst
+# End time: 16:51:18 on Jan 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

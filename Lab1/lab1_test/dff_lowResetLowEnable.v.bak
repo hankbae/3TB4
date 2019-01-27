@@ -1,0 +1,16 @@
+//DFF w/ low reset & low enable
+
+module lowDff(D,clk,reset,Q,QBar);
+	input D, clk,reset;
+	output reg Q;
+	output QBar;
+	
+	
+	if (reset == 1'b0)
+	begin
+		Q<=1'b0;
+	end
+	
+	always @(negedge clk) Q <= D;
+	assign QBar = ~Q;
+endmodule

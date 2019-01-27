@@ -1,0 +1,18 @@
+module cntr_4b(
+	input clk,R
+	output [3:0] out
+	);
+	
+	reg [3:0] cntr;
+	
+	always @(posedge clk)
+	begin
+	if (R) 
+		cntr[3:0] <= 4'b0;
+	else
+		cntr[3:0] <= cntr[3:0] + 4'b1;
+	
+	end
+	assign out[3:0] = cntr[3:0];
+	
+endmodule 
