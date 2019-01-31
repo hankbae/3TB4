@@ -4,239 +4,99 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "disp_num[0]",
+					"name" : "clk_ms",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[1]",
+					"name" : "divisor[16]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[2]",
+					"name" : "divisor[18]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[3]",
+					"name" : "divisor[20]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[4]",
+					"name" : "divisor[19]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[5]",
+					"name" : "divisor[17]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[6]",
+					"name" : "divisor[8]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[7]",
+					"name" : "divisor[7]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[8]",
+					"name" : "divisor[6]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[9]",
+					"name" : "divisor[5]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[10]",
+					"name" : "divisor[2]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[11]",
+					"name" : "divisor[1]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[12]",
+					"name" : "divisor[4]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[13]",
+					"name" : "divisor[3]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[14]",
+					"name" : "divisor[10]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[15]",
+					"name" : "divisor[12]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[16]",
+					"name" : "divisor[11]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[17]",
+					"name" : "divisor[9]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[18]",
+					"name" : "divisor[15]",
 					"strict" : false
 				},
 				{
-					"name" : "disp_num[19]",
+					"name" : "divisor[14]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[0]",
+					"name" : "divisor[13]",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[1]",
+					"name" : "Clock",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[2]",
+					"name" : "Reset_n",
 					"strict" : false
 				},
 				{
-					"name" : "HEX0[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX0[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX2[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX3[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4[6]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[0]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[1]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[2]",
-					"strict" : false
-				},
-				{
-					"name" : "CLOCK_50",
+					"name" : "divisor[0]",
 					"strict" : false
 				}
 			]

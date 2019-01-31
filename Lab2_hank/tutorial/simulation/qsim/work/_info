@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/Documents/School/3TB4/Lab2/tutorial/simulation/qsim
 vclock_divider
-Z1 !s110 1548916331
+!s110 1548946436
 !i10b 1
 !s100 RS>T[;9KEN3GGCzBWZ^<T2
 ISIGkJde=58kQG?V1ZTVZa2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1548916330
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/3TB4/Lab2_hank/tutorial/simulation/qsim
+w1548946432
 Z3 8tutorial.vo
 Z4 Ftutorial.vo
 Z5 L0 31
@@ -23,20 +23,20 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1548916331.000000
+Z7 !s108 1548946436.000000
 Z8 !s107 tutorial.vo|
 Z9 !s90 -work|work|tutorial.vo|
 !i113 1
 Z10 o-work work
 Z11 tCvgOpt 0
 vclock_divider_vlg_vec_tst
-R1
+!s110 1548946437
 !i10b 1
 !s100 <;E8?Lg9OCWhNG?0H2T_W2
 I5NA9H0fNM8NZ:bR`I6i;]3
+R1
 R2
-R0
-w1548916329
+w1548946429
 8clock_divider.vwf.vt
 Fclock_divider.vwf.vt
 Z12 L0 29
@@ -55,7 +55,7 @@ Z13 !s110 1548920295
 !i10b 1
 !s100 jfm<FS]Kjz4J=ZKbT`DVR1
 I1z^3zJ6okOMzVbD5=<k1<3
-R2
+R1
 R0
 w1548920294
 R3
@@ -76,7 +76,7 @@ R13
 !i10b 1
 !s100 nie@Cl6GWGZ;DKY?@VbWc1
 I57_:0FHQ@^WD2;PgKTQ]?1
-R2
+R1
 R0
 w1548920293
 8hex_counter.vwf.vt
@@ -97,7 +97,7 @@ Z15 !s110 1548924620
 !i10b 1
 !s100 0J1DjMXZ[C]TEMJ_l>9lR3
 IB<XRF;GkbBi=N`d1Z[TgU3
-R2
+R1
 R0
 w1548924619
 R3
@@ -118,7 +118,7 @@ R15
 !i10b 1
 !s100 aXh2WAUKLG]8BJ?eCYLaU0
 I=HW[<@DB=j1P>XNJ<MF9V1
-R2
+R1
 R0
 w1548924617
 8lab2tut.vwf.vt
