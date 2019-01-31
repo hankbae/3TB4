@@ -15,7 +15,7 @@ module lab2tut (
 	assign prescaler = 10'd50000;
 	
 	clock_divider(CLOCK_50,KEY[0],prescaler,clk);		//	prescaling clock
-	hex_counter(clk,KEY[0],KEY[1],KEY[2],disp_num);		// counting clock pulses
+	hex_counter_Nathan(clk,KEY[0],KEY[1],KEY[2],disp_num);		// counting clock pulses
 	num_decoder(disp_num[3:0],HEX0);
 	num_decoder(disp_num[7:4],HEX1);
 	num_decoder(disp_num[11:8],HEX2);

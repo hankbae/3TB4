@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("D:/3TB4/Lab2_hank/tutorial_during/output_files/") File("lab2tut.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/output_files/") File("lab2tut.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

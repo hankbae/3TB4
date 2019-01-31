@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lab2tut
-Thu Jan 31 10:17:14 2019
+Thu Jan 31 10:35:57 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.2%      ;
+;     Processor 2            ;   2.4%      ;
 +----------------------------+-------------+
 
 
@@ -788,7 +788,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Jan 31 10:17:00 2019
+    Info: Processing started: Thu Jan 31 10:35:42 2019
 Info: Command: quartus_sta lab2tut -c lab2tut
 Info: qsta_default_script.tcl version: #3
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -1466,8 +1466,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 578 warnings
     Info: Peak virtual memory: 5135 megabytes
-    Info: Processing ended: Thu Jan 31 10:17:14 2019
-    Info: Elapsed time: 00:00:14
+    Info: Processing ended: Thu Jan 31 10:35:57 2019
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:11
 
 

@@ -114,7 +114,8 @@ divisor[20] => LessThan1.IN2
 clk_ms <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|hex_counter:comb_24
+|lab2tut|hex_counter_Nathan:comb_24
+Clock => resume.CLK
 Clock => Q[0]~reg0.CLK
 Clock => Q[1]~reg0.CLK
 Clock => Q[2]~reg0.CLK
@@ -135,7 +136,6 @@ Clock => Q[16]~reg0.CLK
 Clock => Q[17]~reg0.CLK
 Clock => Q[18]~reg0.CLK
 Clock => Q[19]~reg0.CLK
-Clock => resume.CLK
 Reset_n => Q.OUTPUTSELECT
 Reset_n => Q.OUTPUTSELECT
 Reset_n => Q.OUTPUTSELECT

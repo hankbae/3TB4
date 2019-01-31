@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab2tut
-Thu Jan 31 10:15:43 2019
+Thu Jan 31 10:34:10 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jan 31 10:15:43 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jan 31 10:34:10 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab2tut                                     ;
 ; Top-level Entity Name           ; lab2tut                                     ;
@@ -168,16 +168,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                      ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
-; num_decoder.v                    ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/tutorial_during/num_decoder.v   ;         ;
-; lab2tut.v                        ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v       ;         ;
-; hex_counter.v                    ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/tutorial_during/hex_counter.v   ;         ;
-; clock_divider.v                  ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/tutorial_during/clock_divider.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------+---------+
+; num_decoder.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/num_decoder.v        ;         ;
+; lab2tut.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v            ;         ;
+; clock_divider.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/clock_divider.v      ;         ;
+; hex_counter_Nathan.v             ; yes             ; User Verilog HDL File  ; C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/hex_counter_Nathan.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -207,20 +207,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name   ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------+--------------+
-; |lab2tut                   ; 85 (0)              ; 42 (0)                    ; 0                 ; 0          ; 46   ; 0            ; |lab2tut                       ; lab2tut       ; work         ;
-;    |clock_divider:comb_23| ; 29 (29)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|clock_divider:comb_23 ; clock_divider ; work         ;
-;    |hex_counter:comb_24|   ; 21 (21)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|hex_counter:comb_24   ; hex_counter   ; work         ;
-;    |num_decoder:comb_25|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_25   ; num_decoder   ; work         ;
-;    |num_decoder:comb_26|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_26   ; num_decoder   ; work         ;
-;    |num_decoder:comb_27|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_27   ; num_decoder   ; work         ;
-;    |num_decoder:comb_28|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_28   ; num_decoder   ; work         ;
-;    |num_decoder:comb_29|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_29   ; num_decoder   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------+---------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name        ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------------+--------------+
+; |lab2tut                        ; 85 (0)              ; 42 (0)                    ; 0                 ; 0          ; 46   ; 0            ; |lab2tut                            ; lab2tut            ; work         ;
+;    |clock_divider:comb_23|      ; 29 (29)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|clock_divider:comb_23      ; clock_divider      ; work         ;
+;    |hex_counter_Nathan:comb_24| ; 21 (21)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|hex_counter_Nathan:comb_24 ; hex_counter_Nathan ; work         ;
+;    |num_decoder:comb_25|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_25        ; num_decoder        ; work         ;
+;    |num_decoder:comb_26|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_26        ; num_decoder        ; work         ;
+;    |num_decoder:comb_27|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_27        ; num_decoder        ; work         ;
+;    |num_decoder:comb_28|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_28        ; num_decoder        ; work         ;
+;    |num_decoder:comb_29|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_29        ; num_decoder        ; work         ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -295,7 +295,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -305,40 +305,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Jan 31 10:15:23 2019
+    Info: Processing started: Thu Jan 31 10:33:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2tut -c lab2tut
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file num_decoder.v
-    Info (12023): Found entity 1: num_decoder File: D:/3TB4/Lab2_hank/tutorial_during/num_decoder.v Line: 1
-Warning (10229): Verilog HDL Expression warning at lab2tut.v(15): truncated literal to match 10 bits File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 15
+    Info (12023): Found entity 1: num_decoder File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/num_decoder.v Line: 1
+Warning (10229): Verilog HDL Expression warning at lab2tut.v(15): truncated literal to match 10 bits File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 15
 Info (12021): Found 1 design units, including 1 entities, in source file lab2tut.v
-    Info (12023): Found entity 1: lab2tut File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 1
+    Info (12023): Found entity 1: lab2tut File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hex_counter.v
-    Info (12023): Found entity 1: hex_counter File: D:/3TB4/Lab2_hank/tutorial_during/hex_counter.v Line: 1
+    Info (12023): Found entity 1: hex_counter File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/hex_counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.v
-    Info (12023): Found entity 1: clock_divider File: D:/3TB4/Lab2_hank/tutorial_during/clock_divider.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(17): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 17
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(18): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 18
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(19): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 19
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(20): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 20
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(21): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(22): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 22
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(23): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 23
-Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(24): instance has no name File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 24
+    Info (12023): Found entity 1: clock_divider File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/clock_divider.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hex_counter_nathan.v
+    Info (12023): Found entity 1: hex_counter_Nathan File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/hex_counter_Nathan.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(17): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(18): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(19): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(20): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 20
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(21): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(22): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 22
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(23): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at lab2tut.v(24): instance has no name File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 24
 Info (12127): Elaborating entity "lab2tut" for the top level hierarchy
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:comb_23" File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 17
-Info (12128): Elaborating entity "hex_counter" for hierarchy "hex_counter:comb_24" File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 18
-Info (12128): Elaborating entity "num_decoder" for hierarchy "num_decoder:comb_25" File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 19
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:comb_23" File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 17
+Info (12128): Elaborating entity "hex_counter_Nathan" for hierarchy "hex_counter_Nathan:comb_24" File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 18
+Info (12128): Elaborating entity "num_decoder" for hierarchy "num_decoder:comb_25" File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 19
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -919,9 +921,9 @@ Info (21057): Implemented 131 device resources after synthesis - the final resou
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 85 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 591 warnings
-    Info: Peak virtual memory: 4835 megabytes
-    Info: Processing ended: Thu Jan 31 10:15:43 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Thu Jan 31 10:34:10 2019
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:40
 
 

@@ -1,5 +1,5 @@
 Fitter report for lab2tut
-Thu Jan 31 10:16:44 2019
+Thu Jan 31 10:35:24 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Thu Jan 31 10:16:44 2019       ;
+; Fitter Status                   ; Successful - Thu Jan 31 10:35:24 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab2tut                                     ;
 ; Top-level Entity Name           ; lab2tut                                     ;
@@ -158,7 +158,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.5%      ;
+;     Processor 2            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -429,7 +429,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/3TB4/Lab2_hank/tutorial_during/output_files/lab2tut.pin.
+The pin-out file can be found in C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/output_files/lab2tut.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -1665,20 +1665,20 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                               ;
-+----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name   ; Library Name ;
-+----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------+---------------+--------------+
-; |lab2tut                   ; 45.5 (0.5)           ; 46.0 (0.5)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 86 (1)              ; 42 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 46   ; 0            ; |lab2tut                       ; lab2tut       ; work         ;
-;    |clock_divider:comb_23| ; 17.0 (17.0)          ; 17.2 (17.2)                      ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 21 (21)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|clock_divider:comb_23 ; clock_divider ; work         ;
-;    |hex_counter:comb_24|   ; 10.5 (10.5)          ; 10.8 (10.8)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 21 (21)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|hex_counter:comb_24   ; hex_counter   ; work         ;
-;    |num_decoder:comb_25|   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_25   ; num_decoder   ; work         ;
-;    |num_decoder:comb_26|   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_26   ; num_decoder   ; work         ;
-;    |num_decoder:comb_27|   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_27   ; num_decoder   ; work         ;
-;    |num_decoder:comb_28|   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_28   ; num_decoder   ; work         ;
-;    |num_decoder:comb_29|   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_29   ; num_decoder   ; work         ;
-+----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------+---------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                              ;
++---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node      ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name        ; Library Name ;
++---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------+--------------------+--------------+
+; |lab2tut                        ; 45.5 (0.5)           ; 46.0 (0.5)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 86 (1)              ; 42 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 46   ; 0            ; |lab2tut                            ; lab2tut            ; work         ;
+;    |clock_divider:comb_23|      ; 17.0 (17.0)          ; 17.2 (17.2)                      ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (29)             ; 21 (21)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|clock_divider:comb_23      ; clock_divider      ; work         ;
+;    |hex_counter_Nathan:comb_24| ; 10.5 (10.5)          ; 10.8 (10.8)                      ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 21 (21)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|hex_counter_Nathan:comb_24 ; hex_counter_Nathan ; work         ;
+;    |num_decoder:comb_25|        ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_25        ; num_decoder        ; work         ;
+;    |num_decoder:comb_26|        ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_26        ; num_decoder        ; work         ;
+;    |num_decoder:comb_27|        ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_27        ; num_decoder        ; work         ;
+;    |num_decoder:comb_28|        ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_28        ; num_decoder        ; work         ;
+;    |num_decoder:comb_29|        ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |lab2tut|num_decoder:comb_29        ; num_decoder        ; work         ;
++---------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1736,40 +1736,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
-+----------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                       ;
-+----------------------------------------+-------------------+---------+
-; Source Pin / Fanout                    ; Pad To Core Index ; Setting ;
-+----------------------------------------+-------------------+---------+
-; KEY[0]                                 ;                   ;         ;
-;      - hex_counter:comb_24|Q[0]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[1]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[2]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[3]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[4]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[5]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[6]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[7]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[8]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[9]        ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[10]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[11]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[12]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[13]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[14]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[15]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[16]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[17]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[18]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|Q[19]       ; 0                 ; 0       ;
-;      - hex_counter:comb_24|resume      ; 0                 ; 0       ;
-;      - clock_divider:comb_23|always0~0 ; 0                 ; 0       ;
-; CLOCK_50                               ;                   ;         ;
-; KEY[1]                                 ;                   ;         ;
-;      - hex_counter:comb_24|resume~0    ; 1                 ; 0       ;
-; KEY[2]                                 ;                   ;         ;
-;      - hex_counter:comb_24|resume~0    ; 1                 ; 0       ;
-+----------------------------------------+-------------------+---------+
++--------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                           ;
++--------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                        ; Pad To Core Index ; Setting ;
++--------------------------------------------+-------------------+---------+
+; KEY[0]                                     ;                   ;         ;
+;      - hex_counter_Nathan:comb_24|Q[0]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[1]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[2]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[3]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[4]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[5]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[6]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[7]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[8]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[9]     ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[10]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[11]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[12]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[13]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[14]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[15]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[16]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[17]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[18]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|Q[19]    ; 0                 ; 0       ;
+;      - hex_counter_Nathan:comb_24|resume   ; 0                 ; 0       ;
+;      - clock_divider:comb_23|always0~0     ; 0                 ; 0       ;
+; CLOCK_50                                   ;                   ;         ;
+; KEY[1]                                     ;                   ;         ;
+;      - hex_counter_Nathan:comb_24|resume~0 ; 1                 ; 0       ;
+; KEY[2]                                     ;                   ;         ;
+;      - hex_counter_Nathan:comb_24|resume~0 ; 1                 ; 0       ;
++--------------------------------------------+-------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2036,57 +2036,57 @@ Note: For more information on problematic transfers, consider running the Fitter
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+-------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                       ;
-+--------------------------------+--------------------------------+-------------------+
-; Source Register                ; Destination Register           ; Delay Added in ns ;
-+--------------------------------+--------------------------------+-------------------+
-; clock_divider:comb_23|cntr[10] ; clock_divider:comb_23|cntr[20] ; 5.139             ;
-; clock_divider:comb_23|cntr[14] ; clock_divider:comb_23|cntr[7]  ; 3.772             ;
-; clock_divider:comb_23|cntr[12] ; clock_divider:comb_23|cntr[7]  ; 3.772             ;
-; clock_divider:comb_23|cntr[11] ; clock_divider:comb_23|cntr[7]  ; 3.772             ;
-; clock_divider:comb_23|cntr[13] ; clock_divider:comb_23|cntr[7]  ; 3.772             ;
-; clock_divider:comb_23|cntr[20] ; clock_divider:comb_23|cntr[7]  ; 2.603             ;
-; clock_divider:comb_23|cntr[18] ; clock_divider:comb_23|cntr[7]  ; 2.603             ;
-; clock_divider:comb_23|cntr[17] ; clock_divider:comb_23|cntr[7]  ; 2.603             ;
-; clock_divider:comb_23|cntr[16] ; clock_divider:comb_23|cntr[7]  ; 2.603             ;
-; clock_divider:comb_23|cntr[15] ; clock_divider:comb_23|cntr[7]  ; 2.603             ;
-; clock_divider:comb_23|cntr[19] ; clock_divider:comb_23|cntr[7]  ; 2.603             ;
-; clock_divider:comb_23|cntr[9]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[8]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[6]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[5]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[4]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[3]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[2]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[1]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[0]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; clock_divider:comb_23|cntr[7]  ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; KEY[0]                         ; clock_divider:comb_23|cntr[7]  ; 1.434             ;
-; hex_counter:comb_24|resume     ; hex_counter:comb_24|Q[19]      ; 1.143             ;
-; hex_counter:comb_24|Q[9]       ; hex_counter:comb_24|Q[19]      ; 0.513             ;
-; hex_counter:comb_24|Q[7]       ; hex_counter:comb_24|Q[19]      ; 0.498             ;
-; hex_counter:comb_24|Q[18]      ; hex_counter:comb_24|Q[19]      ; 0.497             ;
-; hex_counter:comb_24|Q[15]      ; hex_counter:comb_24|Q[19]      ; 0.496             ;
-; hex_counter:comb_24|Q[1]       ; hex_counter:comb_24|Q[19]      ; 0.494             ;
-; hex_counter:comb_24|Q[12]      ; hex_counter:comb_24|Q[19]      ; 0.492             ;
-; hex_counter:comb_24|Q[0]       ; hex_counter:comb_24|Q[19]      ; 0.491             ;
-; hex_counter:comb_24|Q[8]       ; hex_counter:comb_24|Q[19]      ; 0.490             ;
-; hex_counter:comb_24|Q[13]      ; hex_counter:comb_24|Q[19]      ; 0.483             ;
-; hex_counter:comb_24|Q[16]      ; hex_counter:comb_24|Q[19]      ; 0.480             ;
-; hex_counter:comb_24|Q[6]       ; hex_counter:comb_24|Q[19]      ; 0.480             ;
-; hex_counter:comb_24|Q[3]       ; hex_counter:comb_24|Q[19]      ; 0.480             ;
-; hex_counter:comb_24|Q[5]       ; hex_counter:comb_24|Q[19]      ; 0.477             ;
-; hex_counter:comb_24|Q[17]      ; hex_counter:comb_24|Q[19]      ; 0.315             ;
-; hex_counter:comb_24|Q[11]      ; hex_counter:comb_24|Q[19]      ; 0.305             ;
-; hex_counter:comb_24|Q[14]      ; hex_counter:comb_24|Q[19]      ; 0.301             ;
-; hex_counter:comb_24|Q[2]       ; hex_counter:comb_24|Q[19]      ; 0.299             ;
-; hex_counter:comb_24|Q[10]      ; hex_counter:comb_24|Q[19]      ; 0.295             ;
-; hex_counter:comb_24|Q[4]       ; hex_counter:comb_24|Q[19]      ; 0.270             ;
-; hex_counter:comb_24|Q[19]      ; hex_counter:comb_24|Q[19]      ; 0.251             ;
-; KEY[1]                         ; hex_counter:comb_24|resume     ; 0.084             ;
-; KEY[2]                         ; hex_counter:comb_24|resume     ; 0.084             ;
-+--------------------------------+--------------------------------+-------------------+
++-------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                             ;
++-----------------------------------+-----------------------------------+-------------------+
+; Source Register                   ; Destination Register              ; Delay Added in ns ;
++-----------------------------------+-----------------------------------+-------------------+
+; clock_divider:comb_23|cntr[10]    ; clock_divider:comb_23|cntr[20]    ; 5.139             ;
+; clock_divider:comb_23|cntr[14]    ; clock_divider:comb_23|cntr[7]     ; 3.772             ;
+; clock_divider:comb_23|cntr[12]    ; clock_divider:comb_23|cntr[7]     ; 3.772             ;
+; clock_divider:comb_23|cntr[11]    ; clock_divider:comb_23|cntr[7]     ; 3.772             ;
+; clock_divider:comb_23|cntr[13]    ; clock_divider:comb_23|cntr[7]     ; 3.772             ;
+; clock_divider:comb_23|cntr[20]    ; clock_divider:comb_23|cntr[7]     ; 2.603             ;
+; clock_divider:comb_23|cntr[18]    ; clock_divider:comb_23|cntr[7]     ; 2.603             ;
+; clock_divider:comb_23|cntr[17]    ; clock_divider:comb_23|cntr[7]     ; 2.603             ;
+; clock_divider:comb_23|cntr[16]    ; clock_divider:comb_23|cntr[7]     ; 2.603             ;
+; clock_divider:comb_23|cntr[15]    ; clock_divider:comb_23|cntr[7]     ; 2.603             ;
+; clock_divider:comb_23|cntr[19]    ; clock_divider:comb_23|cntr[7]     ; 2.603             ;
+; clock_divider:comb_23|cntr[9]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[8]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[6]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[5]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[4]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[3]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[2]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[1]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[0]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; clock_divider:comb_23|cntr[7]     ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; KEY[0]                            ; clock_divider:comb_23|cntr[7]     ; 1.434             ;
+; hex_counter_Nathan:comb_24|resume ; hex_counter_Nathan:comb_24|Q[19]  ; 1.143             ;
+; hex_counter_Nathan:comb_24|Q[9]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.513             ;
+; hex_counter_Nathan:comb_24|Q[7]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.498             ;
+; hex_counter_Nathan:comb_24|Q[18]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.497             ;
+; hex_counter_Nathan:comb_24|Q[15]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.496             ;
+; hex_counter_Nathan:comb_24|Q[1]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.494             ;
+; hex_counter_Nathan:comb_24|Q[12]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.492             ;
+; hex_counter_Nathan:comb_24|Q[0]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.491             ;
+; hex_counter_Nathan:comb_24|Q[8]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.490             ;
+; hex_counter_Nathan:comb_24|Q[13]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.483             ;
+; hex_counter_Nathan:comb_24|Q[16]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.480             ;
+; hex_counter_Nathan:comb_24|Q[6]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.480             ;
+; hex_counter_Nathan:comb_24|Q[3]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.480             ;
+; hex_counter_Nathan:comb_24|Q[5]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.477             ;
+; hex_counter_Nathan:comb_24|Q[17]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.315             ;
+; hex_counter_Nathan:comb_24|Q[11]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.305             ;
+; hex_counter_Nathan:comb_24|Q[14]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.301             ;
+; hex_counter_Nathan:comb_24|Q[2]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.299             ;
+; hex_counter_Nathan:comb_24|Q[10]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.295             ;
+; hex_counter_Nathan:comb_24|Q[4]   ; hex_counter_Nathan:comb_24|Q[19]  ; 0.270             ;
+; hex_counter_Nathan:comb_24|Q[19]  ; hex_counter_Nathan:comb_24|Q[19]  ; 0.251             ;
+; KEY[1]                            ; hex_counter_Nathan:comb_24|resume ; 0.084             ;
+; KEY[2]                            ; hex_counter_Nathan:comb_24|resume ; 0.084             ;
++-----------------------------------+-----------------------------------+-------------------+
 Note: This table only shows the top 45 path(s) that have the largest delay added for hold.
 
 
@@ -2321,7 +2321,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:17
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:23
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab2tut.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -2339,24 +2339,24 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.42 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.50 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:06
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file D:/3TB4/Lab2_hank/tutorial_during/output_files/lab2tut.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/output_files/lab2tut.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 218 warnings
-    Info: Peak virtual memory: 6315 megabytes
-    Info: Processing ended: Thu Jan 31 10:16:45 2019
-    Info: Elapsed time: 00:01:01
-    Info: Total CPU time (on all processors): 00:01:28
+    Info: Peak virtual memory: 6319 megabytes
+    Info: Processing ended: Thu Jan 31 10:35:25 2019
+    Info: Elapsed time: 00:01:13
+    Info: Total CPU time (on all processors): 00:01:40
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/3TB4/Lab2_hank/tutorial_during/output_files/lab2tut.fit.smsg.
+The suppressed messages can be found in C:/Users/Nathan Lam/Dropbox/University/My Git/3TB4/Lab2_hank/tutorial_during/output_files/lab2tut.fit.smsg.
 
 
