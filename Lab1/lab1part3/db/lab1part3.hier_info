@@ -25,13 +25,13 @@ SW[9] => Mux1.IN1
 SW[9] => Mux2.IN1
 SW[9] => Mux3.IN1
 KEY3 => reset30b.IN1
-HEX0[0] <= seven_seg_decoder:decoder.port1
-HEX0[1] <= seven_seg_decoder:decoder.port1
-HEX0[2] <= seven_seg_decoder:decoder.port1
-HEX0[3] <= seven_seg_decoder:decoder.port1
-HEX0[4] <= seven_seg_decoder:decoder.port1
-HEX0[5] <= seven_seg_decoder:decoder.port1
-HEX0[6] <= seven_seg_decoder:decoder.port1
+HEX0[0] << seven_seg_decoder:decoder.port1
+HEX0[1] << seven_seg_decoder:decoder.port1
+HEX0[2] << seven_seg_decoder:decoder.port1
+HEX0[3] << seven_seg_decoder:decoder.port1
+HEX0[4] << seven_seg_decoder:decoder.port1
+HEX0[5] << seven_seg_decoder:decoder.port1
+HEX0[6] << seven_seg_decoder:decoder.port1
 
 
 |lab1part3_V3|cntr_4b:my_4bCntr
