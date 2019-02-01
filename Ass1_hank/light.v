@@ -1,15 +1,14 @@
 module light(
-	input clk, on,
+	input clk, enable,
 	output reg A, B, C
 	);
 	
 	reg [1:0] light_state;
 	
 	
-	always @(posedge clk or posedge on)
+	always @(posedge clk)
 	begin
-		if (on == 1'b1) begin
-		
+		if (enable) begin
 			case (light_state)
 				2'b01: begin
 					A <= 1'b1;
@@ -42,7 +41,6 @@ module light(
 			A <= 1'b0;
 			B <= 1'b0;
 			C <= 1'b0;
-			//light_state <= 2'b00;
 		end
 	end
 endmodule 

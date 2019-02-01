@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ass1
-Thu Jan 31 13:21:57 2019
+Fri Feb 01 00:46:38 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -36,9 +36,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Jan 31 13:21:57 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Feb 01 00:46:38 2019 ;
 ; Revision Name             ; ass1                                  ;
-; Top-level Entity Name     ; ass1                                  ;
+; Top-level Entity Name     ; light                                 ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------+
-; Simulation Generated Files                 ;
-+--------------------------------------------+
-; Generated Files                            ;
-+--------------------------------------------+
-; D:/3TB4/Ass1_hank/simulation/qsim//ass1.vo ;
-+--------------------------------------------+
++-------------------------------------------------------------+
+; Simulation Generated Files                                  ;
++-------------------------------------------------------------+
+; Generated Files                                             ;
++-------------------------------------------------------------+
+; D:/Documents/School/3TB4/Ass1_hank/simulation/qsim//ass1.vo ;
++-------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jan 31 13:21:55 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/3TB4/Ass1_hank/simulation/qsim/ ass1 -c ass1
+    Info: Processing started: Fri Feb 01 00:46:37 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/ ass1 -c ass1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ass1.vo in folder "D:/3TB4/Ass1_hank/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ass1.vo in folder "D:/Documents/School/3TB4/Ass1_hank/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4736 megabytes
-    Info: Processing ended: Thu Jan 31 13:21:57 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Fri Feb 01 00:46:38 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

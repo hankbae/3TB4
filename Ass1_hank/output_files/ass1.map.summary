@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Jan 31 13:13:44 2019
+Analysis & Synthesis Status : Successful - Fri Feb 01 00:48:16 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : ass1
 Top-level Entity Name : ass1
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 8
+Total registers : 14
 Total pins : 10
 Total virtual pins : 0
 Total block memory bits : 0

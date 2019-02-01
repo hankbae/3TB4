@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source="D:/3TB4/Ass1_hank/ass1.vwf" --testbench_file="D:/3TB4/Ass1_hank/simulation/qsim/ass1.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source="D:/3TB4/Ass1_hank/ass1.vwf" --testbench_file="D:/3TB4/Ass1_hank/simulation/qsim/ass1.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Ass1_hank/simulation/qsim/" ass1 -c ass1</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Ass1_hank/simulation/qsim/" ass1 -c ass1</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source="D:/Documents/School/3TB4/Ass1_hank/ass1.vwf" --testbench_file="D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/ass1.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source="D:/Documents/School/3TB4/Ass1_hank/ass1.vwf" --testbench_file="D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/ass1.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/" ass1 -c ass1</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/" ass1 -c ass1</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work ass1.vo
@@ -236,9 +236,9 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 100;
+			LEVEL 0 FOR 5.0;
+			LEVEL 1 FOR 5.0;
 		}
 	}
 }
@@ -248,11 +248,11 @@ TRANSITION_LIST("left")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 70.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 60.0;
 		LEVEL 0 FOR 540.0;
-		LEVEL 1 FOR 170.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 320.0;
 	}
 }
 
@@ -261,9 +261,9 @@ TRANSITION_LIST("reset")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 510.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 400.0;
+		LEVEL 0 FOR 520.0;
+		LEVEL 1 FOR 20.0;
+		LEVEL 0 FOR 460.0;
 	}
 }
 
@@ -273,8 +273,8 @@ TRANSITION_LIST("right")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 340.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 570.0;
+		LEVEL 1 FOR 30.0;
+		LEVEL 0 FOR 630.0;
 	}
 }
 

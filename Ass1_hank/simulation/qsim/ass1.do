@@ -1,11 +1,11 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work ass1.vo
-vlog -work work ass1.vwf.vt
-vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ass1_vlg_vec_tst
+vlog -work work light.vwf.vt
+vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.light_vlg_vec_tst
 vcd file -direction ass1.msim.vcd
-vcd add -internal ass1_vlg_vec_tst/*
-vcd add -internal ass1_vlg_vec_tst/i1/*
+vcd add -internal light_vlg_vec_tst/*
+vcd add -internal light_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ass1
-Thu Jan 31 13:13:44 2019
+Fri Feb 01 00:48:16 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,9 +13,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Inverted Register Statistics
+  8. State Machine - |ass1|light:left_light|light_state
+  9. State Machine - |ass1|light:right_light|light_state
+ 10. General Register Statistics
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
  13. Analysis & Synthesis Messages
@@ -44,13 +44,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Jan 31 13:13:44 2019       ;
+; Analysis & Synthesis Status     ; Successful - Fri Feb 01 00:48:16 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; ass1                                        ;
 ; Top-level Entity Name           ; ass1                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 8                                           ;
+; Total registers                 ; 14                                          ;
 ; Total pins                      ; 10                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -156,53 +156,53 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                               ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; light.v                          ; yes             ; User Verilog HDL File  ; D:/3TB4/Ass1_hank/light.v    ;         ;
-; ass1.v                           ; yes             ; User Verilog HDL File  ; D:/3TB4/Ass1_hank/ass1.v     ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; light.v                          ; yes             ; User Verilog HDL File  ; D:/Documents/School/3TB4/Ass1_hank/light.v ;         ;
+; ass1.v                           ; yes             ; User Verilog HDL File  ; D:/Documents/School/3TB4/Ass1_hank/ass1.v  ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 8     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 14    ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 4     ;
-;     -- <=3 input functions                  ; 10    ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 8     ;
-;                                             ;       ;
-; I/O pins                                    ; 10    ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; L     ;
-; Maximum fan-out                             ; 10    ;
-; Total fan-out                               ; 84    ;
-; Average fan-out                             ; 2.00  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 7         ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 10        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 10        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 14        ;
+;                                             ;           ;
+; I/O pins                                    ; 10        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 14        ;
+; Total fan-out                               ; 70        ;
+; Average fan-out                             ; 1.59      ;
++---------------------------------------------+-----------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,27 +210,35 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name     ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------+-------------+--------------+
-; |ass1                      ; 14 (2)              ; 8 (2)                     ; 0                 ; 0          ; 10   ; 0            ; |ass1                   ; ass1        ; work         ;
-;    |light:left_light|      ; 6 (6)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |ass1|light:left_light  ; light       ; work         ;
-;    |light:right_light|     ; 6 (6)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |ass1|light:right_light ; light       ; work         ;
+; |ass1                      ; 10 (2)              ; 14 (2)                    ; 0                 ; 0          ; 10   ; 0            ; |ass1                   ; ass1        ; work         ;
+;    |light:left_light|      ; 4 (4)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |ass1|light:left_light  ; light       ; work         ;
+;    |light:right_light|     ; 4 (4)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |ass1|light:right_light ; light       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; light:left_light|light_state.01_50                 ; L                   ; yes                    ;
-; light:left_light|light_state.11_38                 ; L                   ; yes                    ;
-; light:right_light|light_state.01_50                ; R                   ; yes                    ;
-; light:right_light|light_state.11_38                ; R                   ; yes                    ;
-; light:left_light|light_state.10_44                 ; L                   ; yes                    ;
-; light:right_light|light_state.10_44                ; R                   ; yes                    ;
-; Number of user-specified and inferred latches = 6  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+Encoding Type:  One-Hot
++-------------------------------------------------------------------+
+; State Machine - |ass1|light:left_light|light_state                ;
++----------------+----------------+----------------+----------------+
+; Name           ; light_state.11 ; light_state.01 ; light_state.10 ;
++----------------+----------------+----------------+----------------+
+; light_state.01 ; 0              ; 0              ; 0              ;
+; light_state.10 ; 0              ; 1              ; 1              ;
+; light_state.11 ; 1              ; 1              ; 0              ;
++----------------+----------------+----------------+----------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------+
+; State Machine - |ass1|light:right_light|light_state               ;
++----------------+----------------+----------------+----------------+
+; Name           ; light_state.11 ; light_state.01 ; light_state.10 ;
++----------------+----------------+----------------+----------------+
+; light_state.01 ; 0              ; 0              ; 0              ;
+; light_state.10 ; 0              ; 1              ; 1              ;
+; light_state.11 ; 1              ; 1              ; 0              ;
++----------------+----------------+----------------+----------------+
 
 
 +------------------------------------------------------+
@@ -238,25 +246,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 14    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 2     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 6     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; light:left_light|A                     ; 1       ;
-; light:right_light|A                    ; 1       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -264,17 +261,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 8                           ;
-;     CLR               ; 8                           ;
-; arriav_lcell_comb     ; 16                          ;
-;     normal            ; 16                          ;
-;         1 data inputs ; 2                           ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 4                           ;
+; arriav_ff             ; 14                          ;
+;     CLR               ; 2                           ;
+;     ENA               ; 6                           ;
+;     plain             ; 6                           ;
+; arriav_lcell_comb     ; 10                          ;
+;     normal            ; 10                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 2                           ;
 ; boundary_port         ; 10                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.94                        ;
+; Average LUT depth     ; 0.64                        ;
 +-----------------------+-----------------------------+
 
 
@@ -293,39 +292,27 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Jan 31 13:13:28 2019
+    Info: Processing started: Fri Feb 01 00:48:05 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ass1 -c ass1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file light.v
-    Info (12023): Found entity 1: light File: D:/3TB4/Ass1_hank/light.v Line: 1
+    Info (12023): Found entity 1: light File: D:/Documents/School/3TB4/Ass1_hank/light.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ass1.v
-    Info (12023): Found entity 1: ass1 File: D:/3TB4/Ass1_hank/ass1.v Line: 1
+    Info (12023): Found entity 1: ass1 File: D:/Documents/School/3TB4/Ass1_hank/ass1.v Line: 1
 Info (12127): Elaborating entity "ass1" for the top level hierarchy
-Info (12128): Elaborating entity "light" for hierarchy "light:right_light" File: D:/3TB4/Ass1_hank/ass1.v Line: 11
-Warning (10240): Verilog HDL Always Construct warning at light.v(9): inferring latch(es) for variable "light_state", which holds its previous value in one or more paths through the always construct File: D:/3TB4/Ass1_hank/light.v Line: 9
-Info (10041): Inferred latch for "light_state.11" at light.v(9) File: D:/3TB4/Ass1_hank/light.v Line: 9
-Info (10041): Inferred latch for "light_state.10" at light.v(9) File: D:/3TB4/Ass1_hank/light.v Line: 9
-Info (10041): Inferred latch for "light_state.01" at light.v(9) File: D:/3TB4/Ass1_hank/light.v Line: 9
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "light:left_light|B" is converted into an equivalent circuit using register "light:left_light|B~_emulated" and latch "light:left_light|B~1" File: D:/3TB4/Ass1_hank/light.v Line: 3
-    Warning (13310): Register "light:left_light|C" is converted into an equivalent circuit using register "light:left_light|C~_emulated" and latch "light:left_light|C~1" File: D:/3TB4/Ass1_hank/light.v Line: 4
-    Warning (13310): Register "light:right_light|B" is converted into an equivalent circuit using register "light:right_light|B~_emulated" and latch "light:right_light|B~1" File: D:/3TB4/Ass1_hank/light.v Line: 3
-    Warning (13310): Register "light:right_light|C" is converted into an equivalent circuit using register "light:right_light|C~_emulated" and latch "light:right_light|C~1" File: D:/3TB4/Ass1_hank/light.v Line: 4
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "light:left_light|C~1" merged with LATCH primitive "light:left_light|light_state.01_50" File: D:/3TB4/Ass1_hank/light.v Line: 4
-    Info (13026): Duplicate LATCH primitive "light:right_light|C~1" merged with LATCH primitive "light:right_light|light_state.01_50" File: D:/3TB4/Ass1_hank/light.v Line: 4
+Info (12128): Elaborating entity "light" for hierarchy "light:right_light" File: D:/Documents/School/3TB4/Ass1_hank/ass1.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 20 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Thu Jan 31 13:13:44 2019
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:35
+    Info (21061): Implemented 14 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4880 megabytes
+    Info: Processing ended: Fri Feb 01 00:48:16 2019
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
 
 

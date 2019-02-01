@@ -1,13 +1,13 @@
 Determining the location of the ModelSim executable...
 
-Using: c:/intelfpga_lite/17.1/modelsim_ase/win32aloem/
+Using: d:/intelfpga_lite/17.1/modelsim_ase/win32aloem/
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source="D:/3TB4/Ass1_hank/ass1.vwf" --testbench_file="D:/3TB4/Ass1_hank/simulation/qsim/ass1.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source="D:/Documents/School/3TB4/Ass1_hank/light.vwf" --testbench_file="D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/light.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jan 31 13:21:52 2019
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source=D:/3TB4/Ass1_hank/ass1.vwf --testbench_file=D:/3TB4/Ass1_hank/simulation/qsim/ass1.vwf.vt
+    Info: Processing started: Fri Feb 01 00:46:36 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ass1 -c ass1 --vector_source=D:/Documents/School/3TB4/Ass1_hank/light.vwf --testbench_file=D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/light.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -35,7 +35,7 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Ass1_hank/simulation/qsim/" ass1 -c ass1
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/" ass1 -c ass1
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -53,81 +53,81 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jan 31 13:21:55 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/3TB4/Ass1_hank/simulation/qsim/ ass1 -c ass1
+    Info: Processing started: Fri Feb 01 00:46:37 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/ ass1 -c ass1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file ass1.vo in folder "D:/3TB4/Ass1_hank/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file ass1.vo in folder "D:/Documents/School/3TB4/Ass1_hank/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4736 megabytes
-    Info: Processing ended: Thu Jan 31 13:21:57 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Fri Feb 01 00:46:38 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-D:/3TB4/Ass1_hank/simulation/qsim/ass1.do generated.
+D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/ass1.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-c:/intelfpga_lite/17.1/modelsim_ase/win32aloem//vsim -c -do ass1.do
+d:/intelfpga_lite/17.1/modelsim_ase/win32aloem//vsim -c -do ass1.do
 
-Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+Reading D:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+
 
 # 10.5b
 
-
 # do ass1.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:21:59 on Jan 31,2019
+# Start time: 00:46:39 on Feb 01,2019
 # vlog -work work ass1.vo 
-# -- Compiling module ass1
+
+# -- Compiling module light
 # 
 # Top level modules:
-# 	ass1
-
-# End time: 13:21:59 on Jan 31,2019, Elapsed time: 0:00:00
+# 	light
+# End time: 00:46:39 on Feb 01,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:21:59 on Jan 31,2019
-# vlog -work work ass1.vwf.vt 
-# -- Compiling module ass1_vlg_vec_tst
+# Start time: 00:46:40 on Feb 01,2019
+# vlog -work work light.vwf.vt 
+# -- Compiling module light_vlg_vec_tst
 # 
 # Top level modules:
-# 	ass1_vlg_vec_tst
+# 	light_vlg_vec_tst
 
-# End time: 13:21:59 on Jan 31,2019, Elapsed time: 0:00:00
+# End time: 00:46:40 on Feb 01,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ass1_vlg_vec_tst 
-# Start time: 13:21:59 on Jan 31,2019
-# Loading work.ass1_vlg_vec_tst
-# Loading work.ass1
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.light_vlg_vec_tst 
+# Start time: 00:46:40 on Feb 01,2019
+# Loading work.light_vlg_vec_tst
+# Loading work.light
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#25
-# ** Note: $finish    : ass1.vwf.vt(60)
-#    Time: 1 us  Iteration: 0  Instance: /ass1_vlg_vec_tst
-# End time: 13:21:59 on Jan 31,2019, Elapsed time: 0:00:00
+# ** Note: $finish    : light.vwf.vt(50)
+#    Time: 1 us  Iteration: 0  Instance: /light_vlg_vec_tst
+
+# End time: 00:46:40 on Feb 01,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/3TB4/Ass1_hank/ass1.vwf...
+Reading D:/Documents/School/3TB4/Ass1_hank/light.vwf...
 
-Reading D:/3TB4/Ass1_hank/simulation/qsim/ass1.msim.vcd...
+Reading D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/ass1.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/3TB4/Ass1_hank/simulation/qsim/ass1_20190131132159.sim.vwf
+Writing the resulting VWF to D:/Documents/School/3TB4/Ass1_hank/simulation/qsim/ass1_20190201004640.sim.vwf
 
 Finished VCD to VWF conversion.
 
