@@ -1,0 +1,46 @@
+|ass1
+clk => clk.IN2
+reset => L.ACLR
+reset => R.ACLR
+left => L.OUTPUTSELECT
+left => R.OUTPUTSELECT
+right => L.OUTPUTSELECT
+right => R.OUTPUTSELECT
+LA << light:left_light.port2
+LB << light:left_light.port3
+LC << light:left_light.port4
+RA << light:right_light.port2
+RB << light:right_light.port3
+RC << light:right_light.port4
+
+
+|ass1|light:right_light
+clk => C~reg0.CLK
+clk => B~reg0.CLK
+clk => A~reg0.CLK
+on => C~reg0.ALOAD
+on => B~reg0.ALOAD
+on => A~reg0.PRESET
+on => light_state.11_38.LATCH_ENABLE
+on => light_state.10_44.LATCH_ENABLE
+on => light_state.01_50.LATCH_ENABLE
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B <= B~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C <= C~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ass1|light:left_light
+clk => C~reg0.CLK
+clk => B~reg0.CLK
+clk => A~reg0.CLK
+on => C~reg0.ALOAD
+on => B~reg0.ALOAD
+on => A~reg0.PRESET
+on => light_state.11_38.LATCH_ENABLE
+on => light_state.10_44.LATCH_ENABLE
+on => light_state.01_50.LATCH_ENABLE
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B <= B~reg0.DB_MAX_OUTPUT_PORT_TYPE
+C <= C~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

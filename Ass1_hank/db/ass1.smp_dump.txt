@@ -1,0 +1,12 @@
+
+State Machine - |ass1|light:left_light|light_state
+Name light_state.11 light_state.01 light_state.10 
+light_state.01 0 0 0 
+light_state.10 0 1 1 
+light_state.11 1 1 0 
+
+State Machine - |ass1|light:right_light|light_state
+Name light_state.11 light_state.01 light_state.10 
+light_state.01 0 0 0 
+light_state.10 0 1 1 
+light_state.11 1 1 0 

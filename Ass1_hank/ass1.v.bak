@@ -1,0 +1,47 @@
+module ass1(
+	input clk, reset, left, right,
+	output LA, LB, LC, RA, RB, RC
+	);
+	
+	reg [1:0] direction;
+	reg [1:0] light_state;
+	
+	always @(posedge clk or posedge reset)
+	begin
+		
+		if (reset) begin
+			LA <= 1'b0;
+			LB <= 1'b0;
+			LC <= 1'b0;
+			RA <= 1'b0;
+			RB <= 1'b0;
+			RC <= 1'b0;
+		end else begin
+		
+			if (left == 1'b0) direction <= 2'b01;
+			else if (right == 1'b0) direction <= 2'b10;
+			
+			case (direction)
+				2'b01: begin		// right
+					light right_light(clk,1'b1,RA,RB,RC);
+					light right_light(clk,1'b0,LA,LB,LC);
+				end
+				
+				2'b10: begin		// left
+					light right_light(clk,1'bO,RA,RB,RC);
+					light right_light(clk,1'b1,LA,LB,LC);
+				end
+				
+				default: begin
+					LA <= 1'b0;
+					LB <= 1'b0;
+					LC <= 1'b0;
+					RA <= 1'b0;
+					RB <= 1'b0;
+					RC <= 1'b0;
+				end
+			endcase
+		end
+	end
+	
+endmodule 
