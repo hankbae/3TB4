@@ -1,1 +1,6 @@
-Warning (10268): Verilog HDL information at hex_counter.v(12): always construct contains both blocking and non-blocking assignments File: D:/3TB4/Lab2_hank/tutorial_during/hex_counter.v Line: 12
+Info (10281): Verilog HDL Declaration information at lab2tut.v(5): object "HEX0" differs only in case from object "hex0" in the same scope File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 5
+Info (10281): Verilog HDL Declaration information at lab2tut.v(6): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 6
+Info (10281): Verilog HDL Declaration information at lab2tut.v(7): object "HEX2" differs only in case from object "hex2" in the same scope File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 7
+Info (10281): Verilog HDL Declaration information at lab2tut.v(8): object "HEX3" differs only in case from object "hex3" in the same scope File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 8
+Info (10281): Verilog HDL Declaration information at lab2tut.v(9): object "HEX4" differs only in case from object "hex4" in the same scope File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 9
+Info (10281): Verilog HDL Declaration information at lab2tut.v(11): object "HEX5" differs only in case from object "hex5" in the same scope File: D:/3TB4/Lab2_hank/tutorial_during/lab2tut.v Line: 11

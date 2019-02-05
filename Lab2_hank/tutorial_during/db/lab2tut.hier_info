@@ -3,51 +3,51 @@ CLOCK_50 => CLOCK_50.IN1
 KEY[0] => KEY[0].IN2
 KEY[1] => KEY[1].IN1
 KEY[2] => KEY[2].IN1
-HEX0[0] <= num_decoder:comb_25.port1
-HEX0[1] <= num_decoder:comb_25.port1
-HEX0[2] <= num_decoder:comb_25.port1
-HEX0[3] <= num_decoder:comb_25.port1
-HEX0[4] <= num_decoder:comb_25.port1
-HEX0[5] <= num_decoder:comb_25.port1
-HEX0[6] <= num_decoder:comb_25.port1
-HEX1[0] <= num_decoder:comb_26.port1
-HEX1[1] <= num_decoder:comb_26.port1
-HEX1[2] <= num_decoder:comb_26.port1
-HEX1[3] <= num_decoder:comb_26.port1
-HEX1[4] <= num_decoder:comb_26.port1
-HEX1[5] <= num_decoder:comb_26.port1
-HEX1[6] <= num_decoder:comb_26.port1
-HEX2[0] <= num_decoder:comb_27.port1
-HEX2[1] <= num_decoder:comb_27.port1
-HEX2[2] <= num_decoder:comb_27.port1
-HEX2[3] <= num_decoder:comb_27.port1
-HEX2[4] <= num_decoder:comb_27.port1
-HEX2[5] <= num_decoder:comb_27.port1
-HEX2[6] <= num_decoder:comb_27.port1
-HEX3[0] <= num_decoder:comb_28.port1
-HEX3[1] <= num_decoder:comb_28.port1
-HEX3[2] <= num_decoder:comb_28.port1
-HEX3[3] <= num_decoder:comb_28.port1
-HEX3[4] <= num_decoder:comb_28.port1
-HEX3[5] <= num_decoder:comb_28.port1
-HEX3[6] <= num_decoder:comb_28.port1
-HEX4[0] <= num_decoder:comb_29.port1
-HEX4[1] <= num_decoder:comb_29.port1
-HEX4[2] <= num_decoder:comb_29.port1
-HEX4[3] <= num_decoder:comb_29.port1
-HEX4[4] <= num_decoder:comb_29.port1
-HEX4[5] <= num_decoder:comb_29.port1
-HEX4[6] <= num_decoder:comb_29.port1
-HEX5[0] <= num_decoder:comb_30.port1
-HEX5[1] <= num_decoder:comb_30.port1
-HEX5[2] <= num_decoder:comb_30.port1
-HEX5[3] <= num_decoder:comb_30.port1
-HEX5[4] <= num_decoder:comb_30.port1
-HEX5[5] <= num_decoder:comb_30.port1
-HEX5[6] <= num_decoder:comb_30.port1
+HEX0[0] <= num_decoder:hex0.port1
+HEX0[1] <= num_decoder:hex0.port1
+HEX0[2] <= num_decoder:hex0.port1
+HEX0[3] <= num_decoder:hex0.port1
+HEX0[4] <= num_decoder:hex0.port1
+HEX0[5] <= num_decoder:hex0.port1
+HEX0[6] <= num_decoder:hex0.port1
+HEX1[0] <= num_decoder:hex1.port1
+HEX1[1] <= num_decoder:hex1.port1
+HEX1[2] <= num_decoder:hex1.port1
+HEX1[3] <= num_decoder:hex1.port1
+HEX1[4] <= num_decoder:hex1.port1
+HEX1[5] <= num_decoder:hex1.port1
+HEX1[6] <= num_decoder:hex1.port1
+HEX2[0] <= num_decoder:hex2.port1
+HEX2[1] <= num_decoder:hex2.port1
+HEX2[2] <= num_decoder:hex2.port1
+HEX2[3] <= num_decoder:hex2.port1
+HEX2[4] <= num_decoder:hex2.port1
+HEX2[5] <= num_decoder:hex2.port1
+HEX2[6] <= num_decoder:hex2.port1
+HEX3[0] <= num_decoder:hex3.port1
+HEX3[1] <= num_decoder:hex3.port1
+HEX3[2] <= num_decoder:hex3.port1
+HEX3[3] <= num_decoder:hex3.port1
+HEX3[4] <= num_decoder:hex3.port1
+HEX3[5] <= num_decoder:hex3.port1
+HEX3[6] <= num_decoder:hex3.port1
+HEX4[0] <= num_decoder:hex4.port1
+HEX4[1] <= num_decoder:hex4.port1
+HEX4[2] <= num_decoder:hex4.port1
+HEX4[3] <= num_decoder:hex4.port1
+HEX4[4] <= num_decoder:hex4.port1
+HEX4[5] <= num_decoder:hex4.port1
+HEX4[6] <= num_decoder:hex4.port1
+HEX5[0] <= num_decoder:hex5.port1
+HEX5[1] <= num_decoder:hex5.port1
+HEX5[2] <= num_decoder:hex5.port1
+HEX5[3] <= num_decoder:hex5.port1
+HEX5[4] <= num_decoder:hex5.port1
+HEX5[5] <= num_decoder:hex5.port1
+HEX5[6] <= num_decoder:hex5.port1
 
 
-|lab2tut|clock_divider:comb_23
+|lab2tut|clock_divider:msec_clock
 Clock => cntr[0].CLK
 Clock => cntr[1].CLK
 Clock => cntr[2].CLK
@@ -114,7 +114,7 @@ divisor[20] => LessThan1.IN2
 clk_ms <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|hex_counter_Nathan:comb_24
+|lab2tut|hex_counter:cntr
 Clock => resume.CLK
 Clock => Q[0]~reg0.CLK
 Clock => Q[1]~reg0.CLK
@@ -181,7 +181,92 @@ Q[18] <= Q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[19] <= Q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|num_decoder:comb_25
+|lab2tut|bin2BCD:display_val
+bin[0] => BCD[0].DATAIN
+bin[1] => LessThan51.IN8
+bin[1] => Add51.IN8
+bin[1] => tmp.DATAA
+bin[2] => LessThan45.IN8
+bin[2] => Add45.IN8
+bin[2] => tmp.DATAA
+bin[3] => LessThan40.IN8
+bin[3] => Add40.IN8
+bin[3] => tmp.DATAA
+bin[4] => LessThan35.IN8
+bin[4] => Add35.IN8
+bin[4] => tmp.DATAA
+bin[5] => LessThan30.IN8
+bin[5] => Add30.IN8
+bin[5] => tmp.DATAA
+bin[6] => LessThan26.IN8
+bin[6] => Add26.IN8
+bin[6] => tmp.DATAA
+bin[7] => LessThan22.IN8
+bin[7] => Add22.IN8
+bin[7] => tmp.DATAA
+bin[8] => LessThan18.IN8
+bin[8] => Add18.IN8
+bin[8] => tmp.DATAA
+bin[9] => LessThan15.IN8
+bin[9] => Add15.IN8
+bin[9] => tmp.DATAA
+bin[10] => LessThan12.IN8
+bin[10] => Add12.IN8
+bin[10] => tmp.DATAA
+bin[11] => LessThan9.IN8
+bin[11] => Add9.IN8
+bin[11] => tmp.DATAA
+bin[12] => LessThan7.IN8
+bin[12] => Add7.IN8
+bin[12] => tmp.DATAA
+bin[13] => LessThan5.IN8
+bin[13] => Add5.IN8
+bin[13] => tmp.DATAA
+bin[14] => LessThan3.IN8
+bin[14] => Add3.IN8
+bin[14] => tmp.DATAA
+bin[15] => LessThan2.IN8
+bin[15] => Add2.IN8
+bin[15] => tmp.DATAA
+bin[16] => LessThan1.IN8
+bin[16] => Add1.IN8
+bin[16] => tmp.DATAA
+bin[17] => LessThan0.IN6
+bin[17] => Add0.IN6
+bin[17] => tmp.DATAA
+bin[18] => LessThan0.IN5
+bin[18] => Add0.IN5
+bin[18] => tmp.DATAA
+bin[19] => LessThan0.IN4
+bin[19] => Add0.IN4
+bin[19] => tmp.DATAA
+BCD[0] <= bin[0].DB_MAX_OUTPUT_PORT_TYPE
+BCD[1] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[2] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[3] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[4] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[5] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[6] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[7] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[8] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[9] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[10] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[11] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[12] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[13] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[14] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[15] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[16] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[17] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[18] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[19] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[20] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[21] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[22] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+BCD[23] <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2tut|num_decoder:hex0
 number[0] => Decoder0.IN3
 number[1] => Decoder0.IN2
 number[2] => Decoder0.IN1
@@ -195,7 +280,7 @@ disp[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 disp[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|num_decoder:comb_26
+|lab2tut|num_decoder:hex1
 number[0] => Decoder0.IN3
 number[1] => Decoder0.IN2
 number[2] => Decoder0.IN1
@@ -209,7 +294,7 @@ disp[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 disp[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|num_decoder:comb_27
+|lab2tut|num_decoder:hex2
 number[0] => Decoder0.IN3
 number[1] => Decoder0.IN2
 number[2] => Decoder0.IN1
@@ -223,7 +308,7 @@ disp[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 disp[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|num_decoder:comb_28
+|lab2tut|num_decoder:hex3
 number[0] => Decoder0.IN3
 number[1] => Decoder0.IN2
 number[2] => Decoder0.IN1
@@ -237,7 +322,7 @@ disp[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 disp[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|num_decoder:comb_29
+|lab2tut|num_decoder:hex4
 number[0] => Decoder0.IN3
 number[1] => Decoder0.IN2
 number[2] => Decoder0.IN1
@@ -251,7 +336,7 @@ disp[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 disp[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab2tut|num_decoder:comb_30
+|lab2tut|num_decoder:hex5
 number[0] => Decoder0.IN3
 number[1] => Decoder0.IN2
 number[2] => Decoder0.IN1

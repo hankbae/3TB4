@@ -144,11 +144,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "KEY[0]",
+					"name" : "HEX5[0]",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK_50",
+					"name" : "HEX5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
@@ -157,6 +181,10 @@
 				},
 				{
 					"name" : "KEY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
 					"strict" : false
 				}
 			]

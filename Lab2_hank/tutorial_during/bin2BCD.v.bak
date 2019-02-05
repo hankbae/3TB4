@@ -1,0 +1,9 @@
+module bin2BCD(
+	input [19:0] val,
+	output reg [23:0] BCD
+	);
+	
+	
+	
+	
+endmodule

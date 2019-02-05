@@ -1,0 +1,180 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/3TB4/Lab2_hank/tutorial_during/simulation/qsim
+vbin2BCD
+Z1 !s110 1549407358
+!i10b 1
+!s100 _bI78zXnbHFAiN1Ff@eEk2
+IjkddM[njnHJ9VU1kCjVih1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1549407355
+Z3 8lab2tut.vo
+Z4 Flab2tut.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1549407358.000000
+Z8 !s107 lab2tut.vo|
+Z9 !s90 -work|work|lab2tut.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+nbin2@b@c@d
+vbin2BCD_vlg_vec_tst
+R1
+!i10b 1
+!s100 c>DMfWDgz1>:l750f^nRP2
+ICSkcjoOFAPM=0kXC3dgFX0
+R2
+R0
+w1549407353
+8bin2BCD.vwf.vt
+Fbin2BCD.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 bin2BCD.vwf.vt|
+!s90 -work|work|bin2BCD.vwf.vt|
+!i113 1
+R10
+R11
+nbin2@b@c@d_vlg_vec_tst
+vclock_divider
+Z13 !s110 1549405462
+!i10b 1
+!s100 bSCKoI6`EPn4_ni`El=ie1
+IW3bP=Ef=45c0RYM300C=Q0
+R2
+R0
+w1549405460
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1549405462.000000
+R8
+R9
+!i113 1
+R10
+R11
+vclock_divider_vlg_vec_tst
+R13
+!i10b 1
+!s100 <ozLAJHLP35k0PJ=h>EPH1
+I4UST_85Zc;3NaNJ0fd?eg0
+R2
+R0
+w1549405458
+8clock_divider.vwf.vt
+Fclock_divider.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R14
+!s107 clock_divider.vwf.vt|
+!s90 -work|work|clock_divider.vwf.vt|
+!i113 1
+R10
+R11
+vhex_counter
+Z15 !s110 1549404980
+!i10b 1
+!s100 Ra[R5afOP[2JP`PhnB2M]0
+I@<z=5YC7onb15c=MQQVW_3
+R2
+R0
+w1549404978
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1549404979.000000
+R8
+R9
+!i113 1
+R10
+R11
+vhex_counter_vlg_vec_tst
+R15
+!i10b 1
+!s100 ]d<SG[TzbY<^>o>ZYB_k60
+I]fmH79i3=WW2@4<Q691Oe2
+R2
+R0
+w1549404975
+8hex_counter.vwf.vt
+Fhex_counter.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1549404980.000000
+!s107 hex_counter.vwf.vt|
+!s90 -work|work|hex_counter.vwf.vt|
+!i113 1
+R10
+R11
+vlab2tut
+!s110 1549407972
+!i10b 1
+!s100 lYg@h4z`g8G=]zBmHz6;:0
+IRK=B]OQ]1KSAAH?Z>]Y@71
+R2
+R0
+w1549407971
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1549407972.000000
+R8
+R9
+!i113 1
+R10
+R11
+vlab2tut_vlg_vec_tst
+!s110 1549407973
+!i10b 1
+!s100 VaN8G?ZO?2]HB:]LNe:7z0
+IMMH84F;mfoCiBARPO>_I62
+R2
+R0
+w1549407969
+8lab2tut.vwf.vt
+Flab2tut.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1549407973.000000
+!s107 lab2tut.vwf.vt|
+!s90 -work|work|lab2tut.vwf.vt|
+!i113 1
+R10
+R11
