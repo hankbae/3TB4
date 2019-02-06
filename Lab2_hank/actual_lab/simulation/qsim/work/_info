@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/3TB4/Lab2_hank/actual_lab/simulation/qsim
+vrandom
+Z1 !s110 1549412910
+!i10b 1
+!s100 Cb<fn`X9fh80gAK`b;U;81
+ImA=Ql:jRfzQ4kOERYoHk@1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1549412906
+8prelab.vo
+Fprelab.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1549412910.000000
+!s107 prelab.vo|
+!s90 -work|work|prelab.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vrandom_vlg_vec_tst
+R1
+!i10b 1
+!s100 ;T[DD]G<QFodFL<ZY`VD11
+IOFzKig9hShPNFfY]Z?jm]3
+R2
+R0
+w1549412904
+8random.vwf.vt
+Frandom.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 random.vwf.vt|
+!s90 -work|work|random.vwf.vt|
+!i113 1
+R5
+R6

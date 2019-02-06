@@ -1,0 +1,492 @@
+$comment
+	File created using the following command:
+		vcd file prelab.msim.vcd -direction
+$end
+$date
+	Tue Feb 05 19:28:32 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module random_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " reset_n $end
+$var wire 1 # random [14] $end
+$var wire 1 $ random [13] $end
+$var wire 1 % random [12] $end
+$var wire 1 & random [11] $end
+$var wire 1 ' random [10] $end
+$var wire 1 ( random [9] $end
+$var wire 1 ) random [8] $end
+$var wire 1 * random [7] $end
+$var wire 1 + random [6] $end
+$var wire 1 , random [5] $end
+$var wire 1 - random [4] $end
+$var wire 1 . random [3] $end
+$var wire 1 / random [2] $end
+$var wire 1 0 random [1] $end
+$var wire 1 1 random [0] $end
+$var wire 1 2 rnd_ready $end
+
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var tri1 1 6 devclrn $end
+$var tri1 1 7 devpor $end
+$var tri1 1 8 devoe $end
+$var wire 1 9 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 : clk~input_o $end
+$var wire 1 ; clk~inputCLKENA0_outclk $end
+$var wire 1 < reset_n~input_o $end
+$var wire 1 = random[1]~reg0DUPLICATE_q $end
+$var wire 1 > random[2]~1_combout $end
+$var wire 1 ? random[2]~reg0DUPLICATE_q $end
+$var wire 1 @ random[3]~2_combout $end
+$var wire 1 A random[3]~reg0DUPLICATE_q $end
+$var wire 1 B random[4]~reg0DUPLICATE_q $end
+$var wire 1 C random[5]~3_combout $end
+$var wire 1 D random[5]~reg0DUPLICATE_q $end
+$var wire 1 E random[6]~reg0_q $end
+$var wire 1 F random[7]~reg0DUPLICATE_q $end
+$var wire 1 G random[8]~reg0_q $end
+$var wire 1 H random[9]~4_combout $end
+$var wire 1 I random[9]~reg0DUPLICATE_q $end
+$var wire 1 J random[10]~5_combout $end
+$var wire 1 K random[10]~reg0_q $end
+$var wire 1 L random[11]~6_combout $end
+$var wire 1 M random[11]~reg0_q $end
+$var wire 1 N random[12]~7_combout $end
+$var wire 1 O random[12]~reg0_q $end
+$var wire 1 P random[1]~reg0_q $end
+$var wire 1 Q random[0]~reg0_q $end
+$var wire 1 R random~0_combout $end
+$var wire 1 S random[0]~reg0DUPLICATE_q $end
+$var wire 1 T random[3]~reg0_q $end
+$var wire 1 U random[4]~reg0_q $end
+$var wire 1 V random[7]~reg0_q $end
+$var wire 1 W random[13]~8_combout $end
+$var wire 1 X random[13]~reg0_q $end
+$var wire 1 Y random[13]~reg0DUPLICATE_q $end
+$var wire 1 Z random[14]~9_combout $end
+$var wire 1 [ random[14]~reg0_q $end
+$var wire 1 \ always0~0_combout $end
+$var wire 1 ] random[9]~reg0_q $end
+$var wire 1 ^ always0~3_combout $end
+$var wire 1 _ random[5]~reg0_q $end
+$var wire 1 ` always0~1_combout $end
+$var wire 1 a random[2]~reg0_q $end
+$var wire 1 b always0~2_combout $end
+$var wire 1 c always0~4_combout $end
+$var wire 1 d rnd_ready~0_combout $end
+$var wire 1 e rnd_ready~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+11
+10
+0/
+1.
+1-
+0,
+0+
+0*
+0)
+1(
+0'
+1&
+0%
+1$
+0#
+02
+03
+14
+x5
+16
+17
+18
+09
+0:
+0;
+1<
+0=
+1>
+0?
+1@
+0A
+0B
+1C
+0D
+0E
+0F
+0G
+1H
+0I
+1J
+0K
+1L
+0M
+1N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+1W
+0X
+0Y
+1Z
+0[
+0\
+0]
+1^
+0_
+1`
+0a
+1b
+1c
+0d
+0e
+$end
+#50000
+1!
+1:
+1;
+1a
+1_
+1]
+1Y
+1X
+1T
+1M
+1I
+1A
+1[
+1O
+1K
+1D
+1?
+1/
+1,
+1'
+1%
+1#
+0(
+0&
+0.
+0$
+0`
+0L
+0J
+0N
+0Z
+0@
+0W
+#100000
+0!
+0:
+0;
+#150000
+1!
+1:
+1;
+0Y
+0X
+1U
+0T
+0M
+1B
+0A
+0[
+0O
+0K
+1E
+1+
+0'
+0%
+0#
+1&
+1.
+0-
+1$
+1`
+1L
+0C
+1N
+1Z
+1W
+#200000
+0!
+0:
+0;
+#250000
+1!
+1:
+1;
+0_
+1Y
+1X
+0U
+1M
+1F
+0B
+1[
+1V
+1O
+0D
+0,
+1%
+1*
+1#
+0&
+1-
+0$
+1C
+0N
+0Z
+0W
+1R
+#300000
+0!
+0:
+0;
+#350000
+1!
+1:
+1;
+1_
+0Y
+0X
+1S
+1Q
+0[
+0O
+1G
+0E
+1D
+1,
+0+
+1)
+0%
+0#
+01
+1$
+0`
+1Z
+0H
+1W
+#400000
+0!
+0:
+0;
+#450000
+1!
+1:
+1;
+0]
+1Y
+1X
+1P
+0I
+0F
+1=
+1[
+0V
+1E
+1+
+0*
+1#
+00
+1(
+0$
+0^
+0>
+1J
+0R
+0Z
+0c
+1d
+#500000
+0!
+0:
+0;
+#550000
+1!
+1:
+1;
+0a
+0S
+0Q
+1F
+1e
+0[
+1V
+1K
+0G
+0?
+0/
+0)
+1'
+1*
+0#
+12
+11
+0L
+1R
+1@
+1H
+#600000
+0!
+0:
+0;
+#650000
+1!
+1:
+1;
+1]
+1T
+1S
+1Q
+0P
+0M
+1I
+1A
+0=
+1G
+1)
+10
+0(
+1&
+01
+0.
+1`
+1^
+1\
+1>
+0R
+0J
+1N
+0H
+1c
+0d
+#700000
+0!
+0:
+0;
+#750000
+1!
+1:
+1;
+1a
+0]
+1U
+0S
+0Q
+1P
+0I
+1B
+1=
+0e
+1O
+0K
+1?
+1/
+0'
+1%
+02
+00
+1(
+11
+0-
+1L
+0>
+0C
+1J
+1R
+0@
+0W
+#800000
+0!
+0:
+0;
+#850000
+1!
+1:
+1;
+0a
+0_
+0Y
+0X
+0T
+1S
+1Q
+0P
+1M
+0A
+0=
+1K
+0D
+0?
+0/
+0,
+1'
+10
+0&
+01
+1.
+1$
+0L
+1>
+0R
+0N
+1Z
+1@
+#900000
+0!
+0:
+0;
+#950000
+1!
+1:
+1;
+1a
+0U
+1T
+0S
+0Q
+1P
+0M
+0B
+1A
+1=
+1[
+0O
+0E
+1?
+1/
+0+
+0%
+1#
+00
+1&
+11
+0.
+1-
+0\
+0>
+1C
+1N
+0@
+1W
+#1000000
