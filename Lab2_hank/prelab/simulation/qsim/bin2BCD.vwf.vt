@@ -1,0 +1,160 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "02/06/2019 14:58:30"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          bin2BCD
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module bin2BCD_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [19:0] bin;
+// wires                                               
+wire [23:0] BCD;
+
+// assign statements (if any)                          
+bin2BCD i1 (
+// port map - connection between master ports and signals/registers   
+	.BCD(BCD),
+	.bin(bin)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// bin[ 19 ]
+initial
+begin
+	bin[19] = 1'b0;
+end 
+// bin[ 18 ]
+initial
+begin
+	bin[18] = 1'b0;
+end 
+// bin[ 17 ]
+initial
+begin
+	bin[17] = 1'b0;
+end 
+// bin[ 16 ]
+initial
+begin
+	bin[16] = 1'b0;
+end 
+// bin[ 15 ]
+initial
+begin
+	bin[15] = 1'b0;
+end 
+// bin[ 14 ]
+initial
+begin
+	bin[14] = 1'b0;
+end 
+// bin[ 13 ]
+initial
+begin
+	bin[13] = 1'b0;
+end 
+// bin[ 12 ]
+initial
+begin
+	bin[12] = 1'b0;
+end 
+// bin[ 11 ]
+initial
+begin
+	bin[11] = 1'b0;
+end 
+// bin[ 10 ]
+initial
+begin
+	bin[10] = 1'b0;
+end 
+// bin[ 9 ]
+initial
+begin
+	bin[9] = 1'b0;
+end 
+// bin[ 8 ]
+initial
+begin
+	bin[8] = 1'b0;
+end 
+// bin[ 7 ]
+initial
+begin
+	bin[7] = 1'b0;
+end 
+// bin[ 6 ]
+initial
+begin
+	bin[6] = 1'b0;
+end 
+// bin[ 5 ]
+initial
+begin
+	bin[5] = 1'b0;
+end 
+// bin[ 4 ]
+initial
+begin
+	bin[4] = 1'b0;
+	bin[4] = #800000 1'b1;
+end 
+// bin[ 3 ]
+initial
+begin
+	bin[3] = 1'b0;
+	bin[3] = #400000 1'b1;
+	bin[3] = #400000 1'b0;
+end 
+// bin[ 2 ]
+initial
+begin
+	repeat(2)
+	begin
+		bin[2] = 1'b0;
+		bin[2] = #200000 1'b1;
+		# 200000;
+	end
+	bin[2] = 1'b0;
+end 
+// bin[ 1 ]
+always
+begin
+	bin[1] = 1'b0;
+	bin[1] = #100000 1'b1;
+	#100000;
+end 
+// bin[ 0 ]
+always
+begin
+	bin[0] = 1'b0;
+	bin[0] = #50000 1'b1;
+	#50000;
+end 
+endmodule
+

@@ -1,0 +1,264 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/3TB4/Lab2_hank/actual_lab/simulation/qsim
+vbin2BCD
+Z1 !s110 1549483113
+!i10b 1
+!s100 _bI78zXnbHFAiN1Ff@eEk2
+IigVf3Aoz@mXId1CB2bAPd0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/Documents/School/3TB4/Lab2_hank/actual_lab/simulation/qsim
+w1549483112
+Z4 8prelab.vo
+Z5 Fprelab.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1549483113.000000
+Z9 !s107 prelab.vo|
+Z10 !s90 -work|work|prelab.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+nbin2@b@c@d
+vbin2BCD_vlg_vec_tst
+R1
+!i10b 1
+!s100 Lm?P@Y;kiS2FhEhCmiO;<1
+IIMh`Qc:K4<Ug0c`L4dmP:0
+R2
+R3
+w1549483110
+8bin2BCD.vwf.vt
+Fbin2BCD.vwf.vt
+Z13 L0 29
+R7
+r1
+!s85 0
+31
+R8
+!s107 bin2BCD.vwf.vt|
+!s90 -work|work|bin2BCD.vwf.vt|
+!i113 1
+R11
+R12
+nbin2@b@c@d_vlg_vec_tst
+vhex_counter
+Z14 !s110 1549480223
+!i10b 1
+!s100 Ra[R5afOP[2JP`PhnB2M]0
+IgHnjdc1KzYB3UHa2WTl=z3
+R2
+R3
+w1549480222
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1549480223.000000
+R9
+R10
+!i113 1
+R11
+R12
+vhex_counter_vlg_vec_tst
+R14
+!i10b 1
+!s100 A3Tf?6;?OVXK[lEF57:Ub0
+IM0kbjlL0OLn7GNGAm;`mM1
+R2
+R3
+w1549480220
+8hex_counter.vwf.vt
+Fhex_counter.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R15
+!s107 hex_counter.vwf.vt|
+!s90 -work|work|hex_counter.vwf.vt|
+!i113 1
+R11
+R12
+vled_decoder
+!s110 1549493069
+!i10b 1
+!s100 >LFn3MeEJFjd:6P90HGbB1
+I_eOYc_POlmS0FYMa?K4zo0
+R2
+R3
+w1549493068
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z16 !s108 1549493069.000000
+R9
+R10
+!i113 1
+R11
+R12
+vled_decoder_vlg_vec_tst
+!s110 1549493070
+!i10b 1
+!s100 @lac6;XnINTfF:k9ZRFfV0
+I3>O3:D@B<0<;2]hNd^1ml1
+R2
+R3
+w1549493067
+8led_decoder.vwf.vt
+Fled_decoder.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R16
+!s107 led_decoder.vwf.vt|
+!s90 -work|work|led_decoder.vwf.vt|
+!i113 1
+R11
+R12
+vnum_decoder
+Z17 !s110 1549492388
+!i10b 1
+!s100 I5^EFf`z_?ZmHbN>[S5IM2
+IaVcEeNdN4N2G71b^L74T91
+R2
+R3
+w1549492387
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z18 !s108 1549492388.000000
+R9
+R10
+!i113 1
+R11
+R12
+vnum_decoder_vlg_vec_tst
+R17
+!i10b 1
+!s100 oOVfI2Y<N5?1bECCSaOW72
+I7_UX?Um6hzl;HYTf9o>F70
+R2
+R3
+w1549492386
+8num_decoder.vwf.vt
+Fnum_decoder.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R18
+!s107 num_decoder.vwf.vt|
+!s90 -work|work|num_decoder.vwf.vt|
+!i113 1
+R11
+R12
+vrandom
+Z19 !s110 1549412910
+!i10b 1
+!s100 Cb<fn`X9fh80gAK`b;U;81
+ImA=Ql:jRfzQ4kOERYoHk@1
+R2
+R0
+w1549412906
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z20 !s108 1549412910.000000
+R9
+R10
+!i113 1
+R11
+R12
+vrandom_vlg_vec_tst
+R19
+!i10b 1
+!s100 ;T[DD]G<QFodFL<ZY`VD11
+IOFzKig9hShPNFfY]Z?jm]3
+R2
+R0
+w1549412904
+8random.vwf.vt
+Frandom.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R20
+!s107 random.vwf.vt|
+!s90 -work|work|random.vwf.vt|
+!i113 1
+R11
+R12
+vreaction_game
+Z21 !s110 1549514800
+!i10b 1
+!s100 nReWOijHQWCkdSmif57g_3
+I5WA6K1WMO?L];XYe72lkz3
+R2
+R3
+w1549514799
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z22 !s108 1549514800.000000
+R9
+R10
+!i113 1
+R11
+R12
+vreaction_game_vlg_vec_tst
+R21
+!i10b 1
+!s100 [KFJ5?8ngn8>2D8hSj=U92
+I0KnZOX2QhGKEdZ5D_MYZ12
+R2
+R3
+w1549514797
+8reaction_game.vwf.vt
+Freaction_game.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R22
+!s107 reaction_game.vwf.vt|
+!s90 -work|work|reaction_game.vwf.vt|
+!i113 1
+R11
+R12

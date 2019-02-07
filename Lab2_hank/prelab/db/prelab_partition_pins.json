@@ -1,0 +1,877 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HEX0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_start",
+					"strict" : false
+				},
+				{
+					"name" : "init_start",
+					"strict" : false
+				},
+				{
+					"name" : "init_stop",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_start",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_stop",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_flashing",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_off",
+					"strict" : false
+				},
+				{
+					"name" : "P1_ledEnable",
+					"strict" : false
+				},
+				{
+					"name" : "P2_ledEnable",
+					"strict" : false
+				},
+				{
+					"name" : "P1_addPoint",
+					"strict" : false
+				},
+				{
+					"name" : "P2_addPoint",
+					"strict" : false
+				},
+				{
+					"name" : "P1_press",
+					"strict" : false
+				},
+				{
+					"name" : "P2_press",
+					"strict" : false
+				},
+				{
+					"name" : "main_reset",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[12]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delay[14]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[7]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[8]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[9]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[10]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[11]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[12]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[13]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[14]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[15]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[16]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[17]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[18]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[19]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[20]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[21]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[22]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_val[23]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rng_ready",
+					"strict" : false
+				},
+				{
+					"name" : "P1_points[0]",
+					"strict" : false
+				},
+				{
+					"name" : "P1_points[1]",
+					"strict" : false
+				},
+				{
+					"name" : "P1_points[2]",
+					"strict" : false
+				},
+				{
+					"name" : "P2_points[0]",
+					"strict" : false
+				},
+				{
+					"name" : "P2_points[1]",
+					"strict" : false
+				},
+				{
+					"name" : "P2_points[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[12]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_delayBuff[14]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[0]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[1]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[2]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[3]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[4]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[5]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[6]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[7]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[8]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[9]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[10]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[11]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[12]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[13]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[14]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[15]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[16]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[17]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[18]",
+					"strict" : false
+				},
+				{
+					"name" : "init_timer[19]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[2]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[3]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[4]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[5]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[6]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[7]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[8]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[9]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[10]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[11]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[12]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[13]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[14]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[15]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[16]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[17]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[18]",
+					"strict" : false
+				},
+				{
+					"name" : "stopwatch_timer[19]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[5]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[7]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[8]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[9]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[10]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[11]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[12]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[13]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[14]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[15]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[16]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[17]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[18]",
+					"strict" : false
+				},
+				{
+					"name" : "rng_timer[19]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[7]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[8]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[9]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[10]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[11]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[12]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[13]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[14]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[15]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[16]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[17]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[18]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[19]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[20]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[21]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[22]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX_buff[23]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
