@@ -1,0 +1,497 @@
+Analysis & Synthesis report for lab2part1
+Thu Feb 07 10:21:25 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Port Connectivity Checks: "num_decoder:hex5"
+ 12. Port Connectivity Checks: "num_decoder:hex4"
+ 13. Port Connectivity Checks: "num_decoder:hex3"
+ 14. Port Connectivity Checks: "num_decoder:hex2"
+ 15. Port Connectivity Checks: "num_decoder:hex1"
+ 16. Port Connectivity Checks: "num_decoder:hex0|clock_divider:clk_flashing"
+ 17. Port Connectivity Checks: "num_decoder:hex0"
+ 18. Port Connectivity Checks: "bin2BCD:bcd"
+ 19. Port Connectivity Checks: "random:RNG"
+ 20. Port Connectivity Checks: "clock_divider:sec"
+ 21. Port Connectivity Checks: "clock_divider:msec"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+ 25. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Feb 07 10:21:25 2019       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; lab2part1                                   ;
+; Top-level Entity Name           ; lab2part1                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 96                                          ;
+; Total pins                      ; 44                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; lab2part1          ; lab2part1          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
+; num_decoder.v                    ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/lab_actual/part1/num_decoder.v   ;         ;
+; clock_divider.v                  ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/lab_actual/part1/clock_divider.v ;         ;
+; bin2BCD.v                        ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/lab_actual/part1/bin2BCD.v       ;         ;
+; random.v                         ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/lab_actual/part1/random.v        ;         ;
+; lab2part1.v                      ; yes             ; User Verilog HDL File  ; D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v     ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 104            ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 162            ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 44             ;
+;     -- 5 input functions                    ; 20             ;
+;     -- 4 input functions                    ; 42             ;
+;     -- <=3 input functions                  ; 56             ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 96             ;
+;                                             ;                ;
+; I/O pins                                    ; 44             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 61             ;
+; Total fan-out                               ; 995            ;
+; Average fan-out                             ; 2.88           ;
++---------------------------------------------+----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
+; |lab2part1                 ; 162 (0)             ; 96 (0)                    ; 0                 ; 0          ; 44   ; 0            ; |lab2part1                    ; lab2part1     ; work         ;
+;    |bin2BCD:bcd|           ; 56 (56)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|bin2BCD:bcd        ; bin2BCD       ; work         ;
+;    |clock_divider:msec|    ; 28 (28)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|clock_divider:msec ; clock_divider ; work         ;
+;    |clock_divider:sec|     ; 28 (28)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|clock_divider:sec  ; clock_divider ; work         ;
+;    |num_decoder:hex0|      ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|num_decoder:hex0   ; num_decoder   ; work         ;
+;    |num_decoder:hex1|      ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|num_decoder:hex1   ; num_decoder   ; work         ;
+;    |num_decoder:hex2|      ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|num_decoder:hex2   ; num_decoder   ; work         ;
+;    |num_decoder:hex3|      ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|num_decoder:hex3   ; num_decoder   ; work         ;
+;    |num_decoder:hex4|      ; 6 (6)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|num_decoder:hex4   ; num_decoder   ; work         ;
+;    |num_decoder:hex5|      ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|num_decoder:hex5   ; num_decoder   ; work         ;
+;    |random:RNG|            ; 10 (10)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |lab2part1|random:RNG         ; random        ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                               ;
++---------------------------------------------------------+----------------------------------------+
+; Register name                                           ; Reason for Removal                     ;
++---------------------------------------------------------+----------------------------------------+
+; num_decoder:hex5|clock_divider:clk_flashing|cntr[0..19] ; Lost fanout                            ;
+; num_decoder:hex4|clock_divider:clk_flashing|cntr[0..19] ; Lost fanout                            ;
+; num_decoder:hex3|clock_divider:clk_flashing|cntr[0..19] ; Lost fanout                            ;
+; num_decoder:hex2|clock_divider:clk_flashing|cntr[0..19] ; Lost fanout                            ;
+; num_decoder:hex1|clock_divider:clk_flashing|cntr[0..19] ; Lost fanout                            ;
+; num_decoder:hex0|clock_divider:clk_flashing|cntr[0..19] ; Lost fanout                            ;
+; num_decoder:hex5|disp[6]                                ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 121                 ;                                        ;
++---------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 96    ;
+; Number of registers using Synchronous Clear  ; 40    ;
+; Number of registers using Synchronous Load   ; 35    ;
+; Number of registers using Asynchronous Clear ; 15    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; random:RNG|random[0]                   ; 9       ;
+; random:RNG|random[1]                   ; 5       ;
+; random:RNG|random[3]                   ; 8       ;
+; random:RNG|random[4]                   ; 7       ;
+; random:RNG|random[9]                   ; 8       ;
+; random:RNG|random[11]                  ; 9       ;
+; random:RNG|random[13]                  ; 10      ;
+; Total number of inverted registers = 7 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "num_decoder:hex5" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; flashing ; Input ; Info     ; Stuck at GND   ;
++----------+-------+----------+----------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "num_decoder:hex4" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; flashing ; Input ; Info     ; Stuck at GND   ;
++----------+-------+----------+----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "num_decoder:hex3"                                                                                                                                                                   ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                                                          ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; flashing ; Input ; Info     ; Stuck at GND                                                                                                                                                                     ;
+; number   ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "num_decoder:hex2" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; flashing ; Input ; Info     ; Stuck at GND   ;
++----------+-------+----------+----------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "num_decoder:hex1" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; flashing ; Input ; Info     ; Stuck at GND   ;
++----------+-------+----------+----------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "num_decoder:hex0|clock_divider:clk_flashing" ;
++-----------------+-------+----------+------------------------------------+
+; Port            ; Type  ; Severity ; Details                            ;
++-----------------+-------+----------+------------------------------------+
+; Reset_n         ; Input ; Info     ; Stuck at VCC                       ;
+; divisor[16..15] ; Input ; Info     ; Stuck at VCC                       ;
+; divisor[10..9]  ; Input ; Info     ; Stuck at VCC                       ;
+; divisor[19..17] ; Input ; Info     ; Stuck at GND                       ;
+; divisor[14..11] ; Input ; Info     ; Stuck at GND                       ;
+; divisor[4..0]   ; Input ; Info     ; Stuck at GND                       ;
+; divisor[8]      ; Input ; Info     ; Stuck at GND                       ;
+; divisor[7]      ; Input ; Info     ; Stuck at VCC                       ;
+; divisor[6]      ; Input ; Info     ; Stuck at GND                       ;
+; divisor[5]      ; Input ; Info     ; Stuck at VCC                       ;
++-----------------+-------+----------+------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "num_decoder:hex0" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; flashing ; Input ; Info     ; Stuck at GND   ;
++----------+-------+----------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bin2BCD:bcd"                                                                                                                                   ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                         ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; bin  ; Input ; Warning  ; Input port expression (15 bits) is smaller than the input port (20 bits) it drives.  Extra input bit(s) "bin[19..15]" will be connected to GND. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "random:RNG"                                                                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; rnd_ready ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:sec"     ;
++-----------------+-------+----------+--------------+
+; Port            ; Type  ; Severity ; Details      ;
++-----------------+-------+----------+--------------+
+; divisor[9..5]   ; Input ; Info     ; Stuck at VCC ;
+; divisor[19..10] ; Input ; Info     ; Stuck at GND ;
+; divisor[2..0]   ; Input ; Info     ; Stuck at GND ;
+; divisor[4]      ; Input ; Info     ; Stuck at GND ;
+; divisor[3]      ; Input ; Info     ; Stuck at VCC ;
++-----------------+-------+----------+--------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "clock_divider:msec"    ;
++-----------------+-------+----------+--------------+
+; Port            ; Type  ; Severity ; Details      ;
++-----------------+-------+----------+--------------+
+; divisor[15..14] ; Input ; Info     ; Stuck at VCC ;
+; divisor[9..8]   ; Input ; Info     ; Stuck at VCC ;
+; divisor[19..16] ; Input ; Info     ; Stuck at GND ;
+; divisor[13..10] ; Input ; Info     ; Stuck at GND ;
+; divisor[3..0]   ; Input ; Info     ; Stuck at GND ;
+; divisor[7]      ; Input ; Info     ; Stuck at GND ;
+; divisor[6]      ; Input ; Info     ; Stuck at VCC ;
+; divisor[5]      ; Input ; Info     ; Stuck at GND ;
+; divisor[4]      ; Input ; Info     ; Stuck at VCC ;
++-----------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 96                          ;
+;     CLR               ; 15                          ;
+;     SCLR              ; 40                          ;
+;     SLD               ; 35                          ;
+;     plain             ; 6                           ;
+; arriav_lcell_comb     ; 163                         ;
+;     arith             ; 40                          ;
+;         1 data inputs ; 40                          ;
+;     normal            ; 123                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 15                          ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 42                          ;
+;         5 data inputs ; 20                          ;
+;         6 data inputs ; 44                          ;
+; boundary_port         ; 44                          ;
+;                       ;                             ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 3.24                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Thu Feb 07 10:20:39 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab2part1 -c lab2part1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file num_decoder.v
+    Info (12023): Found entity 1: num_decoder File: D:/3TB4/Lab2_hank/lab_actual/part1/num_decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.v
+    Info (12023): Found entity 1: clock_divider File: D:/3TB4/Lab2_hank/lab_actual/part1/clock_divider.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bin2bcd.v
+    Info (12023): Found entity 1: bin2BCD File: D:/3TB4/Lab2_hank/lab_actual/part1/bin2BCD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file random.v
+    Info (12023): Found entity 1: random File: D:/3TB4/Lab2_hank/lab_actual/part1/random.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lab2part1.v
+    Info (12023): Found entity 1: lab2part1 File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 1
+Info (12127): Elaborating entity "lab2part1" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at lab2part1.v(7): object "disp_val" assigned a value but never read File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 7
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:msec" File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 13
+Info (12128): Elaborating entity "random" for hierarchy "random:RNG" File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 16
+Info (12128): Elaborating entity "bin2BCD" for hierarchy "bin2BCD:bcd" File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 17
+Info (12128): Elaborating entity "num_decoder" for hierarchy "num_decoder:hex0" File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 19
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 120 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/3TB4/Lab2_hank/lab_actual/part1/output_files/lab2part1.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 213 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 169 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4854 megabytes
+    Info: Processing ended: Thu Feb 07 10:21:25 2019
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:00:52
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/3TB4/Lab2_hank/lab_actual/part1/output_files/lab2part1.map.smsg.
+
+

@@ -33,7 +33,7 @@ module random(
 			random[0] = random[0] ^ (random[2] ^ (random[4] ^ random[13]));
 			
 
-			if ((random >= 15'd10)&&(random <= 15'd50)) rnd_ready = 1'b1;  // 1000 <= random <= 5000
+			if ((random >= 15'd1000)&&(random <= 15'd5000)) rnd_ready = 1'b1;  // 1000 <= random <= 5000
 			else rnd_ready = 1'b0;
 		end
 	end

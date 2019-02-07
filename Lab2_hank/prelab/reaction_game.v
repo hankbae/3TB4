@@ -7,37 +7,36 @@ module reaction_game(
 					 HEX3,
 					 HEX4,
 					 HEX5,
-	output [9:0] LEDR,
-	
-	
-	output reg 			 rng_start,
-	output reg			 init_start,
-	output reg			 init_stop,
-	output reg			 stopwatch_start,
-	output reg			 stopwatch_stop,
-	output reg			 HEX_flashing,
-	output reg			 HEX_off,
-	output reg			 P1_ledEnable,
-	output reg			 P2_ledEnable,
-	output reg			 P1_addPoint,
-	output reg			 P2_addPoint,
-	output reg			 P1_press,
-	output reg			 P2_press,
-	output reg			 main_reset,
-	output reg 	[14:0] rng_delay,
-	output reg 	[23:0] HEX_val,
-	
-	
-	output 			 clk,
-	output 			 rng_ready,
-	output  	[2:0]	 P1_points, P2_points,
-	output  	[14:0] rng_delayBuff,
-	output  	[19:0] divisor, init_timer, stopwatch_timer, rng_timer,
-	output  	[23:0] HEX_buff
+	output [9:0] LEDR
 	);
 	
+	reg 			 rng_start;
+	reg			 init_start;
+	reg			 init_stop;
+	reg			 stopwatch_start;
+	reg			 stopwatch_stop;
+	reg			 HEX_flashing;
+	reg			 HEX_off;
+	reg			 P1_ledEnable;
+	reg			 P2_ledEnable;
+	reg			 P1_addPoint;
+	reg			 P2_addPoint;
+	reg			 P1_press;
+	reg			 P2_press;
+	reg			 main_reset;
+	reg 	[14:0] rng_delay;
+	reg 	[23:0] HEX_val;
 	
-	assign divisor = 20'd4;		// divisor for clock (original: 20'd50000)
+	
+	wire 			 clk;
+	wire 			 rng_ready;
+	wire  	[2:0]	 P1_points, P2_points;
+	wire  	[14:0] rng_delayBuff;
+	wire  	[19:0] divisor, init_timer, stopwatch_timer, rng_timer;
+	wire  	[23:0] HEX_buff;
+	
+	
+	assign divisor = 20'd50000;		// divisor for clock (original: 20'd50000)
 	
 	
 	
@@ -113,7 +112,7 @@ module reaction_game(
 			P2_addPoint		 <= 1'b0;
 
 			
-			if (init_timer >= 20'd10) // originally 20'd2000
+			if (init_timer >= 20'd2000) // originally 20'd2000
 			begin
 				
 				init_start 		 <= 1'b1;		// rng counter started, init counter off

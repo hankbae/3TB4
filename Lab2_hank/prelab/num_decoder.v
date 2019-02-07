@@ -8,7 +8,7 @@ module num_decoder (
 	
 	wire clk_2Hz;
 	
-	clock_divider clk_flashing(clk,1'b1,20'd4,clk_2Hz);  // divisor is originally 20'd100000
+	clock_divider clk_flashing(clk,1'b1,20'd100000,clk_2Hz);  // divisor is originally 20'd100000
 	
 	always @(posedge clk)
 	begin

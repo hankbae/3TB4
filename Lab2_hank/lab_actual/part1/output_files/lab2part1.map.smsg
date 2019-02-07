@@ -1,0 +1,7 @@
+Info (10281): Verilog HDL Declaration information at lab2part1.v(9): object "BCD" differs only in case from object "bcd" in the same scope File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 9
+Info (10281): Verilog HDL Declaration information at lab2part1.v(4): object "HEX0" differs only in case from object "hex0" in the same scope File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 4
+Info (10281): Verilog HDL Declaration information at lab2part1.v(4): object "HEX1" differs only in case from object "hex1" in the same scope File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 4
+Info (10281): Verilog HDL Declaration information at lab2part1.v(4): object "HEX2" differs only in case from object "hex2" in the same scope File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 4
+Info (10281): Verilog HDL Declaration information at lab2part1.v(4): object "HEX3" differs only in case from object "hex3" in the same scope File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 4
+Info (10281): Verilog HDL Declaration information at lab2part1.v(4): object "HEX4" differs only in case from object "hex4" in the same scope File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 4
+Info (10281): Verilog HDL Declaration information at lab2part1.v(5): object "HEX5" differs only in case from object "hex5" in the same scope File: D:/3TB4/Lab2_hank/lab_actual/part1/lab2part1.v Line: 5
