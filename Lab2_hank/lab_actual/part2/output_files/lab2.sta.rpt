@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lab2
-Thu Feb 07 10:29:50 2019
+Wed Feb 13 21:42:45 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.14        ;
+; Average used               ; 1.13        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  14.4%      ;
+;     Processor 2            ;  12.9%      ;
 +----------------------------+-------------+
 
 
@@ -125,10 +125,10 @@ refer to the applicable agreement for further details.
 +------------+-----------------+-----------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                  ; Note ;
 +------------+-----------------+-----------------------------+------+
-; 186.53 MHz ; 186.53 MHz      ; CLOCK_50                    ;      ;
-; 261.03 MHz ; 261.03 MHz      ; clock_divider:msec|cntr[10] ;      ;
-; 434.4 MHz  ; 434.4 MHz       ; P2_addPoint                 ;      ;
-; 498.26 MHz ; 498.26 MHz      ; P1_addPoint                 ;      ;
+; 194.78 MHz ; 194.78 MHz      ; CLOCK_50                    ;      ;
+; 236.69 MHz ; 236.69 MHz      ; clock_divider:msec|cntr[10] ;      ;
+; 458.72 MHz ; 458.72 MHz      ; P1_addPoint                 ;      ;
+; 463.82 MHz ; 463.82 MHz      ; P2_addPoint                 ;      ;
 +------------+-----------------+-----------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -144,23 +144,23 @@ HTML report is unavailable in plain text report export.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -7.745 ; -375.678      ;
-; clock_divider:msec|cntr[10] ; -2.851 ; -332.254      ;
-; P2_addPoint                 ; -1.302 ; -2.939        ;
-; P1_addPoint                 ; -1.007 ; -4.709        ;
+; CLOCK_50                    ; -6.675 ; -336.271      ;
+; clock_divider:msec|cntr[10] ; -3.310 ; -382.674      ;
+; P1_addPoint                 ; -1.180 ; -6.928        ;
+; P2_addPoint                 ; -1.156 ; -6.828        ;
 +-----------------------------+--------+---------------+
 
 
-+-----------------------------------------------------+
-; Slow 1100mV 85C Model Hold Summary                  ;
-+-----------------------------+-------+---------------+
-; Clock                       ; Slack ; End Point TNS ;
-+-----------------------------+-------+---------------+
-; CLOCK_50                    ; 0.161 ; 0.000         ;
-; P1_addPoint                 ; 0.364 ; 0.000         ;
-; clock_divider:msec|cntr[10] ; 0.427 ; 0.000         ;
-; P2_addPoint                 ; 0.532 ; 0.000         ;
-+-----------------------------+-------+---------------+
++------------------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary                   ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; CLOCK_50                    ; -0.087 ; -0.154        ;
+; clock_divider:msec|cntr[10] ; 0.427  ; 0.000         ;
+; P2_addPoint                 ; 0.761  ; 0.000         ;
+; P1_addPoint                 ; 0.796  ; 0.000         ;
++-----------------------------+--------+---------------+
 
 
 ------------------------------------------
@@ -180,10 +180,10 @@ No paths to report.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -0.453 ; -50.470       ;
-; clock_divider:msec|cntr[10] ; -0.394 ; -83.472       ;
-; P1_addPoint                 ; -0.394 ; -3.214        ;
-; P2_addPoint                 ; -0.394 ; -1.530        ;
+; clock_divider:msec|cntr[10] ; -0.394 ; -77.148       ;
+; CLOCK_50                    ; -0.394 ; -49.750       ;
+; P2_addPoint                 ; -0.394 ; -3.418        ;
+; P1_addPoint                 ; -0.394 ; -3.062        ;
 +-----------------------------+--------+---------------+
 
 
@@ -198,10 +198,10 @@ No synchronizer chains to report.
 +------------+-----------------+-----------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                  ; Note ;
 +------------+-----------------+-----------------------------+------+
-; 194.55 MHz ; 194.55 MHz      ; CLOCK_50                    ;      ;
-; 265.96 MHz ; 265.96 MHz      ; clock_divider:msec|cntr[10] ;      ;
-; 434.03 MHz ; 434.03 MHz      ; P2_addPoint                 ;      ;
-; 502.51 MHz ; 502.51 MHz      ; P1_addPoint                 ;      ;
+; 195.54 MHz ; 195.54 MHz      ; CLOCK_50                    ;      ;
+; 241.72 MHz ; 241.72 MHz      ; clock_divider:msec|cntr[10] ;      ;
+; 454.13 MHz ; 454.13 MHz      ; P1_addPoint                 ;      ;
+; 456.41 MHz ; 456.41 MHz      ; P2_addPoint                 ;      ;
 +------------+-----------------+-----------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -211,10 +211,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -7.545 ; -360.294      ;
-; clock_divider:msec|cntr[10] ; -3.003 ; -339.673      ;
-; P2_addPoint                 ; -1.304 ; -2.949        ;
-; P1_addPoint                 ; -0.990 ; -4.590        ;
+; CLOCK_50                    ; -6.531 ; -319.624      ;
+; clock_divider:msec|cntr[10] ; -3.448 ; -394.637      ;
+; P1_addPoint                 ; -1.202 ; -6.949        ;
+; P2_addPoint                 ; -1.191 ; -7.055        ;
 +-----------------------------+--------+---------------+
 
 
@@ -223,10 +223,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -0.176 ; -0.176        ;
-; P1_addPoint                 ; 0.337  ; 0.000         ;
+; CLOCK_50                    ; -0.337 ; -2.016        ;
 ; clock_divider:msec|cntr[10] ; 0.445  ; 0.000         ;
-; P2_addPoint                 ; 0.506  ; 0.000         ;
+; P2_addPoint                 ; 0.723  ; 0.000         ;
+; P1_addPoint                 ; 0.736  ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -247,10 +247,10 @@ No paths to report.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -0.463 ; -54.234       ;
-; clock_divider:msec|cntr[10] ; -0.394 ; -83.621       ;
-; P1_addPoint                 ; -0.394 ; -3.171        ;
-; P2_addPoint                 ; -0.394 ; -1.530        ;
+; CLOCK_50                    ; -0.436 ; -52.925       ;
+; clock_divider:msec|cntr[10] ; -0.394 ; -74.943       ;
+; P2_addPoint                 ; -0.394 ; -3.405        ;
+; P1_addPoint                 ; -0.394 ; -3.080        ;
 +-----------------------------+--------+---------------+
 
 
@@ -265,10 +265,10 @@ No synchronizer chains to report.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -4.027 ; -198.673      ;
-; clock_divider:msec|cntr[10] ; -1.403 ; -150.816      ;
-; P2_addPoint                 ; -0.519 ; -0.933        ;
-; P1_addPoint                 ; -0.366 ; -1.405        ;
+; CLOCK_50                    ; -3.378 ; -173.847      ;
+; clock_divider:msec|cntr[10] ; -1.531 ; -168.090      ;
+; P1_addPoint                 ; -0.419 ; -2.470        ;
+; P2_addPoint                 ; -0.394 ; -2.156        ;
 +-----------------------------+--------+---------------+
 
 
@@ -277,10 +277,10 @@ No synchronizer chains to report.
 +-----------------------------+-------+---------------+
 ; Clock                       ; Slack ; End Point TNS ;
 +-----------------------------+-------+---------------+
-; P1_addPoint                 ; 0.155 ; 0.000         ;
+; CLOCK_50                    ; 0.132 ; 0.000         ;
 ; clock_divider:msec|cntr[10] ; 0.160 ; 0.000         ;
-; CLOCK_50                    ; 0.178 ; 0.000         ;
-; P2_addPoint                 ; 0.279 ; 0.000         ;
+; P1_addPoint                 ; 0.385 ; 0.000         ;
+; P2_addPoint                 ; 0.404 ; 0.000         ;
 +-----------------------------+-------+---------------+
 
 
@@ -301,10 +301,10 @@ No paths to report.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -0.494 ; -9.160        ;
-; clock_divider:msec|cntr[10] ; -0.085 ; -2.889        ;
-; P1_addPoint                 ; 0.078  ; 0.000         ;
-; P2_addPoint                 ; 0.148  ; 0.000         ;
+; CLOCK_50                    ; -0.463 ; -9.264        ;
+; clock_divider:msec|cntr[10] ; 0.021  ; 0.000         ;
+; P2_addPoint                 ; 0.049  ; 0.000         ;
+; P1_addPoint                 ; 0.144  ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -319,23 +319,23 @@ No synchronizer chains to report.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -3.499 ; -167.453      ;
-; clock_divider:msec|cntr[10] ; -1.370 ; -141.190      ;
-; P2_addPoint                 ; -0.421 ; -0.752        ;
-; P1_addPoint                 ; -0.275 ; -1.091        ;
+; CLOCK_50                    ; -2.924 ; -145.902      ;
+; clock_divider:msec|cntr[10] ; -1.491 ; -160.118      ;
+; P1_addPoint                 ; -0.362 ; -2.097        ;
+; P2_addPoint                 ; -0.342 ; -1.872        ;
 +-----------------------------+--------+---------------+
 
 
-+-----------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                   ;
-+-----------------------------+-------+---------------+
-; Clock                       ; Slack ; End Point TNS ;
-+-----------------------------+-------+---------------+
-; CLOCK_50                    ; 0.039 ; 0.000         ;
-; P1_addPoint                 ; 0.130 ; 0.000         ;
-; clock_divider:msec|cntr[10] ; 0.148 ; 0.000         ;
-; P2_addPoint                 ; 0.248 ; 0.000         ;
-+-----------------------------+-------+---------------+
++------------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                    ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; CLOCK_50                    ; -0.064 ; -0.156        ;
+; clock_divider:msec|cntr[10] ; 0.148  ; 0.000         ;
+; P1_addPoint                 ; 0.332  ; 0.000         ;
+; P2_addPoint                 ; 0.355  ; 0.000         ;
++-----------------------------+--------+---------------+
 
 
 -----------------------------------------
@@ -355,10 +355,10 @@ No paths to report.
 +-----------------------------+--------+---------------+
 ; Clock                       ; Slack  ; End Point TNS ;
 +-----------------------------+--------+---------------+
-; CLOCK_50                    ; -0.488 ; -9.062        ;
-; clock_divider:msec|cntr[10] ; -0.043 ; -0.558        ;
-; P1_addPoint                 ; 0.096  ; 0.000         ;
-; P2_addPoint                 ; 0.149  ; 0.000         ;
+; CLOCK_50                    ; -0.481 ; -9.172        ;
+; clock_divider:msec|cntr[10] ; 0.045  ; 0.000         ;
+; P2_addPoint                 ; 0.072  ; 0.000         ;
+; P1_addPoint                 ; 0.144  ; 0.000         ;
 +-----------------------------+--------+---------------+
 
 
@@ -373,16 +373,16 @@ No synchronizer chains to report.
 +------------------------------+----------+--------+----------+---------+---------------------+
 ; Clock                        ; Setup    ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------------------+----------+--------+----------+---------+---------------------+
-; Worst-case Slack             ; -7.745   ; -0.176 ; N/A      ; N/A     ; -0.494              ;
-;  CLOCK_50                    ; -7.745   ; -0.176 ; N/A      ; N/A     ; -0.494              ;
-;  P1_addPoint                 ; -1.007   ; 0.130  ; N/A      ; N/A     ; -0.394              ;
-;  P2_addPoint                 ; -1.304   ; 0.248  ; N/A      ; N/A     ; -0.394              ;
-;  clock_divider:msec|cntr[10] ; -3.003   ; 0.148  ; N/A      ; N/A     ; -0.394              ;
-; Design-wide TNS              ; -715.58  ; -0.176 ; 0.0      ; 0.0     ; -142.556            ;
-;  CLOCK_50                    ; -375.678 ; -0.176 ; N/A      ; N/A     ; -54.234             ;
-;  P1_addPoint                 ; -4.709   ; 0.000  ; N/A      ; N/A     ; -3.214              ;
-;  P2_addPoint                 ; -2.949   ; 0.000  ; N/A      ; N/A     ; -1.530              ;
-;  clock_divider:msec|cntr[10] ; -339.673 ; 0.000  ; N/A      ; N/A     ; -83.621             ;
+; Worst-case Slack             ; -6.675   ; -0.337 ; N/A      ; N/A     ; -0.481              ;
+;  CLOCK_50                    ; -6.675   ; -0.337 ; N/A      ; N/A     ; -0.481              ;
+;  P1_addPoint                 ; -1.202   ; 0.332  ; N/A      ; N/A     ; -0.394              ;
+;  P2_addPoint                 ; -1.191   ; 0.355  ; N/A      ; N/A     ; -0.394              ;
+;  clock_divider:msec|cntr[10] ; -3.448   ; 0.148  ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS              ; -732.701 ; -2.016 ; 0.0      ; 0.0     ; -134.353            ;
+;  CLOCK_50                    ; -336.271 ; -2.016 ; N/A      ; N/A     ; -52.925             ;
+;  P1_addPoint                 ; -6.949   ; 0.000  ; N/A      ; N/A     ; -3.080              ;
+;  P2_addPoint                 ; -7.055   ; 0.000  ; N/A      ; N/A     ; -3.418              ;
+;  clock_divider:msec|cntr[10] ; -394.637 ; 0.000  ; N/A      ; N/A     ; -77.148             ;
 +------------------------------+----------+--------+----------+---------+---------------------+
 
 
@@ -704,12 +704,12 @@ No synchronizer chains to report.
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 ; From Clock                  ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
-; CLOCK_50                    ; CLOCK_50                    ; 2672     ; 0        ; 0        ; 0        ;
+; CLOCK_50                    ; CLOCK_50                    ; 2671     ; 0        ; 0        ; 0        ;
 ; clock_divider:msec|cntr[10] ; CLOCK_50                    ; 4143681  ; 30       ; 0        ; 0        ;
 ; CLOCK_50                    ; clock_divider:msec|cntr[10] ; 422      ; 0        ; 0        ; 0        ;
-; clock_divider:msec|cntr[10] ; clock_divider:msec|cntr[10] ; 5229     ; 0        ; 0        ; 0        ;
-; P1_addPoint                 ; P1_addPoint                 ; 12       ; 0        ; 0        ; 0        ;
-; P2_addPoint                 ; P2_addPoint                 ; 6        ; 0        ; 0        ; 0        ;
+; clock_divider:msec|cntr[10] ; clock_divider:msec|cntr[10] ; 5500     ; 0        ; 0        ; 0        ;
+; P1_addPoint                 ; P1_addPoint                 ; 18       ; 0        ; 0        ; 0        ;
+; P2_addPoint                 ; P2_addPoint                 ; 18       ; 0        ; 0        ; 0        ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -719,12 +719,12 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 ; From Clock                  ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
-; CLOCK_50                    ; CLOCK_50                    ; 2672     ; 0        ; 0        ; 0        ;
+; CLOCK_50                    ; CLOCK_50                    ; 2671     ; 0        ; 0        ; 0        ;
 ; clock_divider:msec|cntr[10] ; CLOCK_50                    ; 4143681  ; 30       ; 0        ; 0        ;
 ; CLOCK_50                    ; clock_divider:msec|cntr[10] ; 422      ; 0        ; 0        ; 0        ;
-; clock_divider:msec|cntr[10] ; clock_divider:msec|cntr[10] ; 5229     ; 0        ; 0        ; 0        ;
-; P1_addPoint                 ; P1_addPoint                 ; 12       ; 0        ; 0        ; 0        ;
-; P2_addPoint                 ; P2_addPoint                 ; 6        ; 0        ; 0        ; 0        ;
+; clock_divider:msec|cntr[10] ; clock_divider:msec|cntr[10] ; 5500     ; 0        ; 0        ; 0        ;
+; P1_addPoint                 ; P1_addPoint                 ; 18       ; 0        ; 0        ; 0        ;
+; P2_addPoint                 ; P2_addPoint                 ; 18       ; 0        ; 0        ; 0        ;
 +-----------------------------+-----------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -917,7 +917,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Feb 07 10:29:36 2019
+    Info: Processing started: Wed Feb 13 21:42:34 2019
 Info: Command: quartus_sta lab2 -c lab2
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -937,120 +937,120 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -7.745
+Info (332146): Worst-case setup slack is -6.675
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.745            -375.678 CLOCK_50 
-    Info (332119):    -2.851            -332.254 clock_divider:msec|cntr[10] 
-    Info (332119):    -1.302              -2.939 P2_addPoint 
-    Info (332119):    -1.007              -4.709 P1_addPoint 
-Info (332146): Worst-case hold slack is 0.161
+    Info (332119):    -6.675            -336.271 CLOCK_50 
+    Info (332119):    -3.310            -382.674 clock_divider:msec|cntr[10] 
+    Info (332119):    -1.180              -6.928 P1_addPoint 
+    Info (332119):    -1.156              -6.828 P2_addPoint 
+Info (332146): Worst-case hold slack is -0.087
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.161               0.000 CLOCK_50 
-    Info (332119):     0.364               0.000 P1_addPoint 
+    Info (332119):    -0.087              -0.154 CLOCK_50 
     Info (332119):     0.427               0.000 clock_divider:msec|cntr[10] 
-    Info (332119):     0.532               0.000 P2_addPoint 
+    Info (332119):     0.761               0.000 P2_addPoint 
+    Info (332119):     0.796               0.000 P1_addPoint 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.453
+Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.453             -50.470 CLOCK_50 
-    Info (332119):    -0.394             -83.472 clock_divider:msec|cntr[10] 
-    Info (332119):    -0.394              -3.214 P1_addPoint 
-    Info (332119):    -0.394              -1.530 P2_addPoint 
+    Info (332119):    -0.394             -77.148 clock_divider:msec|cntr[10] 
+    Info (332119):    -0.394             -49.750 CLOCK_50 
+    Info (332119):    -0.394              -3.418 P2_addPoint 
+    Info (332119):    -0.394              -3.062 P1_addPoint 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -7.545
+Info (332146): Worst-case setup slack is -6.531
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.545            -360.294 CLOCK_50 
-    Info (332119):    -3.003            -339.673 clock_divider:msec|cntr[10] 
-    Info (332119):    -1.304              -2.949 P2_addPoint 
-    Info (332119):    -0.990              -4.590 P1_addPoint 
-Info (332146): Worst-case hold slack is -0.176
+    Info (332119):    -6.531            -319.624 CLOCK_50 
+    Info (332119):    -3.448            -394.637 clock_divider:msec|cntr[10] 
+    Info (332119):    -1.202              -6.949 P1_addPoint 
+    Info (332119):    -1.191              -7.055 P2_addPoint 
+Info (332146): Worst-case hold slack is -0.337
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.176              -0.176 CLOCK_50 
-    Info (332119):     0.337               0.000 P1_addPoint 
+    Info (332119):    -0.337              -2.016 CLOCK_50 
     Info (332119):     0.445               0.000 clock_divider:msec|cntr[10] 
-    Info (332119):     0.506               0.000 P2_addPoint 
+    Info (332119):     0.723               0.000 P2_addPoint 
+    Info (332119):     0.736               0.000 P1_addPoint 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.463
+Info (332146): Worst-case minimum pulse width slack is -0.436
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.463             -54.234 CLOCK_50 
-    Info (332119):    -0.394             -83.621 clock_divider:msec|cntr[10] 
-    Info (332119):    -0.394              -3.171 P1_addPoint 
-    Info (332119):    -0.394              -1.530 P2_addPoint 
+    Info (332119):    -0.436             -52.925 CLOCK_50 
+    Info (332119):    -0.394             -74.943 clock_divider:msec|cntr[10] 
+    Info (332119):    -0.394              -3.405 P2_addPoint 
+    Info (332119):    -0.394              -3.080 P1_addPoint 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.027
+Info (332146): Worst-case setup slack is -3.378
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.027            -198.673 CLOCK_50 
-    Info (332119):    -1.403            -150.816 clock_divider:msec|cntr[10] 
-    Info (332119):    -0.519              -0.933 P2_addPoint 
-    Info (332119):    -0.366              -1.405 P1_addPoint 
-Info (332146): Worst-case hold slack is 0.155
+    Info (332119):    -3.378            -173.847 CLOCK_50 
+    Info (332119):    -1.531            -168.090 clock_divider:msec|cntr[10] 
+    Info (332119):    -0.419              -2.470 P1_addPoint 
+    Info (332119):    -0.394              -2.156 P2_addPoint 
+Info (332146): Worst-case hold slack is 0.132
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.155               0.000 P1_addPoint 
+    Info (332119):     0.132               0.000 CLOCK_50 
     Info (332119):     0.160               0.000 clock_divider:msec|cntr[10] 
-    Info (332119):     0.178               0.000 CLOCK_50 
-    Info (332119):     0.279               0.000 P2_addPoint 
+    Info (332119):     0.385               0.000 P1_addPoint 
+    Info (332119):     0.404               0.000 P2_addPoint 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.494
+Info (332146): Worst-case minimum pulse width slack is -0.463
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.494              -9.160 CLOCK_50 
-    Info (332119):    -0.085              -2.889 clock_divider:msec|cntr[10] 
-    Info (332119):     0.078               0.000 P1_addPoint 
-    Info (332119):     0.148               0.000 P2_addPoint 
+    Info (332119):    -0.463              -9.264 CLOCK_50 
+    Info (332119):     0.021               0.000 clock_divider:msec|cntr[10] 
+    Info (332119):     0.049               0.000 P2_addPoint 
+    Info (332119):     0.144               0.000 P1_addPoint 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.499
+Info (332146): Worst-case setup slack is -2.924
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.499            -167.453 CLOCK_50 
-    Info (332119):    -1.370            -141.190 clock_divider:msec|cntr[10] 
-    Info (332119):    -0.421              -0.752 P2_addPoint 
-    Info (332119):    -0.275              -1.091 P1_addPoint 
-Info (332146): Worst-case hold slack is 0.039
+    Info (332119):    -2.924            -145.902 CLOCK_50 
+    Info (332119):    -1.491            -160.118 clock_divider:msec|cntr[10] 
+    Info (332119):    -0.362              -2.097 P1_addPoint 
+    Info (332119):    -0.342              -1.872 P2_addPoint 
+Info (332146): Worst-case hold slack is -0.064
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.039               0.000 CLOCK_50 
-    Info (332119):     0.130               0.000 P1_addPoint 
+    Info (332119):    -0.064              -0.156 CLOCK_50 
     Info (332119):     0.148               0.000 clock_divider:msec|cntr[10] 
-    Info (332119):     0.248               0.000 P2_addPoint 
+    Info (332119):     0.332               0.000 P1_addPoint 
+    Info (332119):     0.355               0.000 P2_addPoint 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.488
+Info (332146): Worst-case minimum pulse width slack is -0.481
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.488              -9.062 CLOCK_50 
-    Info (332119):    -0.043              -0.558 clock_divider:msec|cntr[10] 
-    Info (332119):     0.096               0.000 P1_addPoint 
-    Info (332119):     0.149               0.000 P2_addPoint 
+    Info (332119):    -0.481              -9.172 CLOCK_50 
+    Info (332119):     0.045               0.000 clock_divider:msec|cntr[10] 
+    Info (332119):     0.072               0.000 P2_addPoint 
+    Info (332119):     0.144               0.000 P1_addPoint 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5140 megabytes
-    Info: Processing ended: Thu Feb 07 10:29:50 2019
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 5143 megabytes
+    Info: Processing ended: Wed Feb 13 21:42:45 2019
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
 
 
