@@ -1,0 +1,32 @@
+|Ass2
+CLOCK => ~NO_FANOUT~
+n_R_W => ~NO_FANOUT~
+request => ~NO_FANOUT~
+ack => ~NO_FANOUT~
+address_master[0] => ~NO_FANOUT~
+address_master[1] => ~NO_FANOUT~
+address_master[2] => ~NO_FANOUT~
+address_master[3] => ~NO_FANOUT~
+addressBuff_slave[0] => ~NO_FANOUT~
+addressBuff_slave[1] => ~NO_FANOUT~
+addressBuff_slave[2] => ~NO_FANOUT~
+addressBuff_slave[3] => ~NO_FANOUT~
+data_master[0] => ~NO_FANOUT~
+data_master[1] => ~NO_FANOUT~
+data_master[2] => ~NO_FANOUT~
+data_master[3] => ~NO_FANOUT~
+data_slave[0] => ~NO_FANOUT~
+data_slave[1] => ~NO_FANOUT~
+data_slave[2] => ~NO_FANOUT~
+data_slave[3] => ~NO_FANOUT~
+dataBuff_master[0] => ~NO_FANOUT~
+dataBuff_master[1] => ~NO_FANOUT~
+dataBuff_master[2] => ~NO_FANOUT~
+dataBuff_master[3] => ~NO_FANOUT~
+dataBuff_master[4] => ~NO_FANOUT~
+dataBuff_master[5] => ~NO_FANOUT~
+dataBuff_master[6] => ~NO_FANOUT~
+dataBuff_master[7] => ~NO_FANOUT~
+rand <= <GND>
+
+
