@@ -1,5 +1,5 @@
 EDA Netlist Writer report for lab3
-Wed Mar 06 21:48:40 2019
+Thu Mar 07 09:02:29 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -8,9 +8,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. Simulation Settings
-  4. Simulation Generated Files
-  5. EDA Netlist Writer Messages
+  3. EDA Netlist Writer Messages
 
 
 
@@ -33,45 +31,14 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------+
-; EDA Netlist Writer Summary                                        ;
-+---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Mar 06 21:48:40 2019 ;
-; Revision Name             ; lab3                                  ;
-; Top-level Entity Name     ; FIR50                                 ;
-; Family                    ; Cyclone V                             ;
-; Simulation Files Creation ; Successful                            ;
-+---------------------------+---------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                           ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Option                                                                                            ; Setting                   ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                        ;
-; Truncate long hierarchy paths                                                                     ; Off                       ;
-; Map illegal HDL characters                                                                        ; Off                       ;
-; Flatten buses into individual nodes                                                               ; Off                       ;
-; Maintain hierarchy                                                                                ; Off                       ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
-; Enable glitch filtering                                                                           ; Off                       ;
-; Do not write top level VHDL entity                                                                ; Off                       ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
-; Architecture name in VHDL output netlist                                                          ; structure                 ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-
-
-+-----------------------------------------------------------------+
-; Simulation Generated Files                                      ;
-+-----------------------------------------------------------------+
-; Generated Files                                                 ;
-+-----------------------------------------------------------------+
-; D:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim//lab3.vo ;
-+-----------------------------------------------------------------+
++---------------------------------------------------------------+
+; EDA Netlist Writer Summary                                    ;
++---------------------------+-----------------------------------+
+; EDA Netlist Writer Status ; Failed - Thu Mar 07 09:02:29 2019 ;
+; Revision Name             ; lab3                              ;
+; Top-level Entity Name     ; dsp_subsystem                     ;
+; Family                    ; Cyclone V                         ;
++---------------------------+-----------------------------------+
 
 
 +-----------------------------+
@@ -93,8 +60,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Mar 06 21:48:36 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim/ lab3 -c lab3
+    Info: Processing started: Thu Mar 07 09:02:25 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source=D:/3TB4/Lab3_hank/lab_actual/output_files/dsp.vwf --testbench_file=D:/3TB4/Lab3_hank/lab_actual/simulation/qsim/output_files/dsp.vwf.vt
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -668,11 +635,11 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file lab3.vo in folder "D:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 573 warnings
-    Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Wed Mar 06 21:48:40 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Error (199013): HDL output file name "D:/3TB4/Lab3_hank/lab_actual/simulation/qsim/output_files/dsp.vwf.vt" used with --testbench_file option contains a non-existent directory path
+Error: Quartus Prime EDA Netlist Writer was unsuccessful. 1 error, 573 warnings
+    Error: Peak virtual memory: 4827 megabytes
+    Error: Processing ended: Thu Mar 07 09:02:30 2019
+    Error: Elapsed time: 00:00:05
+    Error: Total CPU time (on all processors): 00:00:05
 
 

@@ -2,500 +2,500 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'SW[3]'
+Slack : -14.570
+TNS   : -95.023
+
 Type  : Slow 1100mV 85C Model Setup 'AUD_ADCLRCK'
-Slack : -26.617
-TNS   : -6284.790
+Slack : -9.972
+TNS   : -44866.041
 
 Type  : Slow 1100mV 85C Model Setup 'AUD_BCLK'
-Slack : -7.835
-TNS   : -195.334
-
-Type  : Slow 1100mV 85C Model Setup 'SW[3]'
-Slack : -5.314
-TNS   : -77.453
-
-Type  : Slow 1100mV 85C Model Setup 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -4.826
-TNS   : -81.468
+Slack : -8.397
+TNS   : -178.679
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -4.690
-TNS   : -16.007
+Slack : -4.921
+TNS   : -17.078
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
+Slack : -4.541
+TNS   : -85.334
 
 Type  : Slow 1100mV 85C Model Setup 'keytr:KEY_0|KEYON'
-Slack : -2.537
-TNS   : -29.790
+Slack : -2.528
+TNS   : -34.664
 
 Type  : Slow 1100mV 85C Model Setup 'i2c:b2v_inst|END_TR'
-Slack : -2.050
-TNS   : -30.197
+Slack : -1.945
+TNS   : -30.663
 
 Type  : Slow 1100mV 85C Model Hold 'AUD_ADCLRCK'
-Slack : 0.009
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'i2c:b2v_inst|END_TR'
-Slack : 0.073
+Slack : 0.077
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.202
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'i2c:b2v_inst|END_TR'
+Slack : 0.218
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'AUD_BCLK'
-Slack : 0.223
+Slack : 0.219
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.387
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'SW[3]'
-Slack : 0.743
+Slack : 0.451
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'keytr:KEY_0|KEYON'
-Slack : 0.815
+Slack : 0.643
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'SW[3]'
+Slack : 1.380
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'AUD_ADCLRCK'
-Slack : -7.525
-TNS   : -119.389
+Slack : -7.583
+TNS   : -119.427
 
 Type  : Slow 1100mV 85C Model Recovery 'AUD_BCLK'
-Slack : -7.391
-TNS   : -320.739
+Slack : -7.406
+TNS   : -333.700
 
 Type  : Slow 1100mV 85C Model Recovery 'i2c:b2v_inst|END_TR'
-Slack : -4.545
-TNS   : -27.264
+Slack : -4.655
+TNS   : -41.882
 
 Type  : Slow 1100mV 85C Model Recovery 'keytr:KEY_0|KEYON'
-Slack : -2.215
-TNS   : -30.967
+Slack : -2.082
+TNS   : -32.602
 
 Type  : Slow 1100mV 85C Model Recovery 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -1.608
-TNS   : -28.672
-
-Type  : Slow 1100mV 85C Model Removal 'i2c:b2v_inst|END_TR'
-Slack : 0.268
-TNS   : 0.000
+Slack : -1.504
+TNS   : -33.281
 
 Type  : Slow 1100mV 85C Model Removal 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.425
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'i2c:b2v_inst|END_TR'
+Slack : 0.588
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'AUD_ADCLRCK'
-Slack : 1.251
+Slack : 1.026
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'keytr:KEY_0|KEYON'
-Slack : 1.451
+Slack : 1.156
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'AUD_BCLK'
-Slack : 1.957
+Slack : 1.742
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'AUD_ADCLRCK'
 Slack : -2.225
-TNS   : -13390.789
+TNS   : -40115.731
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.431
+TNS   : -6.570
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'AUD_BCLK'
 Slack : -0.394
-TNS   : -26.018
+TNS   : -25.232
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
 Slack : -0.394
-TNS   : -18.039
+TNS   : -19.948
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'i2c:b2v_inst|END_TR'
 Slack : -0.394
-TNS   : -9.931
+TNS   : -10.837
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'keytr:KEY_0|KEYON'
 Slack : -0.394
-TNS   : -7.451
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.394
-TNS   : -6.524
+TNS   : -9.540
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SW[3]'
-Slack : -0.087
-TNS   : -0.218
-
-Type  : Slow 1100mV 0C Model Setup 'AUD_ADCLRCK'
-Slack : -27.158
-TNS   : -5731.881
-
-Type  : Slow 1100mV 0C Model Setup 'AUD_BCLK'
-Slack : -7.326
-TNS   : -182.890
+Slack : 0.017
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'SW[3]'
-Slack : -5.355
-TNS   : -78.079
+Slack : -13.944
+TNS   : -91.933
 
-Type  : Slow 1100mV 0C Model Setup 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -4.938
-TNS   : -80.813
+Type  : Slow 1100mV 0C Model Setup 'AUD_ADCLRCK'
+Slack : -10.366
+TNS   : -42949.117
+
+Type  : Slow 1100mV 0C Model Setup 'AUD_BCLK'
+Slack : -8.020
+TNS   : -169.416
 
 Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -4.532
-TNS   : -15.865
+Slack : -4.819
+TNS   : -17.460
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
+Slack : -4.640
+TNS   : -84.868
 
 Type  : Slow 1100mV 0C Model Setup 'keytr:KEY_0|KEYON'
-Slack : -2.538
-TNS   : -30.289
+Slack : -2.509
+TNS   : -35.330
 
 Type  : Slow 1100mV 0C Model Setup 'i2c:b2v_inst|END_TR'
-Slack : -1.921
-TNS   : -28.616
+Slack : -1.786
+TNS   : -29.184
 
-Type  : Slow 1100mV 0C Model Hold 'i2c:b2v_inst|END_TR'
-Slack : 0.055
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
+Slack : 0.145
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'AUD_ADCLRCK'
-Slack : 0.086
+Slack : 0.171
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.227
+Type  : Slow 1100mV 0C Model Hold 'i2c:b2v_inst|END_TR'
+Slack : 0.235
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'AUD_BCLK'
-Slack : 0.283
+Slack : 0.278
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.396
+Slack : 0.427
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'keytr:KEY_0|KEYON'
-Slack : 0.806
+Slack : 0.617
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'SW[3]'
-Slack : 0.885
+Slack : 1.282
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'AUD_ADCLRCK'
-Slack : -7.086
-TNS   : -112.330
+Slack : -7.173
+TNS   : -113.110
 
 Type  : Slow 1100mV 0C Model Recovery 'AUD_BCLK'
-Slack : -6.910
-TNS   : -299.640
+Slack : -7.033
+TNS   : -316.515
 
 Type  : Slow 1100mV 0C Model Recovery 'i2c:b2v_inst|END_TR'
-Slack : -4.603
-TNS   : -27.604
+Slack : -4.731
+TNS   : -42.549
 
 Type  : Slow 1100mV 0C Model Recovery 'keytr:KEY_0|KEYON'
-Slack : -2.209
-TNS   : -30.886
+Slack : -2.078
+TNS   : -32.676
 
 Type  : Slow 1100mV 0C Model Recovery 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -1.532
-TNS   : -26.602
-
-Type  : Slow 1100mV 0C Model Removal 'i2c:b2v_inst|END_TR'
-Slack : 0.315
-TNS   : 0.000
+Slack : -1.460
+TNS   : -31.016
 
 Type  : Slow 1100mV 0C Model Removal 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.353
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'i2c:b2v_inst|END_TR'
+Slack : 0.639
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'AUD_ADCLRCK'
-Slack : 0.920
+Slack : 0.657
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'keytr:KEY_0|KEYON'
-Slack : 1.430
+Slack : 1.164
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'AUD_BCLK'
-Slack : 1.655
+Slack : 1.422
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'AUD_ADCLRCK'
 Slack : -2.225
-TNS   : -13339.107
+TNS   : -39996.156
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.417
-TNS   : -7.135
+Slack : -0.437
+TNS   : -7.105
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'AUD_BCLK'
 Slack : -0.394
-TNS   : -24.015
+TNS   : -24.843
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
 Slack : -0.394
-TNS   : -17.762
+TNS   : -19.837
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'i2c:b2v_inst|END_TR'
 Slack : -0.394
-TNS   : -9.380
+TNS   : -10.574
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'keytr:KEY_0|KEYON'
 Slack : -0.394
-TNS   : -7.327
+TNS   : -9.586
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SW[3]'
-Slack : -0.093
-TNS   : -0.276
-
-Type  : Fast 1100mV 85C Model Setup 'AUD_ADCLRCK'
-Slack : -14.357
-TNS   : -2567.691
-
-Type  : Fast 1100mV 85C Model Setup 'AUD_BCLK'
-Slack : -5.477
-TNS   : -123.143
-
-Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -3.691
-TNS   : -7.939
+Slack : 0.005
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'SW[3]'
-Slack : -2.554
-TNS   : -35.082
+Slack : -9.143
+TNS   : -46.248
+
+Type  : Fast 1100mV 85C Model Setup 'AUD_ADCLRCK'
+Slack : -5.991
+TNS   : -24407.560
+
+Type  : Fast 1100mV 85C Model Setup 'AUD_BCLK'
+Slack : -5.783
+TNS   : -111.150
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.629
+TNS   : -7.807
 
 Type  : Fast 1100mV 85C Model Setup 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -2.483
-TNS   : -37.109
+Slack : -2.362
+TNS   : -39.187
 
 Type  : Fast 1100mV 85C Model Setup 'keytr:KEY_0|KEYON'
-Slack : -1.284
-TNS   : -13.211
+Slack : -1.135
+TNS   : -14.683
 
 Type  : Fast 1100mV 85C Model Setup 'i2c:b2v_inst|END_TR'
-Slack : -1.025
-TNS   : -13.315
-
-Type  : Fast 1100mV 85C Model Hold 'i2c:b2v_inst|END_TR'
-Slack : 0.014
-TNS   : 0.000
+Slack : -0.946
+TNS   : -12.296
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.118
+Slack : 0.008
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'AUD_ADCLRCK'
-Slack : 0.137
+Type  : Fast 1100mV 85C Model Hold 'i2c:b2v_inst|END_TR'
+Slack : 0.103
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'AUD_BCLK'
-Slack : 0.141
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'AUD_ADCLRCK'
+Slack : 0.205
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : 0.188
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'SW[3]'
-Slack : 0.265
+Slack : 0.248
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'keytr:KEY_0|KEYON'
-Slack : 0.366
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'SW[3]'
+Slack : 0.683
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'AUD_ADCLRCK'
-Slack : -6.050
-TNS   : -95.856
+Slack : -5.810
+TNS   : -91.617
 
 Type  : Fast 1100mV 85C Model Recovery 'AUD_BCLK'
-Slack : -5.377
-TNS   : -232.343
+Slack : -5.195
+TNS   : -232.119
 
 Type  : Fast 1100mV 85C Model Recovery 'i2c:b2v_inst|END_TR'
-Slack : -2.523
-TNS   : -15.136
+Slack : -2.582
+TNS   : -23.230
 
 Type  : Fast 1100mV 85C Model Recovery 'keytr:KEY_0|KEYON'
-Slack : -1.456
-TNS   : -20.368
+Slack : -1.383
+TNS   : -21.619
 
 Type  : Fast 1100mV 85C Model Recovery 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -1.061
-TNS   : -14.821
-
-Type  : Fast 1100mV 85C Model Removal 'i2c:b2v_inst|END_TR'
-Slack : -0.030
-TNS   : -0.174
+Slack : -1.118
+TNS   : -17.527
 
 Type  : Fast 1100mV 85C Model Removal 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.080
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'i2c:b2v_inst|END_TR'
+Slack : 0.172
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'keytr:KEY_0|KEYON'
-Slack : 0.619
+Slack : 0.448
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'AUD_ADCLRCK'
-Slack : 1.388
+Slack : 1.041
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'AUD_BCLK'
-Slack : 1.672
+Slack : 1.335
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'AUD_ADCLRCK'
 Slack : -1.702
-TNS   : -11346.566
+TNS   : -42854.495
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.430
-TNS   : -1.421
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SW[3]'
-Slack : -0.304
-TNS   : -4.973
+Slack : -0.461
+TNS   : -1.508
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'AUD_BCLK'
-Slack : -0.208
-TNS   : -9.268
+Slack : -0.209
+TNS   : -9.781
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.070
-TNS   : 0.000
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SW[3]'
+Slack : -0.203
+TNS   : -4.214
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'keytr:KEY_0|KEYON'
-Slack : 0.082
+Slack : 0.019
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'i2c:b2v_inst|END_TR'
-Slack : 0.086
+Slack : 0.060
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'AUD_ADCLRCK'
-Slack : -13.354
-TNS   : -1971.696
-
-Type  : Fast 1100mV 0C Model Setup 'AUD_BCLK'
-Slack : -4.549
-TNS   : -100.886
-
-Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -3.124
-TNS   : -6.557
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
+Slack : 0.075
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'SW[3]'
-Slack : -2.459
-TNS   : -34.531
+Slack : -8.144
+TNS   : -43.534
+
+Type  : Fast 1100mV 0C Model Setup 'AUD_ADCLRCK'
+Slack : -5.135
+TNS   : -20200.131
+
+Type  : Fast 1100mV 0C Model Setup 'AUD_BCLK'
+Slack : -4.850
+TNS   : -90.827
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.064
+TNS   : -6.505
 
 Type  : Fast 1100mV 0C Model Setup 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -2.376
-TNS   : -33.595
+Slack : -2.250
+TNS   : -35.454
 
 Type  : Fast 1100mV 0C Model Setup 'keytr:KEY_0|KEYON'
-Slack : -1.150
-TNS   : -11.800
+Slack : -1.013
+TNS   : -13.172
 
 Type  : Fast 1100mV 0C Model Setup 'i2c:b2v_inst|END_TR'
-Slack : -0.841
-TNS   : -11.079
-
-Type  : Fast 1100mV 0C Model Hold 'i2c:b2v_inst|END_TR'
-Slack : 0.022
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'AUD_ADCLRCK'
-Slack : 0.037
-TNS   : 0.000
+Slack : -0.774
+TNS   : -10.132
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.056
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Fast 1100mV 0C Model Hold 'i2c:b2v_inst|END_TR'
+Slack : 0.088
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'AUD_BCLK'
-Slack : 0.148
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'AUD_ADCLRCK'
+Slack : 0.204
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : 0.179
+Slack : 0.235
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'keytr:KEY_0|KEYON'
-Slack : 0.337
+Slack : 0.265
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'SW[3]'
-Slack : 0.369
+Slack : 0.671
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'AUD_ADCLRCK'
-Slack : -5.162
-TNS   : -81.699
+Slack : -4.972
+TNS   : -78.454
 
 Type  : Fast 1100mV 0C Model Recovery 'AUD_BCLK'
-Slack : -4.444
-TNS   : -191.662
+Slack : -4.307
+TNS   : -192.169
 
 Type  : Fast 1100mV 0C Model Recovery 'i2c:b2v_inst|END_TR'
-Slack : -2.419
-TNS   : -14.512
+Slack : -2.473
+TNS   : -22.255
 
 Type  : Fast 1100mV 0C Model Recovery 'keytr:KEY_0|KEYON'
-Slack : -1.474
-TNS   : -20.620
+Slack : -1.411
+TNS   : -22.170
 
 Type  : Fast 1100mV 0C Model Recovery 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -0.901
-TNS   : -12.219
-
-Type  : Fast 1100mV 0C Model Removal 'i2c:b2v_inst|END_TR'
-Slack : -0.052
-TNS   : -0.308
+Slack : -0.969
+TNS   : -14.538
 
 Type  : Fast 1100mV 0C Model Removal 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : -0.019
-TNS   : -0.019
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'i2c:b2v_inst|END_TR'
+Slack : 0.125
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'keytr:KEY_0|KEYON'
-Slack : 0.639
+Slack : 0.495
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'AUD_ADCLRCK'
-Slack : 0.982
+Slack : 0.657
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'AUD_BCLK'
-Slack : 1.233
+Slack : 0.925
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'AUD_ADCLRCK'
 Slack : -1.702
-TNS   : -11395.972
+TNS   : -43043.608
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.436
-TNS   : -1.450
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SW[3]'
-Slack : -0.257
-TNS   : -4.878
+Slack : -0.448
+TNS   : -1.470
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'AUD_BCLK'
-Slack : -0.232
-TNS   : -10.453
+Slack : -0.238
+TNS   : -11.318
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SW[3]'
+Slack : -0.172
+TNS   : -3.637
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keytr:KEY_0|KEYON'
+Slack : 0.044
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'i2c:b2v_inst|END_TR'
-Slack : 0.087
+Slack : 0.062
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_500:b2v_inst4|COUNTER_500[9]'
-Slack : 0.091
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keytr:KEY_0|KEYON'
-Slack : 0.098
+Slack : 0.102
 TNS   : 0.000
 
 ------------------------------------------------------------

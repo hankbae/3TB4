@@ -32,13 +32,13 @@ begin
 	else
 	begin
 		case (selector)
-			2'b0:  output_sample <= input_sample;	// straight passthrough
+			2'b0:  output_sample <= input_sample;	// straight passthrough // WORKS
 			
 			2'b1:	 output_sample <= FIR_out;			// FIR filter
 			
-			2'b10: output_sample <= input_sample + ECHO_out;		// Echo machine
+			2'b10: output_sample <= input_sample + ECHO_out;		// Echo machine // WORKS
 			
-			default: output_sample <= input_sample; // straight passthrough 
+			default: output_sample <= input_sample; // straight passthrough // WORKS
 		endcase
 	end
 end

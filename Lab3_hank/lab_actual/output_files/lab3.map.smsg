@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at FIR50.v(197): always construct contains both blocking and non-blocking assignments File: D:/3TB4/Lab3_hank/prelab/lab3_restored/FIR50.v Line: 197
+Warning (10268): Verilog HDL information at FIR50.v(49): always construct contains both blocking and non-blocking assignments File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 49
