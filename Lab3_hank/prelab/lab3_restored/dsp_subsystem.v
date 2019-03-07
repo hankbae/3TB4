@@ -8,13 +8,14 @@ module dsp_subsystem (
 
 //assign output_sample = input_sample;
 
-reg [15:0] FIR_out;
-reg [15:0] ECHO_out;
+wire [15:0] FIR_out;
+wire [15:0] ECHO_out;
 
 
 FIR50 (
 	.clk(sample_clock),
 	.signal_in(input_sample),
+	.taps(8'd161),
 	.signal_out(FIR_out)
 	);
 	
@@ -22,7 +23,8 @@ shiftregister (
 	.clock(sample_clock),
 	.shiftin(input_sample),
 	.shiftout(ECHO_out),
-	.taps());
+	.taps()
+	);
 
 always @(posedge sample_clock or posedge reset)
 begin

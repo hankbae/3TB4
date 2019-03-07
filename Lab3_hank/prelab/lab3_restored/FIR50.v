@@ -1,22 +1,26 @@
 module FIR50(
 	input clk,
 	input [15:0] signal_in,
+	input [7:0] taps,
 	output [15:0] signal_out
 	);
 	
 
 reg [15:0] delay [160:0]; // delay registers
-wire [15:0] result [160:0];
+wire [15:0] result [160:0]; // taps after coeff mul
 reg [31:0] sum;
 reg [15:0] mul1;
 reg [15:0] mul2;
 wire [31:0] mul_out;
 genvar i;
 integer j,k;
+wire tap_interval = 8'd161/taps;
+
 
 wire [15:0] coeff [160:0];
 
 // -------- COEFFICIENTS -------------
+// ask TA about writing array in 1 line
 
 assign coeff[0] = 0;
 assign coeff[1] = 0;
@@ -195,13 +199,16 @@ always @(posedge clk)
 begin
 	delay[0] <= signal_in;
 	
-	for(j=0;j<=159;j = j + 1) delay[j+1]<=delay[j];
+	for(j=0;j<=159;j = j + 1) delay[j+1]<=delay[j]; // delay line
 		
-	for(k=0;k<=160;k = k + 1) 
+	for(k=0;k<=160;k = k + 1) // summing scaled tapped lines
 	begin
-		mul1 = delay[k];
-		mul2 = coeff[k]; 
-		sum = sum + result[k];
+		if (k%tap_interval == 8'd0)
+		begin
+			mul1 = delay[k];
+			mul2 = coeff[k]; 
+			sum = sum + result[k];
+		end
 	end
 end
 	
