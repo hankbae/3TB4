@@ -34,7 +34,7 @@ begin
 			
 			2'b1:	 output_sample <= FIR_out;			// FIR filter
 			
-			2'b10: output_sample <= ECHO_out;		// Echo machine
+			2'b10: output_sample <= input_sample + ECHO_out;		// Echo machine
 			
 			default: output_sample <= input_sample; // straight passthrough 
 		endcase
