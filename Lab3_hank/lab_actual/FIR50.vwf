@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="D:/3TB4/Lab3_hank/prelab/lab3_restored/FIR50.vwf" --testbench_file="D:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim/FIR50.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="D:/3TB4/Lab3_hank/prelab/lab3_restored/FIR50.vwf" --testbench_file="D:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim/FIR50.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim/" lab3 -c lab3</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim/" lab3 -c lab3</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="D:/3TB4/Lab3_hank/lab_actual/FIR50.vwf" --testbench_file="D:/3TB4/Lab3_hank/lab_actual/simulation/qsim/FIR50.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab3 -c lab3 --vector_source="D:/3TB4/Lab3_hank/lab_actual/FIR50.vwf" --testbench_file="D:/3TB4/Lab3_hank/lab_actual/simulation/qsim/FIR50.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Lab3_hank/lab_actual/simulation/qsim/" lab3 -c lab3</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Lab3_hank/lab_actual/simulation/qsim/" lab3 -c lab3</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work lab3.vo
@@ -432,9 +432,9 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 400;
-			LEVEL 0 FOR 5.0;
-			LEVEL 1 FOR 5.0;
+			REPEAT = 80;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
 	}
 }

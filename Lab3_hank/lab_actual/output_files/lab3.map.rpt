@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Thu Mar 07 10:12:53 2019
+Thu Mar 07 11:46:26 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -21,47 +21,45 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  13. General Register Statistics
  14. Inverted Register Statistics
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component
- 17. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260|lpm_mult:lpm_mult_component
- 18. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261|lpm_mult:lpm_mult_component
- 19. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262|lpm_mult:lpm_mult_component
- 20. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263|lpm_mult:lpm_mult_component
- 21. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264|lpm_mult:lpm_mult_component
- 22. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265|lpm_mult:lpm_mult_component
- 23. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266|lpm_mult:lpm_mult_component
- 24. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267|lpm_mult:lpm_mult_component
- 25. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268|lpm_mult:lpm_mult_component
- 26. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269|lpm_mult:lpm_mult_component
- 27. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270|lpm_mult:lpm_mult_component
- 28. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271|lpm_mult:lpm_mult_component
- 29. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272|lpm_mult:lpm_mult_component
- 30. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273|lpm_mult:lpm_mult_component
+ 16. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component
+ 17. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258|lpm_mult:lpm_mult_component
+ 18. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component
+ 19. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260|lpm_mult:lpm_mult_component
+ 20. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261|lpm_mult:lpm_mult_component
+ 21. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262|lpm_mult:lpm_mult_component
+ 22. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263|lpm_mult:lpm_mult_component
+ 23. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264|lpm_mult:lpm_mult_component
+ 24. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265|lpm_mult:lpm_mult_component
+ 25. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266|lpm_mult:lpm_mult_component
+ 26. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267|lpm_mult:lpm_mult_component
+ 27. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268|lpm_mult:lpm_mult_component
+ 28. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269|lpm_mult:lpm_mult_component
+ 29. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270|lpm_mult:lpm_mult_component
+ 30. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271|lpm_mult:lpm_mult_component
  31. Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|shiftregister:comb_4|altshift_taps:ALTSHIFT_TAPS_component
  32. lpm_mult Parameter Settings by Entity Instance
  33. altshift_taps Parameter Settings by Entity Instance
  34. Port Connectivity Checks: "dsp_subsystem:dsp_instance|shiftregister:comb_4"
- 35. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273"
- 36. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272"
- 37. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271"
- 38. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270"
- 39. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269"
- 40. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268"
- 41. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267"
- 42. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266"
- 43. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265"
- 44. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264"
- 45. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263"
- 46. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262"
- 47. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261"
- 48. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260"
- 49. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259"
- 50. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3"
- 51. Port Connectivity Checks: "keytr:KEY_0"
- 52. Port Connectivity Checks: "i2c:b2v_inst"
- 53. Post-Synthesis Netlist Statistics for Top Partition
- 54. Elapsed Time Per Partition
- 55. Analysis & Synthesis Messages
- 56. Analysis & Synthesis Suppressed Messages
+ 35. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271"
+ 36. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270"
+ 37. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269"
+ 38. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268"
+ 39. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267"
+ 40. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266"
+ 41. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265"
+ 42. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264"
+ 43. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263"
+ 44. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262"
+ 45. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261"
+ 46. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260"
+ 47. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259"
+ 48. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258"
+ 49. Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257"
+ 50. Port Connectivity Checks: "keytr:KEY_0"
+ 51. Port Connectivity Checks: "i2c:b2v_inst"
+ 52. Post-Synthesis Netlist Statistics for Top Partition
+ 53. Elapsed Time Per Partition
+ 54. Analysis & Synthesis Messages
 
 
 
@@ -87,13 +85,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 07 10:12:52 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 07 11:46:25 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab3                                        ;
 ; Top-level Entity Name           ; lab3                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 403                                         ;
+; Total registers                 ; 371                                         ;
 ; Total pins                      ; 13                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -224,15 +222,15 @@ refer to the applicable agreement for further details.
 ; CLOCK_500.v                      ; yes             ; User Verilog HDL File        ; D:/3TB4/Lab3_hank/lab_actual/CLOCK_500.v                                 ;         ;
 ; lab3.v                           ; yes             ; User Verilog HDL File        ; D:/3TB4/Lab3_hank/lab_actual/lab3.v                                      ;         ;
 ; FIR50.v                          ; yes             ; User Verilog HDL File        ; D:/3TB4/Lab3_hank/lab_actual/FIR50.v                                     ;         ;
-; multiplier.v                     ; yes             ; User Wizard-Generated File   ; D:/3TB4/Lab3_hank/lab_actual/multiplier.v                                ;         ;
 ; shiftregister.v                  ; yes             ; User Wizard-Generated File   ; D:/3TB4/Lab3_hank/lab_actual/shiftregister.v                             ;         ;
+; multiplier.v                     ; yes             ; User Wizard-Generated File   ; D:/3TB4/Lab3_hank/lab_actual/multiplier.v                                ;         ;
 ; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf      ;         ;
 ; aglobal171.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc    ;         ;
 ; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc   ;         ;
 ; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/multcore.inc      ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/bypassff.inc      ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift.inc      ;         ;
-; db/mult_71n.v                    ; yes             ; Auto-Generated Megafunction  ; D:/3TB4/Lab3_hank/lab_actual/db/mult_71n.v                               ;         ;
+; db/mult_91n.v                    ; yes             ; Auto-Generated Megafunction  ; D:/3TB4/Lab3_hank/lab_actual/db/mult_91n.v                               ;         ;
 ; altshift_taps.tdf                ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift_taps.tdf ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc      ;         ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_counter.inc   ;         ;
@@ -249,19 +247,19 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1622              ;
+; Estimate of Logic utilization (ALMs needed) ; 1600              ;
 ;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 382               ;
+; Combinational ALUT usage for logic          ; 297               ;
 ;     -- 7 input functions                    ; 0                 ;
 ;     -- 6 input functions                    ; 20                ;
-;     -- 5 input functions                    ; 28                ;
-;     -- 4 input functions                    ; 49                ;
-;     -- <=3 input functions                  ; 285               ;
+;     -- 5 input functions                    ; 37                ;
+;     -- 4 input functions                    ; 56                ;
+;     -- <=3 input functions                  ; 184               ;
 ; Memory ALUT usage                           ; 4096              ;
 ;     -- 64-address deep                      ; 0                 ;
 ;     -- 32-address deep                      ; 4096              ;
 ;                                             ;                   ;
-; Dedicated logic registers                   ; 403               ;
+; Dedicated logic registers                   ; 371               ;
 ;                                             ;                   ;
 ; I/O pins                                    ; 13                ;
 ; Total MLAB memory bits                      ; 32768             ;
@@ -270,9 +268,9 @@ refer to the applicable agreement for further details.
 ; Total DSP Blocks                            ; 15                ;
 ;                                             ;                   ;
 ; Maximum fan-out node                        ; AUD_ADCLRCK~input ;
-; Maximum fan-out                             ; 4390              ;
-; Total fan-out                               ; 23009             ;
-; Average fan-out                             ; 4.67              ;
+; Maximum fan-out                             ; 4358              ;
+; Total fan-out                               ; 22776             ;
+; Average fan-out                             ; 4.74              ;
 +---------------------------------------------+-------------------+
 
 
@@ -281,55 +279,55 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                          ; Entity Name        ; Library Name ;
 +--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |lab3                                            ; 382 (0)             ; 403 (0)                   ; 0                 ; 15         ; 13   ; 0            ; |lab3                                                                                                                                        ; lab3               ; work         ;
+; |lab3                                            ; 297 (0)             ; 371 (0)                   ; 0                 ; 15         ; 13   ; 0            ; |lab3                                                                                                                                        ; lab3               ; work         ;
 ;    |CLOCK_500:b2v_inst4|                         ; 47 (47)             ; 37 (37)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3|CLOCK_500:b2v_inst4                                                                                                                    ; CLOCK_500          ; work         ;
-;    |dsp_subsystem:dsp_instance|                  ; 272 (81)            ; 291 (16)                  ; 0                 ; 15         ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance                                                                                                             ; dsp_subsystem      ; work         ;
-;       |FIR50:comb_3|                             ; 188 (188)           ; 272 (272)                 ; 0                 ; 15         ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3                                                                                                ; FIR50              ; work         ;
+;    |dsp_subsystem:dsp_instance|                  ; 187 (72)            ; 259 (16)                  ; 0                 ; 15         ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance                                                                                                             ; dsp_subsystem      ; work         ;
+;       |FIR50:comb_3|                             ; 112 (112)           ; 240 (240)                 ; 0                 ; 15         ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3                                                                                                ; FIR50              ; work         ;
+;          |multiplier:comb_257|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257                                                                            ; multiplier         ; work         ;
+;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
+;          |multiplier:comb_258|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258                                                                            ; multiplier         ; work         ;
+;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_259|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_260|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_261|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_262|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_263|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_264|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_265|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_266|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_267|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_268|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_269|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_270|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;          |multiplier:comb_271|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271                                                                            ; multiplier         ; work         ;
 ;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
-;          |multiplier:comb_272|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272                                                                            ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
-;          |multiplier:comb_273|                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273                                                                            ; multiplier         ; work         ;
-;             |lpm_mult:lpm_mult_component|        ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273|lpm_mult:lpm_mult_component                                                ; lpm_mult           ; work         ;
-;                |mult_71n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273|lpm_mult:lpm_mult_component|mult_71n:auto_generated                        ; mult_71n           ; work         ;
+;                |mult_91n:auto_generated|         ; 0 (0)               ; 0 (0)                     ; 0                 ; 1          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271|lpm_mult:lpm_mult_component|mult_91n:auto_generated                        ; mult_91n           ; work         ;
 ;       |shiftregister:comb_4|                     ; 3 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|shiftregister:comb_4                                                                                        ; shiftregister      ; work         ;
 ;          |altshift_taps:ALTSHIFT_TAPS_component| ; 3 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|shiftregister:comb_4|altshift_taps:ALTSHIFT_TAPS_component                                                  ; altshift_taps      ; work         ;
 ;             |shift_taps_aj51:auto_generated|     ; 3 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3|dsp_subsystem:dsp_instance|shiftregister:comb_4|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_aj51:auto_generated                   ; shift_taps_aj51    ; work         ;
@@ -370,6 +368,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+----------------------------+---------+--------------+--------------+-------------------------------------------------------------------+-----------------+
 ; Vendor ; IP Core Name               ; Version ; Release Date ; License Type ; Entity Instance                                                   ; IP Include File ;
 +--------+----------------------------+---------+--------------+--------------+-------------------------------------------------------------------+-----------------+
+; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257 ; multiplier.v    ;
+; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258 ; multiplier.v    ;
 ; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259 ; multiplier.v    ;
 ; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260 ; multiplier.v    ;
 ; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261 ; multiplier.v    ;
@@ -383,8 +383,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269 ; multiplier.v    ;
 ; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270 ; multiplier.v    ;
 ; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271 ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272 ; multiplier.v    ;
-; Altera ; LPM_MULT                   ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273 ; multiplier.v    ;
 ; Altera ; Shift register (RAM-based) ; 17.1    ; N/A          ; N/A          ; |lab3|dsp_subsystem:dsp_instance|shiftregister:comb_4             ; shiftregister.v ;
 +--------+----------------------------+---------+--------------+--------------+-------------------------------------------------------------------+-----------------+
 
@@ -431,7 +429,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 403   ;
+; Total registers                              ; 371   ;
 ; Number of registers using Synchronous Clear  ; 1     ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 91    ;
@@ -477,16 +475,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[4]                  ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[1]                  ;
-; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|DATA_A[4]               ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|DATA_A[3]               ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|DATA_A[2]               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lab3|i2c:b2v_inst|SD_COUNTER[5]                  ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |lab3|dsp_subsystem:dsp_instance|output_sample[4] ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lab3|i2c:b2v_inst|SD_COUNTER[0]                  ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab3|dsp_subsystem:dsp_instance|output_sample[5] ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |lab3|CLOCK_500:b2v_inst4|vol[2]                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component ;
+; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component ;
 +------------------------------------------------+-----------+-------------------------------------------------------------------------+
 ; Parameter Name                                 ; Value     ; Type                                                                    ;
 +------------------------------------------------+-----------+-------------------------------------------------------------------------+
@@ -496,7 +494,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -512,7 +510,77 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
++------------------------------------------------+-----------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+-------------------------------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                                                    ;
++------------------------------------------------+-----------+-------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                              ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                            ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                            ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                                                 ;
+; LATENCY                                        ; 0         ; Untyped                                                                 ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
+; USE_EAB                                        ; OFF       ; Untyped                                                                 ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                 ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                 ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                 ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                     ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
+; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
+; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
++------------------------------------------------+-----------+-------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component ;
++------------------------------------------------+-----------+-------------------------------------------------------------------------+
+; Parameter Name                                 ; Value     ; Type                                                                    ;
++------------------------------------------------+-----------+-------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                              ;
+; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                            ;
+; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                            ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
+; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
+; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
+; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
+; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
+; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
+; LPM_PIPELINE                                   ; 0         ; Untyped                                                                 ;
+; LATENCY                                        ; 0         ; Untyped                                                                 ;
+; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
+; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
+; USE_EAB                                        ; OFF       ; Untyped                                                                 ;
+; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                 ;
+; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                 ;
+; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                 ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                     ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -531,7 +599,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -547,7 +615,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -566,7 +634,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -582,7 +650,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -601,7 +669,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -617,7 +685,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -636,7 +704,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -652,7 +720,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -671,7 +739,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -687,7 +755,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -706,7 +774,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -722,7 +790,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -741,7 +809,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -757,7 +825,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -776,7 +844,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -792,7 +860,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -811,7 +879,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -827,7 +895,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -846,7 +914,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -862,7 +930,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -881,7 +949,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -897,7 +965,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -916,7 +984,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
 ; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
+; LPM_WIDTHP                                     ; 16        ; Signed Integer                                                          ;
 ; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
 ; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
 ; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
@@ -932,77 +1000,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
-+------------------------------------------------+-----------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+-------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                    ;
-+------------------------------------------------+-----------+-------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                              ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                            ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                            ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                 ;
-; LATENCY                                        ; 0         ; Untyped                                                                 ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                 ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                 ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                 ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                 ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                     ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
-; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
-; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
-+------------------------------------------------+-----------+-------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273|lpm_mult:lpm_mult_component ;
-+------------------------------------------------+-----------+-------------------------------------------------------------------------+
-; Parameter Name                                 ; Value     ; Type                                                                    ;
-+------------------------------------------------+-----------+-------------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON        ; AUTO_CARRY                                                              ;
-; IGNORE_CARRY_BUFFERS                           ; OFF       ; IGNORE_CARRY                                                            ;
-; AUTO_CASCADE_CHAINS                            ; ON        ; AUTO_CASCADE                                                            ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF       ; IGNORE_CASCADE                                                          ;
-; LPM_WIDTHA                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHB                                     ; 16        ; Signed Integer                                                          ;
-; LPM_WIDTHP                                     ; 32        ; Signed Integer                                                          ;
-; LPM_WIDTHR                                     ; 0         ; Untyped                                                                 ;
-; LPM_WIDTHS                                     ; 1         ; Untyped                                                                 ;
-; LPM_REPRESENTATION                             ; SIGNED    ; Untyped                                                                 ;
-; LPM_PIPELINE                                   ; 0         ; Untyped                                                                 ;
-; LATENCY                                        ; 0         ; Untyped                                                                 ;
-; INPUT_A_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
-; INPUT_B_IS_CONSTANT                            ; NO        ; Untyped                                                                 ;
-; USE_EAB                                        ; OFF       ; Untyped                                                                 ;
-; MAXIMIZE_SPEED                                 ; 5         ; Untyped                                                                 ;
-; DEVICE_FAMILY                                  ; Cyclone V ; Untyped                                                                 ;
-; CARRY_CHAIN                                    ; MANUAL    ; Untyped                                                                 ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT       ; TECH_MAPPER_APEX20K                                                     ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO      ; Untyped                                                                 ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0         ; Untyped                                                                 ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0         ; Untyped                                                                 ;
-; CBXI_PARAMETER                                 ; mult_71n  ; Untyped                                                                 ;
+; CBXI_PARAMETER                                 ; mult_91n  ; Untyped                                                                 ;
 ; INPUT_A_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; INPUT_B_FIXED_VALUE                            ; Bx        ; Untyped                                                                 ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF       ; Untyped                                                                 ;
@@ -1031,10 +1029,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                  ; Value                                                                                   ;
 +---------------------------------------+-----------------------------------------------------------------------------------------+
 ; Number of entity instances            ; 15                                                                                      ;
+; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                                      ;
+;     -- LPM_WIDTHB                     ; 16                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
+;     -- USE_EAB                        ; OFF                                                                                     ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                    ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                      ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                      ;
+; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258|lpm_mult:lpm_mult_component ;
+;     -- LPM_WIDTHA                     ; 16                                                                                      ;
+;     -- LPM_WIDTHB                     ; 16                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
+;     -- USE_EAB                        ; OFF                                                                                     ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                    ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                      ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                      ;
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1045,7 +1065,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1056,7 +1076,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1067,7 +1087,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1078,7 +1098,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1089,7 +1109,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1100,7 +1120,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1111,7 +1131,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1122,7 +1142,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1133,7 +1153,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1144,7 +1164,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1155,7 +1175,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1166,29 +1186,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271|lpm_mult:lpm_mult_component ;
 ;     -- LPM_WIDTHA                     ; 16                                                                                      ;
 ;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
-;     -- USE_EAB                        ; OFF                                                                                     ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                    ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                      ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                      ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                      ;
-;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
-;     -- USE_EAB                        ; OFF                                                                                     ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                                                    ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                                                                      ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                                                                      ;
-; Entity Instance                       ; dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273|lpm_mult:lpm_mult_component ;
-;     -- LPM_WIDTHA                     ; 16                                                                                      ;
-;     -- LPM_WIDTHB                     ; 16                                                                                      ;
-;     -- LPM_WIDTHP                     ; 32                                                                                      ;
+;     -- LPM_WIDTHP                     ; 16                                                                                      ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                                                  ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                      ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                      ;
@@ -1221,191 +1219,199 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+--------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_273"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_272"                                                                          ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                       ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab[7..6]  ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[15..8] ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[5..2]  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[1]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[0]     ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result       ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270" ;
++---------------+-------+----------+------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                              ;
++---------------+-------+----------+------------------------------------------------------+
+; datab[9..6]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[13..12] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[5..4]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[2..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[15]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[14]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[11]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
++---------------+-------+----------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_271"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_270"                                                                          ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                       ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab[15..7] ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[6..5]  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[3..1]  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[4]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[0]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; result       ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268" ;
++---------------+-------+----------+------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                              ;
++---------------+-------+----------+------------------------------------------------------+
+; datab[15..14] ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[9..8]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[4..3]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[13]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[12]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[11]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[7]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[5]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[2]      ; Input ; Info     ; Stuck at VCC                                         ;
++---------------+-------+----------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_269"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_268"                                                                          ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                       ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab[6..0]  ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[15..7] ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result       ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266" ;
++---------------+-------+----------+------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                              ;
++---------------+-------+----------+------------------------------------------------------+
+; datab[13..12] ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[8..7]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[4..2]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..14] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[11..9]  ; Input ; Info     ; Stuck at GND                                         ;
+; datab[6..5]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
++---------------+-------+----------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_267"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_266"                                                                           ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                                                                       ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab[9..8]   ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[6..5]   ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[15..10] ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[4..2]   ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[7]      ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[1]      ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[0]      ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result        ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+---------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264" ;
++---------------+-------+----------+------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                              ;
++---------------+-------+----------+------------------------------------------------------+
+; datab[11..10] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[8..7]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[5..4]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[2..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[15]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[14]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[13]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[12]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[9]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[6]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
++---------------+-------+----------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_265"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_264"                                                                          ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                       ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab[6..0]  ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[15..7] ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result       ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262" ;
++---------------+-------+----------+------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                              ;
++---------------+-------+----------+------------------------------------------------------+
+; datab[13..12] ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[8..7]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[4..2]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..14] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[11..9]  ; Input ; Info     ; Stuck at GND                                         ;
+; datab[6..5]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
++---------------+-------+----------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_263"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_262"                                                                          ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                       ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab[15..7] ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[6..5]  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[3..1]  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[4]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[0]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; result       ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260" ;
++---------------+-------+----------+------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                              ;
++---------------+-------+----------+------------------------------------------------------+
+; datab[15..14] ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[9..8]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[4..3]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[13]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[12]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[11]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[7]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[6]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[5]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[2]      ; Input ; Info     ; Stuck at VCC                                         ;
++---------------+-------+----------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_261"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_260"                                                                          ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                       ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab[7..6]  ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[15..8] ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[5..2]  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; datab[1]     ; Input  ; Info     ; Stuck at VCC                                                                                                                  ;
-; datab[0]     ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result       ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_258" ;
++---------------+-------+----------+------------------------------------------------------+
+; Port          ; Type  ; Severity ; Details                                              ;
++---------------+-------+----------+------------------------------------------------------+
+; datab[9..6]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[13..12] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[5..4]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[2..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[15]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[14]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[11]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at GND                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
++---------------+-------+----------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                       ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-; datab  ; Input  ; Info     ; Stuck at GND                                                                                                                  ;
-; result ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (16 bits) it drives; bit(s) "result[31..16]" have no fanouts ;
-+--------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3" ;
-+------------+-------+----------+-------------------------------------+
-; Port       ; Type  ; Severity ; Details                             ;
-+------------+-------+----------+-------------------------------------+
-; taps[4..1] ; Input ; Info     ; Stuck at GND                        ;
-; taps[7]    ; Input ; Info     ; Stuck at VCC                        ;
-; taps[6]    ; Input ; Info     ; Stuck at GND                        ;
-; taps[5]    ; Input ; Info     ; Stuck at VCC                        ;
-; taps[0]    ; Input ; Info     ; Stuck at VCC                        ;
-+------------+-------+----------+-------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257" ;
++-------+-------+----------+--------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                      ;
++-------+-------+----------+--------------------------------------------------------------+
+; datab ; Input ; Info     ; Stuck at GND                                                 ;
++-------+-------+----------+--------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1435,36 +1441,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 403                         ;
+; arriav_ff             ; 371                         ;
 ;     CLR               ; 49                          ;
 ;     ENA               ; 11                          ;
 ;     ENA CLR           ; 42                          ;
 ;     SCLR              ; 1                           ;
 ;     SLD               ; 1                           ;
-;     plain             ; 299                         ;
+;     plain             ; 267                         ;
 ; arriav_io_obuf        ; 1                           ;
-; arriav_lcell_comb     ; 382                         ;
-;     arith             ; 79                          ;
-;         1 data inputs ; 38                          ;
-;         2 data inputs ; 41                          ;
-;     normal            ; 147                         ;
+; arriav_lcell_comb     ; 297                         ;
+;     arith             ; 63                          ;
+;         1 data inputs ; 22                          ;
+;         2 data inputs ; 25                          ;
+;         4 data inputs ; 7                           ;
+;         5 data inputs ; 9                           ;
+;     normal            ; 138                         ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 6                           ;
-;         3 data inputs ; 42                          ;
+;         3 data inputs ; 33                          ;
 ;         4 data inputs ; 49                          ;
 ;         5 data inputs ; 28                          ;
 ;         6 data inputs ; 20                          ;
-;     shared            ; 156                         ;
-;         0 data inputs ; 10                          ;
-;         1 data inputs ; 28                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 116                         ;
+;     shared            ; 96                          ;
+;         3 data inputs ; 96                          ;
 ; arriav_mac            ; 15                          ;
 ; arriav_mlab_cell      ; 4096                        ;
 ; boundary_port         ; 13                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.10                        ;
-; Average LUT depth     ; 0.95                        ;
+; Max LUT depth         ; 6.50                        ;
+; Average LUT depth     ; 0.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1473,7 +1478,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1483,7 +1488,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Mar 07 10:11:21 2019
+    Info: Processing started: Thu Mar 07 11:45:21 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1503,13 +1508,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file lab3.v
     Info (12023): Found entity 1: lab3 File: D:/3TB4/Lab3_hank/lab_actual/lab3.v Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file fir50.v
     Info (12023): Found entity 1: FIR50 File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
-    Info (12023): Found entity 1: multiplier File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file divider.v
     Info (12023): Found entity 1: divider File: D:/3TB4/Lab3_hank/lab_actual/divider.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file shiftregister.v
     Info (12023): Found entity 1: shiftregister File: D:/3TB4/Lab3_hank/lab_actual/shiftregister.v Line: 39
-Critical Warning (10846): Verilog HDL Instantiation warning at FIR50.v(45): instance has no name File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 45
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier.v
+    Info (12023): Found entity 1: multiplier File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 39
+Critical Warning (10846): Verilog HDL Instantiation warning at FIR50.v(46): instance has no name File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 46
 Critical Warning (10846): Verilog HDL Instantiation warning at dsp_subsystem.v(20): instance has no name File: D:/3TB4/Lab3_hank/lab_actual/dsp_subsystem.v Line: 20
 Critical Warning (10846): Verilog HDL Instantiation warning at dsp_subsystem.v(27): instance has no name File: D:/3TB4/Lab3_hank/lab_actual/dsp_subsystem.v Line: 27
 Info (12127): Elaborating entity "lab3" for the top level hierarchy
@@ -1528,21 +1533,22 @@ Warning (10230): Verilog HDL assignment warning at keytr.v(71): truncated value 
 Info (12128): Elaborating entity "serial_to_parallel" for hierarchy "serial_to_parallel:b2v_inst37" File: D:/3TB4/Lab3_hank/lab_actual/lab3.v Line: 134
 Info (12128): Elaborating entity "dsp_subsystem" for hierarchy "dsp_subsystem:dsp_instance" File: D:/3TB4/Lab3_hank/lab_actual/lab3.v Line: 145
 Info (12128): Elaborating entity "FIR50" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3" File: D:/3TB4/Lab3_hank/lab_actual/dsp_subsystem.v Line: 20
-Warning (10230): Verilog HDL assignment warning at FIR50.v(25): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 25
-Warning (10230): Verilog HDL assignment warning at FIR50.v(33): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 33
-Info (12128): Elaborating entity "multiplier" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259" File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 45
-Info (12128): Elaborating entity "lpm_mult" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component" File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 59
-Info (12130): Elaborated megafunction instantiation "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component" File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 59
-Info (12133): Instantiated megafunction "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component" with the following parameter: File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 59
+Warning (10230): Verilog HDL assignment warning at FIR50.v(28): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 28
+Warning (10230): Verilog HDL assignment warning at FIR50.v(32): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 32
+Warning (10230): Verilog HDL assignment warning at FIR50.v(36): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 36
+Info (12128): Elaborating entity "multiplier" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257" File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 46
+Info (12128): Elaborating entity "lpm_mult" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component" File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 59
+Info (12130): Elaborated megafunction instantiation "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component" File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 59
+Info (12133): Instantiated megafunction "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component" with the following parameter: File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 59
     Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=5"
     Info (12134): Parameter "lpm_representation" = "SIGNED"
     Info (12134): Parameter "lpm_type" = "LPM_MULT"
     Info (12134): Parameter "lpm_widtha" = "16"
     Info (12134): Parameter "lpm_widthb" = "16"
-    Info (12134): Parameter "lpm_widthp" = "32"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_71n.v
-    Info (12023): Found entity 1: mult_71n File: D:/3TB4/Lab3_hank/lab_actual/db/mult_71n.v Line: 28
-Info (12128): Elaborating entity "mult_71n" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_259|lpm_mult:lpm_mult_component|mult_71n:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 376
+    Info (12134): Parameter "lpm_widthp" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_91n.v
+    Info (12023): Found entity 1: mult_91n File: D:/3TB4/Lab3_hank/lab_actual/db/mult_91n.v Line: 28
+Info (12128): Elaborating entity "mult_91n" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component|mult_91n:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 376
 Info (12128): Elaborating entity "shiftregister" for hierarchy "dsp_subsystem:dsp_instance|shiftregister:comb_4" File: D:/3TB4/Lab3_hank/lab_actual/dsp_subsystem.v Line: 27
 Info (12128): Elaborating entity "altshift_taps" for hierarchy "dsp_subsystem:dsp_instance|shiftregister:comb_4|altshift_taps:ALTSHIFT_TAPS_component" File: D:/3TB4/Lab3_hank/lab_actual/shiftregister.v Line: 66
 Info (12130): Elaborated megafunction instantiation "dsp_subsystem:dsp_instance|shiftregister:comb_4|altshift_taps:ALTSHIFT_TAPS_component" File: D:/3TB4/Lab3_hank/lab_actual/shiftregister.v Line: 66
@@ -1563,7 +1569,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
     Info (12023): Found entity 1: cntr_uhf File: D:/3TB4/Lab3_hank/lab_actual/db/cntr_uhf.tdf Line: 25
 Info (12128): Elaborating entity "cntr_uhf" for hierarchy "dsp_subsystem:dsp_instance|shiftregister:comb_4|altshift_taps:ALTSHIFT_TAPS_component|shift_taps_aj51:auto_generated|cntr_uhf:cntr1" File: D:/3TB4/Lab3_hank/lab_actual/db/shift_taps_aj51.tdf Line: 35
 Info (12128): Elaborating entity "parallel_to_serial" for hierarchy "parallel_to_serial:b2v_inst38" File: D:/3TB4/Lab3_hank/lab_actual/lab3.v Line: 162
-Warning (12241): 17 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "dsp_subsystem:dsp_instance|output_sample[15]" is converted into an equivalent circuit using register "dsp_subsystem:dsp_instance|output_sample[15]~_emulated" and latch "dsp_subsystem:dsp_instance|output_sample[15]~1" File: D:/3TB4/Lab3_hank/lab_actual/dsp_subsystem.v Line: 34
     Warning (13310): Register "dsp_subsystem:dsp_instance|output_sample[0]" is converted into an equivalent circuit using register "dsp_subsystem:dsp_instance|output_sample[0]~_emulated" and latch "dsp_subsystem:dsp_instance|output_sample[0]~5" File: D:/3TB4/Lab3_hank/lab_actual/dsp_subsystem.v Line: 34
@@ -2154,26 +2160,19 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[9] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
-Info (144001): Generated suppressed messages file D:/3TB4/Lab3_hank/lab_actual/output_files/lab3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4778 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4693 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 3 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 654 logic cells
+    Info (21061): Implemented 569 logic cells
     Info (21064): Implemented 4096 RAM segments
     Info (21062): Implemented 15 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 605 warnings
-    Info: Peak virtual memory: 5753 megabytes
-    Info: Processing ended: Thu Mar 07 10:12:53 2019
-    Info: Elapsed time: 00:01:32
-    Info: Total CPU time (on all processors): 00:01:11
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in D:/3TB4/Lab3_hank/lab_actual/output_files/lab3.map.smsg.
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 606 warnings
+    Info: Peak virtual memory: 5756 megabytes
+    Info: Processing ended: Thu Mar 07 11:46:26 2019
+    Info: Elapsed time: 00:01:05
+    Info: Total CPU time (on all processors): 00:00:56
 
 

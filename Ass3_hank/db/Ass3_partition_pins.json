@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "w[0]",
+					"strict" : false
+				},
+				{
+					"name" : "w[1]",
+					"strict" : false
+				},
+				{
+					"name" : "w[2]",
+					"strict" : false
+				},
+				{
+					"name" : "w[3]",
+					"strict" : false
+				},
+				{
+					"name" : "w[4]",
+					"strict" : false
+				},
+				{
+					"name" : "w[5]",
+					"strict" : false
+				},
+				{
+					"name" : "w[6]",
+					"strict" : false
+				},
+				{
+					"name" : "w[7]",
+					"strict" : false
+				},
+				{
+					"name" : "w[8]",
+					"strict" : false
+				},
+				{
+					"name" : "w[9]",
+					"strict" : false
+				},
+				{
+					"name" : "w[10]",
+					"strict" : false
+				},
+				{
+					"name" : "w[11]",
+					"strict" : false
+				},
+				{
+					"name" : "w[12]",
+					"strict" : false
+				},
+				{
+					"name" : "w[13]",
+					"strict" : false
+				},
+				{
+					"name" : "w[14]",
+					"strict" : false
+				},
+				{
+					"name" : "w[15]",
+					"strict" : false
+				},
+				{
+					"name" : "w[16]",
+					"strict" : false
+				},
+				{
+					"name" : "z[0]",
+					"strict" : false
+				},
+				{
+					"name" : "z[1]",
+					"strict" : false
+				},
+				{
+					"name" : "z[2]",
+					"strict" : false
+				},
+				{
+					"name" : "z[3]",
+					"strict" : false
+				},
+				{
+					"name" : "z[4]",
+					"strict" : false
+				},
+				{
+					"name" : "z[5]",
+					"strict" : false
+				},
+				{
+					"name" : "z[6]",
+					"strict" : false
+				},
+				{
+					"name" : "z[7]",
+					"strict" : false
+				},
+				{
+					"name" : "x[0]",
+					"strict" : false
+				},
+				{
+					"name" : "x[1]",
+					"strict" : false
+				},
+				{
+					"name" : "x[2]",
+					"strict" : false
+				},
+				{
+					"name" : "x[3]",
+					"strict" : false
+				},
+				{
+					"name" : "x[4]",
+					"strict" : false
+				},
+				{
+					"name" : "x[5]",
+					"strict" : false
+				},
+				{
+					"name" : "x[6]",
+					"strict" : false
+				},
+				{
+					"name" : "x[7]",
+					"strict" : false
+				},
+				{
+					"name" : "y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "y[4]",
+					"strict" : false
+				},
+				{
+					"name" : "y[5]",
+					"strict" : false
+				},
+				{
+					"name" : "y[6]",
+					"strict" : false
+				},
+				{
+					"name" : "y[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

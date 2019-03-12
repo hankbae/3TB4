@@ -7,15 +7,15 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim
+dD:/3TB4/Lab3_hank/prelab/lab3_restored/simulation/qsim
 vFIR50
-!s110 1551926924
+!s110 1551975115
 !i10b 1
-!s100 V=cLD1E73K3YKRnTUMdOZ0
-I^Pig?5jaCQ;Tl7`D03AYh1
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1551926919
+!s100 nGNZAH?ZNXFfhmZ]bUK>71
+I;Ne9U]KMT2lW1KNC8d0761
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dD:/3TB4/Lab3_hank/lab_actual/simulation/qsim
+w1551975111
 8lab3.vo
 Flab3.vo
 L0 31
@@ -23,21 +23,21 @@ Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1551926922.000000
+Z3 !s108 1551975115.000000
 !s107 lab3.vo|
 !s90 -work|work|lab3.vo|
 !i113 1
-Z3 o-work work
-Z4 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 n@f@i@r50
 vFIR50_vlg_vec_tst
-!s110 1551926926
+!s110 1551975116
 !i10b 1
-!s100 M1aYz2g04b<_PZKCbmfBI3
-IXNC2>bS0b]MQD_T^^do4T0
-R1
+!s100 nhCo[`O<E]nYR2S162V2a3
+IKO_=NQEoST6OaQ[76b2DI2
 R0
-w1551926915
+R1
+w1551975108
 8FIR50.vwf.vt
 FFIR50.vwf.vt
 L0 29
@@ -45,10 +45,10 @@ R2
 r1
 !s85 0
 31
-!s108 1551926925.000000
+R3
 !s107 FIR50.vwf.vt|
 !s90 -work|work|FIR50.vwf.vt|
 !i113 1
-R3
 R4
+R5
 n@f@i@r50_vlg_vec_tst

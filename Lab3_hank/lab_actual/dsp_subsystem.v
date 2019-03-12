@@ -15,7 +15,7 @@ wire [15:0] ECHO_out;
 FIR50 (
 	.clk(sample_clock),
 	.signal_in(input_sample),
-	.taps(8'd161),
+	//.taps(8'd161),
 	.signal_out(FIR_out)
 	);
 	
