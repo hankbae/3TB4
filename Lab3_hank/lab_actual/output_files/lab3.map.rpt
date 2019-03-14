@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3
-Thu Mar 07 11:46:26 2019
+Wed Mar 13 16:48:17 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -85,7 +85,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 07 11:46:25 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Mar 13 16:48:16 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab3                                        ;
 ; Top-level Entity Name           ; lab3                                        ;
@@ -1233,15 +1233,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+-------+----------+------------------------------------------------------+
 ; Port          ; Type  ; Severity ; Details                                              ;
 +---------------+-------+----------+------------------------------------------------------+
-; datab[9..6]   ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[13..12] ; Input ; Info     ; Stuck at GND                                         ;
-; datab[5..4]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[2..0]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[15]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[14]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[11]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[10]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[10..7]  ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[6..5]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[4]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[2]      ; Input ; Info     ; Stuck at VCC                                         ;
 +---------------+-------+----------+------------------------------------------------------+
 
 
@@ -1259,18 +1257,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+-------+----------+------------------------------------------------------+
 ; Port          ; Type  ; Severity ; Details                                              ;
 +---------------+-------+----------+------------------------------------------------------+
-; datab[15..14] ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[9..8]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[4..3]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[13]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[12]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[11]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[10]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[7]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..11] ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[9..7]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at GND                                         ;
 ; datab[6]      ; Input ; Info     ; Stuck at GND                                         ;
 ; datab[5]      ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[2]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[4]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[2]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                                         ;
 +---------------+-------+----------+------------------------------------------------------+
 
 
@@ -1288,13 +1284,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+-------+----------+------------------------------------------------------+
 ; Port          ; Type  ; Severity ; Details                                              ;
 +---------------+-------+----------+------------------------------------------------------+
-; datab[13..12] ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[8..7]   ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[4..2]   ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[15..14] ; Input ; Info     ; Stuck at GND                                         ;
-; datab[11..9]  ; Input ; Info     ; Stuck at GND                                         ;
-; datab[6..5]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[7..4]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[2..1]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[9..8]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                                         ;
 +---------------+-------+----------+------------------------------------------------------+
 
 
@@ -1312,17 +1308,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+-------+----------+------------------------------------------------------+
 ; Port          ; Type  ; Severity ; Details                                              ;
 +---------------+-------+----------+------------------------------------------------------+
-; datab[11..10] ; Input ; Info     ; Stuck at GND                                         ;
-; datab[8..7]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[5..4]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[2..0]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[15]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[14]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[13]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[12]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[9]      ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[6]      ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[8..6]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..14] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[12..9]  ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[13]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[5]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[4]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[2]      ; Input ; Info     ; Stuck at VCC                                         ;
 +---------------+-------+----------+------------------------------------------------------+
 
 
@@ -1340,13 +1334,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+-------+----------+------------------------------------------------------+
 ; Port          ; Type  ; Severity ; Details                                              ;
 +---------------+-------+----------+------------------------------------------------------+
-; datab[13..12] ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[8..7]   ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[4..2]   ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[15..14] ; Input ; Info     ; Stuck at GND                                         ;
-; datab[11..9]  ; Input ; Info     ; Stuck at GND                                         ;
-; datab[6..5]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[7..4]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[2..1]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[9..8]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                                         ;
 +---------------+-------+----------+------------------------------------------------------+
 
 
@@ -1364,18 +1358,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+-------+----------+------------------------------------------------------+
 ; Port          ; Type  ; Severity ; Details                                              ;
 +---------------+-------+----------+------------------------------------------------------+
-; datab[15..14] ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[9..8]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[4..3]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[13]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[12]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[11]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[10]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[7]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..11] ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[9..7]   ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[10]     ; Input ; Info     ; Stuck at GND                                         ;
 ; datab[6]      ; Input ; Info     ; Stuck at GND                                         ;
 ; datab[5]      ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[2]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[4]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[2]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[0]      ; Input ; Info     ; Stuck at GND                                         ;
 +---------------+-------+----------+------------------------------------------------------+
 
 
@@ -1393,15 +1385,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+-------+----------+------------------------------------------------------+
 ; Port          ; Type  ; Severity ; Details                                              ;
 +---------------+-------+----------+------------------------------------------------------+
-; datab[9..6]   ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[13..12] ; Input ; Info     ; Stuck at GND                                         ;
-; datab[5..4]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[2..0]   ; Input ; Info     ; Stuck at GND                                         ;
-; datab[15]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[14]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[11]     ; Input ; Info     ; Stuck at VCC                                         ;
-; datab[10]     ; Input ; Info     ; Stuck at GND                                         ;
-; datab[3]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[10..7]  ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[15..11] ; Input ; Info     ; Stuck at GND                                         ;
+; datab[6..5]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[1..0]   ; Input ; Info     ; Stuck at GND                                         ;
+; datab[4]      ; Input ; Info     ; Stuck at VCC                                         ;
+; datab[3]      ; Input ; Info     ; Stuck at GND                                         ;
+; datab[2]      ; Input ; Info     ; Stuck at VCC                                         ;
 +---------------+-------+----------+------------------------------------------------------+
 
 
@@ -1488,7 +1478,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Mar 07 11:45:21 2019
+    Info: Processing started: Wed Mar 13 16:47:06 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1534,7 +1524,6 @@ Info (12128): Elaborating entity "serial_to_parallel" for hierarchy "serial_to_p
 Info (12128): Elaborating entity "dsp_subsystem" for hierarchy "dsp_subsystem:dsp_instance" File: D:/3TB4/Lab3_hank/lab_actual/lab3.v Line: 145
 Info (12128): Elaborating entity "FIR50" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3" File: D:/3TB4/Lab3_hank/lab_actual/dsp_subsystem.v Line: 20
 Warning (10230): Verilog HDL assignment warning at FIR50.v(28): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 28
-Warning (10230): Verilog HDL assignment warning at FIR50.v(32): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 32
 Warning (10230): Verilog HDL assignment warning at FIR50.v(36): truncated value with size 32 to match size of target (16) File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 36
 Info (12128): Elaborating entity "multiplier" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257" File: D:/3TB4/Lab3_hank/lab_actual/FIR50.v Line: 46
 Info (12128): Elaborating entity "lpm_mult" for hierarchy "dsp_subsystem:dsp_instance|FIR50:comb_3|multiplier:comb_257|lpm_mult:lpm_mult_component" File: D:/3TB4/Lab3_hank/lab_actual/multiplier.v Line: 59
@@ -2169,10 +2158,10 @@ Info (21057): Implemented 4693 device resources after synthesis - the final reso
     Info (21061): Implemented 569 logic cells
     Info (21064): Implemented 4096 RAM segments
     Info (21062): Implemented 15 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 606 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 605 warnings
     Info: Peak virtual memory: 5756 megabytes
-    Info: Processing ended: Thu Mar 07 11:46:26 2019
-    Info: Elapsed time: 00:01:05
-    Info: Total CPU time (on all processors): 00:00:56
+    Info: Processing ended: Wed Mar 13 16:48:17 2019
+    Info: Elapsed time: 00:01:11
+    Info: Total CPU time (on all processors): 00:01:02
 
 

@@ -1,4 +1,4 @@
-{assign coeff[0]=-1;
+assign coeff[0]=-1;
 assign coeff[1]=6376;
 assign coeff[2]=-1;
 assign coeff[3]=-3652;
