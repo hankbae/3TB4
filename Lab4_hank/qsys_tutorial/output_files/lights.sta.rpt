@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for lights
-Thu Mar 14 11:19:28 2019
+Thu Mar 21 10:08:39 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -102,12 +102,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.38        ;
+; Average used               ; 1.33        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  37.6%      ;
+;     Processor 2            ;  32.5%      ;
 +----------------------------+-------------+
 
 
@@ -116,10 +116,10 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                                ; Status ; Read at                  ;
 +----------------------------------------------------------------------------------------------+--------+--------------------------+
-; nios_system/synthesis/submodules/altera_reset_controller.sdc                                 ; OK     ; Thu Mar 14 11:19:10 2019 ;
-; nios_system/synthesis/submodules/nios_system_nios2_processor.sdc                             ; OK     ; Thu Mar 14 11:19:10 2019 ;
-; d:/3tb4/lab4_hank/qsys_tutorial/db/ip/nios_system/submodules/altera_reset_controller.sdc     ; OK     ; Thu Mar 14 11:19:10 2019 ;
-; d:/3tb4/lab4_hank/qsys_tutorial/db/ip/nios_system/submodules/nios_system_nios2_processor.sdc ; OK     ; Thu Mar 14 11:19:10 2019 ;
+; nios_system/synthesis/submodules/altera_reset_controller.sdc                                 ; OK     ; Thu Mar 21 10:08:26 2019 ;
+; nios_system/synthesis/submodules/nios_system_nios2_processor.sdc                             ; OK     ; Thu Mar 21 10:08:26 2019 ;
+; d:/3tb4/lab4_hank/qsys_tutorial/db/ip/nios_system/submodules/altera_reset_controller.sdc     ; OK     ; Thu Mar 21 10:08:26 2019 ;
+; d:/3tb4/lab4_hank/qsys_tutorial/db/ip/nios_system/submodules/nios_system_nios2_processor.sdc ; OK     ; Thu Mar 21 10:08:26 2019 ;
 +----------------------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -680,7 +680,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Mar 14 11:19:04 2019
+    Info: Processing started: Thu Mar 21 10:08:21 2019
 Info: Command: quartus_sta lights -c lights
 Info: qsta_default_script.tcl version: #3
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -1454,9 +1454,9 @@ Info (332114): Report Metastability: Found 2 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 577 warnings
-    Info: Peak virtual memory: 5216 megabytes
-    Info: Processing ended: Thu Mar 14 11:19:28 2019
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 5214 megabytes
+    Info: Processing ended: Thu Mar 21 10:08:39 2019
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:18
 
 
