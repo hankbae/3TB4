@@ -1,14 +1,9 @@
-#spin motor 3 step clockwise
-#move 4 half steps counterclockwise
-#delay btwn each step is 0.5s
-#loop this movement
-
 CLR R0
-SR0 3   #3 IN HEX
+SR0 3
 MOV R1,R0
 MOVR R1
 CLR R0
-SR0 C   #-4 in hex
+SR0 -4
 MOV R1,R0
 MOVRHS R1
 BR 0

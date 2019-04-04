@@ -1,5 +1,5 @@
 Flow report for lab5
-Wed Apr 03 22:03:52 2019
+Thu Apr 04 03:30:16 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 03 22:03:52 2019       ;
+; Flow Status                     ; Successful - Thu Apr 04 03:30:16 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab5                                        ;
-; Top-level Entity Name           ; delay_counter                               ;
+; Top-level Entity Name           ; datapath                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 22 / 32,070 ( < 1 % )                       ;
-; Total registers                 ; 28                                          ;
-; Total pins                      ; 13 / 457 ( 3 % )                            ;
+; Logic utilization (in ALMs)     ; 98 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 95                                          ;
+; Total pins                      ; 43 / 457 ( 9 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total block memory bits         ; 1,568 / 4,065,280 ( < 1 % )                 ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -67,28 +67,28 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/03/2019 21:38:07 ;
+; Start date & time ; 04/04/2019 02:05:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5                ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                          ;
-+-------------------------------------+----------------------------------------+---------------+---------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name   ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+---------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1096981167352.155434188601744          ; --            ; --            ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --            ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --            ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; delay_counter ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; delay_counter ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; delay_counter ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --            ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --            ; --         ;
-; TOP_LEVEL_ENTITY                    ; delay_counter                          ; lab5          ; --            ; --         ;
-+-------------------------------------+----------------------------------------+---------------+---------------+------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 1097438438839.155435794615692          ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; datapath    ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; datapath    ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; datapath    ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; datapath                               ; lab5          ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -96,15 +96,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:03     ; 1.0                     ; 4816 MB             ; 00:00:45                           ;
-; Fitter                    ; 00:01:10     ; 1.0                     ; 6289 MB             ; 00:01:35                           ;
-; Assembler                 ; 00:00:15     ; 1.0                     ; 4850 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 5110 MB             ; 00:00:08                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4731 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4739 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4731 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4739 MB             ; 00:00:02                           ;
-; Total                     ; 00:02:52     ; --                      ; --                  ; 00:02:47                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4916 MB             ; 00:00:27                           ;
+; Fitter                    ; 00:01:24     ; 1.1                     ; 7444 MB             ; 00:04:22                           ;
+; Assembler                 ; 00:00:13     ; 1.0                     ; 4850 MB             ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.2                     ; 5281 MB             ; 00:00:07                           ;
+; MIF/HEX Update            ; 00:00:02     ; 1.0                     ; 4895 MB             ; 00:00:03                           ;
+; Total                     ; 00:02:07     ; --                      ; --                  ; 00:05:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,14 +110,11 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-67E64RB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-67E64RB  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-67E64RB  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-67E64RB  ; Windows 10 ; 10.0       ; x86_64         ;
+; MIF/HEX Update            ; DESKTOP-67E64RB  ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -131,10 +125,7 @@ quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 quartus_fit --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_sta lab5 -c lab5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source=D:/3TB4/Lab5_hank/tutorial/delay_counter.vwf --testbench_file=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/delay_counter.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/ lab5 -c lab5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source=D:/3TB4/Lab5_hank/tutorial/delay_counter.vwf --testbench_file=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/delay_counter.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/ lab5 -c lab5
+quartus_cdb lab5 -c lab5 --update_mif
 
 
 

@@ -1,5 +1,5 @@
 Assembler report for lab5
-Wed Apr 03 21:40:39 2019
+Thu Apr 04 02:07:48 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/3TB4/Lab5_hank/tutorial/output_files/lab5.sof
+  5. Assembler Device Options: D:/Documents/School/3TB4/Lab5_hank/tutorial/output_files/lab5.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Apr 03 21:40:39 2019 ;
+; Assembler Status      ; Successful - Thu Apr 04 02:07:48 2019 ;
 ; Revision Name         ; lab5                                  ;
-; Top-level Entity Name ; delay_counter                         ;
+; Top-level Entity Name ; datapath                              ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CSEMA5F31C6                          ;
 +-----------------------+---------------------------------------+
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------+
-; Assembler Generated Files                        ;
-+--------------------------------------------------+
-; File Name                                        ;
-+--------------------------------------------------+
-; D:/3TB4/Lab5_hank/tutorial/output_files/lab5.sof ;
-+--------------------------------------------------+
++-------------------------------------------------------------------+
+; Assembler Generated Files                                         ;
++-------------------------------------------------------------------+
+; File Name                                                         ;
++-------------------------------------------------------------------+
+; D:/Documents/School/3TB4/Lab5_hank/tutorial/output_files/lab5.sof ;
++-------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Assembler Device Options: D:/3TB4/Lab5_hank/tutorial/output_files/lab5.sof ;
-+----------------+-----------------------------------------------------------+
-; Option         ; Setting                                                   ;
-+----------------+-----------------------------------------------------------+
-; JTAG usercode  ; 0x00AFEEA1                                                ;
-; Checksum       ; 0x00AFEEA1                                                ;
-+----------------+-----------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/Documents/School/3TB4/Lab5_hank/tutorial/output_files/lab5.sof ;
++----------------+----------------------------------------------------------------------------+
+; Option         ; Setting                                                                    ;
++----------------+----------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00BC5C81                                                                 ;
+; Checksum       ; 0x00BC5C81                                                                 ;
++----------------+----------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 03 21:40:24 2019
+    Info: Processing started: Thu Apr 04 02:07:35 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Wed Apr 03 21:40:39 2019
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Processing ended: Thu Apr 04 02:07:48 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:09
 
 
