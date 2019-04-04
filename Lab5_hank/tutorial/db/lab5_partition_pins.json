@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "done",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "delay[4]",
+					"strict" : false
+				},
+				{
+					"name" : "delay[5]",
+					"strict" : false
+				},
+				{
+					"name" : "delay[6]",
+					"strict" : false
+				},
+				{
+					"name" : "delay[7]",
+					"strict" : false
+				},
+				{
+					"name" : "delay[0]",
+					"strict" : false
+				},
+				{
+					"name" : "delay[1]",
+					"strict" : false
+				},
+				{
+					"name" : "delay[2]",
+					"strict" : false
+				},
+				{
+					"name" : "delay[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,220 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/3TB4/Lab5_hank/tutorial/simulation/qsim
+valu
+Z1 !s110 1554322994
+!i10b 1
+!s100 TlO<AbXPE`6fR5h51W0;`1
+IMhoRKHm<c=>J]3<h0S1h03
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1554322993
+Z3 8lab5.vo
+Z4 Flab5.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1554322994.000000
+Z8 !s107 lab5.vo|
+Z9 !s90 -work|work|lab5.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+valu_vlg_vec_tst
+R1
+!i10b 1
+!s100 8Th30VP:7FG6EOT4fdGll0
+I_Jkg60k7PMRTIB^Pl4GoZ3
+R2
+R0
+w1554322991
+8alu.vwf.vt
+Falu.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 alu.vwf.vt|
+!s90 -work|work|alu.vwf.vt|
+!i113 1
+R10
+R11
+vclk_div
+Z13 !s110 1554333601
+!i10b 1
+!s100 O2S@1JSScXb7cdXNin]XU3
+I^@CIn_jH4IzXh?:NhBXVE3
+R2
+R0
+w1554333597
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1554333601.000000
+R8
+R9
+!i113 1
+R10
+R11
+vclk_div_vlg_vec_tst
+R13
+!i10b 1
+!s100 o^9[GjA4bI?j5C_mMeV=`2
+Ij52R@F@5hj7@lIe@z8<lk0
+R2
+R0
+w1554333594
+Z15 8delay_counter.vwf.vt
+Z16 Fdelay_counter.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R14
+!s107 delay_counter.vwf.vt|
+Z17 !s90 -work|work|delay_counter.vwf.vt|
+!i113 1
+R10
+R11
+vdelay_counter
+Z18 !s110 1554343436
+!i10b 1
+!s100 gC=40^?Z9S4]32d@=UWUF1
+I7Y`nVC?lWcU[N3`;UI8>U0
+R2
+R0
+w1554343432
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z19 !s108 1554343436.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdelay_counter_vlg_vec_tst
+R18
+!i10b 1
+!s100 P>SKNZIHA7_P:h9X^OWDT0
+IVi718SaN4@<5b3CXBZ>aF1
+R2
+R0
+w1554343430
+R15
+R16
+R12
+R6
+r1
+!s85 0
+31
+R19
+!s107 delay_counter.vwf.vt|
+R17
+!i113 1
+R10
+R11
+vregfile
+Z20 !s110 1554324828
+!i10b 1
+!s100 _4Sd;WmdD;WjoUCi_Iz;=1
+IQ_oSBzM;YXaR8dk]IA^;Z3
+R2
+R0
+w1554324827
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z21 !s108 1554324828.000000
+R8
+R9
+!i113 1
+R10
+R11
+vregfile_vlg_vec_tst
+R20
+!i10b 1
+!s100 6=A8PG8GYRie@9?^Ckg=90
+IzH1CKnFK;UF19Ihk_gEe90
+R2
+R0
+w1554324824
+8regfile.vwf.vt
+Fregfile.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R21
+!s107 regfile.vwf.vt|
+!s90 -work|work|regfile.vwf.vt|
+!i113 1
+R10
+R11
+vtemp_register
+Z22 !s110 1554325447
+!i10b 1
+!s100 _1Y8>fX=R9Nk73G4iX?P_0
+IWe7`lIhaNPGQMlDkM7RN92
+R2
+R0
+w1554325444
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1554325446.000000
+R8
+R9
+!i113 1
+R10
+R11
+vtemp_register_vlg_vec_tst
+R22
+!i10b 1
+!s100 a@_=aOYD`EHO6VAcAIUXO0
+ISMMDU=YV^dA69@`R1U12`1
+R2
+R0
+w1554325442
+8temp_register.vwf.vt
+Ftemp_register.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1554325447.000000
+!s107 temp_register.vwf.vt|
+!s90 -work|work|temp_register.vwf.vt|
+!i113 1
+R10
+R11
