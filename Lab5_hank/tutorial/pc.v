@@ -9,7 +9,7 @@ always @(posedge clk)
 	end else if (branch) begin
 		pc <= newpc;
 	end else if (increment) begin
-		pc <= pc+8'h01;
+		pc <= pc+8'h1;
 	end
 			
 endmodule

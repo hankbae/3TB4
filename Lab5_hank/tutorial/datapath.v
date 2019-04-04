@@ -60,8 +60,8 @@ regfile the_regfile(
 	.reset_n (reset_n),
 	.write (write_reg_file), // red line from diagram
 	.data (RM_out), // 8 bit 
-	.select0 (IM_Q[7:6]), // need to add index // 2 bit
-	.select1 (IM_Q[5:4]), // need to add index // 2 bit
+	.select0 (IM_Q[1:0]), // need to add index // 2 bit
+	.select1 (IM_Q[3:2]), // need to add index // 2 bit
 	.wr_select (WAS_out), // 2 bit
 	// Outputs
 	.selected0 (RF_selected0), // 8 bit
@@ -173,8 +173,8 @@ immediate_extractor the_immediate_extractor(
 write_address_select the_write_address_select(
 	// Inputs
 	.select (select_write_address),
-	.reg_field0 (IM_Q[7:6]), // need to add index // 2 bits
-	.reg_field1 (IM_Q[5:4]), // need to add index // 2 bits
+	.reg_field0 (IM_Q[1:0]), // need to add index // 2 bits
+	.reg_field1 (IM_Q[3:2]), // need to add index // 2 bits
 	// Outputs
 	.write_address(WAS_out) // 2 bits
 );

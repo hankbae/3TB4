@@ -9,7 +9,7 @@ begin
 	if (reset_n == 1'b0) temp <= 8'b0;
 	else
 	begin
-		if (load == 1'b1) temp <= data;
+		if (load == 1'b1) 	  temp <= data;
 		if (increment == 1'b1) temp <= temp + 8'b1;
 		if (decrement == 1'b1) temp <= temp - 8'b1;
 	

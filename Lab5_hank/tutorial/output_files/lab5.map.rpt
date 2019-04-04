@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Thu Apr 04 02:06:04 2019
+Thu Apr 04 11:01:12 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -16,29 +16,32 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Protected by Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for Top-level Entity: |datapath
- 14. Source assignments for regfile:the_regfile
- 15. Source assignments for stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated
- 16. Source assignments for instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated
- 17. Parameter Settings for User Entity Instance: delay_counter:the_delay_counter
- 18. Parameter Settings for User Entity Instance: stepper_rom:the_stepper_rom|altsyncram:altsyncram_component
- 19. Parameter Settings for User Entity Instance: pc:the_pc
- 20. Parameter Settings for User Entity Instance: instruction_rom:the_instruction_rom|altsyncram:altsyncram_component
- 21. altsyncram Parameter Settings by Entity Instance
- 22. Port Connectivity Checks: "branch_logic:the_branch_logic"
- 23. Port Connectivity Checks: "immediate_extractor:the_immediate_extractor"
- 24. Port Connectivity Checks: "instruction_rom:the_instruction_rom"
- 25. Port Connectivity Checks: "stepper_rom:the_stepper_rom"
- 26. Port Connectivity Checks: "delay_counter:the_delay_counter|clk_div:msec10"
- 27. Port Connectivity Checks: "op2_mux:the_op2_mux"
- 28. Port Connectivity Checks: "regfile:the_regfile"
- 29. Port Connectivity Checks: "decoder:the_decoder"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for datapath:the_datapath
+ 15. Source assignments for datapath:the_datapath|regfile:the_regfile
+ 16. Source assignments for datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated
+ 17. Source assignments for datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated
+ 18. Parameter Settings for User Entity Instance: control_fsm:the_control_fsm
+ 19. Parameter Settings for User Entity Instance: datapath:the_datapath|delay_counter:the_delay_counter
+ 20. Parameter Settings for User Entity Instance: datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component
+ 21. Parameter Settings for User Entity Instance: datapath:the_datapath|pc:the_pc
+ 22. Parameter Settings for User Entity Instance: datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component
+ 23. altsyncram Parameter Settings by Entity Instance
+ 24. Port Connectivity Checks: "datapath:the_datapath|branch_logic:the_branch_logic"
+ 25. Port Connectivity Checks: "datapath:the_datapath|immediate_extractor:the_immediate_extractor"
+ 26. Port Connectivity Checks: "datapath:the_datapath|instruction_rom:the_instruction_rom"
+ 27. Port Connectivity Checks: "datapath:the_datapath|stepper_rom:the_stepper_rom"
+ 28. Port Connectivity Checks: "datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10"
+ 29. Port Connectivity Checks: "datapath:the_datapath|op2_mux:the_op2_mux"
+ 30. Port Connectivity Checks: "datapath:the_datapath|regfile:the_regfile"
+ 31. Port Connectivity Checks: "datapath:the_datapath|decoder:the_decoder"
+ 32. Port Connectivity Checks: "datapath:the_datapath"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -64,16 +67,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 04 02:06:04 2019       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 04 11:01:12 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab5                                        ;
-; Top-level Entity Name           ; datapath                                    ;
+; Top-level Entity Name           ; lab5                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 95                                          ;
-; Total pins                      ; 43                                          ;
+; Total registers                 ; 111                                         ;
+; Total pins                      ; 16                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 1,568                                       ;
+; Total block memory bits         ; 2,056                                       ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -90,7 +93,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; datapath           ; lab5               ;
+; Top-level entity name                                                           ; lab5               ; lab5               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -176,15 +179,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -193,149 +196,164 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
-; clk_div.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/clk_div.v                        ;         ;
-; write_address_select.v           ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v           ;         ;
-; temp_register.v                  ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/temp_register.v                  ;         ;
-; result_mux.v                     ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/result_mux.v                     ;         ;
-; regfile.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/regfile.v                        ;         ;
-; pc.v                             ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/pc.v                             ;         ;
-; op2_mux.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v                        ;         ;
-; op1_mux.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v                        ;         ;
-; immediate_extractor.v            ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v            ;         ;
-; delay_counter.v                  ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/delay_counter.v                  ;         ;
-; decoder.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/decoder.v                        ;         ;
-; datapath.v                       ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v                       ;         ;
-; branch_logic.v                   ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/branch_logic.v                   ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v                            ;         ;
-; instruction_rom.mif              ; yes             ; User Memory Initialization File  ; D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.mif              ;         ;
-; instruction_rom.v                ; yes             ; User Wizard-Generated File       ; D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v                ;         ;
-; stepper_rom.mif                  ; yes             ; User Memory Initialization File  ; D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.mif                  ;         ;
-; stepper_rom.v                    ; yes             ; User Wizard-Generated File       ; D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v                    ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_5uf1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf           ;         ;
-; db/altsyncram_qth1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_qth1.tdf           ;         ;
+; clk_div.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/clk_div.v                                         ;         ;
+; write_address_select.v           ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/write_address_select.v                            ;         ;
+; temp_register.v                  ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/temp_register.v                                   ;         ;
+; result_mux.v                     ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/result_mux.v                                      ;         ;
+; regfile.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/regfile.v                                         ;         ;
+; pc.v                             ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/pc.v                                              ;         ;
+; op2_mux.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/op2_mux.v                                         ;         ;
+; op1_mux.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/op1_mux.v                                         ;         ;
+; lab5.v                           ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/lab5.v                                            ;         ;
+; immediate_extractor.v            ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v                             ;         ;
+; delay_counter.v                  ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/delay_counter.v                                   ;         ;
+; decoder.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/decoder.v                                         ;         ;
+; datapath.v                       ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/datapath.v                                        ;         ;
+; control_fsm.v                    ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/control_fsm.v                                     ;         ;
+; branch_logic.v                   ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/branch_logic.v                                    ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/alu.v                                             ;         ;
+; instruction_rom.mif              ; yes             ; User Memory Initialization File  ; D:/3TB4/Lab5_hank/tutorial/instruction_rom.mif                               ;         ;
+; instruction_rom.v                ; yes             ; User Wizard-Generated File       ; D:/3TB4/Lab5_hank/tutorial/instruction_rom.v                                 ;         ;
+; stepper_rom.mif                  ; yes             ; User Memory Initialization File  ; D:/3TB4/Lab5_hank/tutorial/stepper_rom.mif                                   ;         ;
+; stepper_rom.v                    ; yes             ; User Wizard-Generated File       ; D:/3TB4/Lab5_hank/tutorial/stepper_rom.v                                     ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_5uf1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf                            ;         ;
+; db/altsyncram_qth1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/3TB4/Lab5_hank/tutorial/db/altsyncram_qth1.tdf                            ;         ;
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 108       ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 179       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 34        ;
-;     -- 5 input functions                    ; 10        ;
-;     -- 4 input functions                    ; 7         ;
-;     -- <=3 input functions                  ; 128       ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 95        ;
-;                                             ;           ;
-; I/O pins                                    ; 43        ;
-; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 1568      ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 105       ;
-; Total fan-out                               ; 1049      ;
-; Average fan-out                             ; 2.84      ;
-+---------------------------------------------+-----------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 117            ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 193            ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 37             ;
+;     -- 5 input functions                    ; 13             ;
+;     -- 4 input functions                    ; 11             ;
+;     -- <=3 input functions                  ; 132            ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 111            ;
+;                                             ;                ;
+; I/O pins                                    ; 16             ;
+; Total MLAB memory bits                      ; 0              ;
+; Total block memory bits                     ; 2056           ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 120            ;
+; Total fan-out                               ; 1097           ;
+; Average fan-out                             ; 3.18           ;
++---------------------------------------------+----------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                          ; Entity Name     ; Library Name ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |datapath                                 ; 179 (80)            ; 95 (0)                    ; 1568              ; 0          ; 43   ; 0            ; |datapath                                                                                                    ; datapath        ; work         ;
-;    |alu:the_alu|                          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|alu:the_alu                                                                                        ; alu             ; work         ;
-;    |decoder:the_decoder|                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|decoder:the_decoder                                                                                ; decoder         ; work         ;
-;    |delay_counter:the_delay_counter|      ; 36 (16)             ; 28 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |datapath|delay_counter:the_delay_counter                                                                    ; delay_counter   ; work         ;
-;       |clk_div:msec10|                    ; 20 (20)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|delay_counter:the_delay_counter|clk_div:msec10                                                     ; clk_div         ; work         ;
-;    |instruction_rom:the_instruction_rom|  ; 0 (0)               ; 0 (0)                     ; 1536              ; 0          ; 0    ; 0            ; |datapath|instruction_rom:the_instruction_rom                                                                ; instruction_rom ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 1536              ; 0          ; 0    ; 0            ; |datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_qth1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1536              ; 0          ; 0    ; 0            ; |datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated ; altsyncram_qth1 ; work         ;
-;    |pc:the_pc|                            ; 9 (9)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |datapath|pc:the_pc                                                                                          ; pc              ; work         ;
-;    |regfile:the_regfile|                  ; 20 (20)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|regfile:the_regfile                                                                                ; regfile         ; work         ;
-;    |stepper_rom:the_stepper_rom|          ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |datapath|stepper_rom:the_stepper_rom                                                                        ; stepper_rom     ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component                                        ; altsyncram      ; work         ;
-;          |altsyncram_5uf1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated         ; altsyncram_5uf1 ; work         ;
-;    |temp_register:the_temp_register|      ; 14 (14)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |datapath|temp_register:the_temp_register                                                                    ; temp_register   ; work         ;
-+-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------+-----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                     ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                            ; Entity Name     ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
+; |lab5                                        ; 193 (0)             ; 111 (0)                   ; 2056              ; 0          ; 16   ; 0            ; |lab5                                                                                                                          ; lab5            ; work         ;
+;    |control_fsm:the_control_fsm|             ; 20 (20)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|control_fsm:the_control_fsm                                                                                              ; control_fsm     ; work         ;
+;    |datapath:the_datapath|                   ; 173 (82)            ; 95 (0)                    ; 2056              ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath                                                                                                    ; datapath        ; work         ;
+;       |alu:the_alu|                          ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|alu:the_alu                                                                                        ; alu             ; work         ;
+;       |decoder:the_decoder|                  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|decoder:the_decoder                                                                                ; decoder         ; work         ;
+;       |delay_counter:the_delay_counter|      ; 36 (16)             ; 28 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter                                                                    ; delay_counter   ; work         ;
+;          |clk_div:msec10|                    ; 20 (20)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10                                                     ; clk_div         ; work         ;
+;       |instruction_rom:the_instruction_rom|  ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|instruction_rom:the_instruction_rom                                                                ; instruction_rom ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
+;             |altsyncram_qth1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 2048              ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated ; altsyncram_qth1 ; work         ;
+;       |pc:the_pc|                            ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|pc:the_pc                                                                                          ; pc              ; work         ;
+;       |regfile:the_regfile|                  ; 20 (20)             ; 48 (48)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|regfile:the_regfile                                                                                ; regfile         ; work         ;
+;       |stepper_rom:the_stepper_rom|          ; 0 (0)               ; 0 (0)                     ; 8                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|stepper_rom:the_stepper_rom                                                                        ; stepper_rom     ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 8                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component                                        ; altsyncram      ; work         ;
+;             |altsyncram_5uf1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 8                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated         ; altsyncram_5uf1 ; work         ;
+;       |temp_register:the_temp_register|      ; 14 (14)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|temp_register:the_temp_register                                                                    ; temp_register   ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
-; Name                                                                                                          ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                 ;
-+---------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
-; instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; instruction_rom.mif ;
-; stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|ALTSYNCRAM         ; AUTO ; ROM  ; 32           ; 8            ; --           ; --           ; 256  ; stepper_rom.mif     ;
-+---------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
+; Name                                                                                                                                ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                 ;
++-------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
+; datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; instruction_rom.mif ;
+; datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|ALTSYNCRAM         ; AUTO ; ROM  ; 32           ; 8            ; --           ; --           ; 256  ; stepper_rom.mif     ;
++-------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                             ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------+-------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                               ; IP Include File   ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------+-------------------+
-; Altera ; ROM: 1-PORT  ; 17.1    ; N/A          ; N/A          ; |datapath|instruction_rom:the_instruction_rom ; instruction_rom.v ;
-; Altera ; ROM: 1-PORT  ; 17.1    ; N/A          ; N/A          ; |datapath|stepper_rom:the_stepper_rom         ; stepper_rom.v     ;
-+--------+--------------+---------+--------------+--------------+-----------------------------------------------+-------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                               ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------+-------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                 ; IP Include File   ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------+-------------------+
+; Altera ; ROM: 1-PORT  ; 17.1    ; N/A          ; N/A          ; |lab5|datapath:the_datapath|instruction_rom:the_instruction_rom ; instruction_rom.v ;
+; Altera ; ROM: 1-PORT  ; 17.1    ; N/A          ; N/A          ; |lab5|datapath:the_datapath|stepper_rom:the_stepper_rom         ; stepper_rom.v     ;
++--------+--------------+---------+--------------+--------------+-----------------------------------------------------------------+-------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Protected by Synthesis                                                                                                                          ;
-+-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; Register Name                             ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
-+-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
-; regfile:the_regfile|reg3[5]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg3[6]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg3[7]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[6]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[5]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[2]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[4]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[3]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[1]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[0]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg2[7]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[7]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[7]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[6]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[6]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[2]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[2]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg3[2]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[1]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[1]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg3[1]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[0]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[0]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg3[0]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[5]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[5]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[4]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[4]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg3[4]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg0[3]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg1[3]               ; yes                                                              ; yes                                        ;
-; regfile:the_regfile|reg3[3]               ; yes                                                              ; yes                                        ;
-; Total number of protected registers is 32 ;                                                                  ;                                            ;
-+-------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Protected by Synthesis                                                                                                                                  ;
++---------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; Register Name                                     ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
++---------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; datapath:the_datapath|regfile:the_regfile|reg3[5] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg3[6] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg3[7] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[5] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[6] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[7] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[1] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[1] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[1] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg3[1] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[5] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[5] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[3] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[3] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[3] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg3[3] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[2] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[2] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[2] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg3[2] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[0] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[0] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[0] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg3[0] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[7] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[7] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[6] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[6] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg0[4] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg1[4] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg2[4] ; yes                                                              ; yes                                        ;
+; datapath:the_datapath|regfile:the_regfile|reg3[4] ; yes                                                              ; yes                                        ;
+; Total number of protected registers is 32         ;                                                                  ;                                            ;
++---------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                        ;
++-----------------------------------------------+-----------------------------------------------------------+
+; Register name                                 ; Reason for Removal                                        ;
++-----------------------------------------------+-----------------------------------------------------------+
+; control_fsm:the_control_fsm|result_mux_select ; Stuck at GND due to stuck port data_in                    ;
+; control_fsm:the_control_fsm|op2_mux_select[1] ; Merged with control_fsm:the_control_fsm|op1_mux_select[1] ;
+; Total Number of Removed Registers = 2         ;                                                           ;
++-----------------------------------------------+-----------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -343,36 +361,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 95    ;
-; Number of registers using Synchronous Clear  ; 43    ;
+; Total registers                              ; 111   ;
+; Number of registers using Synchronous Clear  ; 57    ;
 ; Number of registers using Synchronous Load   ; 25    ;
 ; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 59    ;
+; Number of registers using Clock Enable       ; 51    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |datapath|regfile:the_regfile|selected0[5]                           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |datapath|regfile:the_regfile|selected1[7]                           ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |datapath|delay_counter:the_delay_counter|clk_div:msec10|counter[10] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |datapath|delay_counter:the_delay_counter|mydelay[6]                 ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |datapath|temp_register:the_temp_register|temp[2]                    ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |datapath|pc:the_pc|pc[2]                                            ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|write_address_select:the_write_address_select|Mux0         ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|alu:the_alu|result[3]                                      ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|op1_mux:the_op1_mux|Mux2                                   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|op2_mux:the_op2_mux|Mux7                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |lab5|datapath:the_datapath|regfile:the_regfile|selected1[4]                           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |lab5|datapath:the_datapath|regfile:the_regfile|selected0[0]                           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |lab5|control_fsm:the_control_fsm|start_delay_counter                                  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|pc:the_pc|pc[4]                                            ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10|counter[11] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|temp_register:the_temp_register|temp[3]                    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|mydelay[1]                 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab5|control_fsm:the_control_fsm|increment_temp_register                              ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|write_address_select:the_write_address_select|Mux0         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|alu:the_alu|result[5]                                      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op1_mux:the_op1_mux|Mux7                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op2_mux:the_op2_mux|Mux6                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------+
-; Source assignments for Top-level Entity: |datapath            ;
+; Source assignments for datapath:the_datapath                  ;
 +------------------------------+-------+------+-----------------+
 ; Assignment                   ; Value ; From ; To              ;
 +------------------------------+-------+------+-----------------+
@@ -543,239 +563,268 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+-------+------+-----------------+
 
 
-+--------------------------------------------+
-; Source assignments for regfile:the_regfile ;
-+-------------------+-------+------+---------+
-; Assignment        ; Value ; From ; To      ;
-+-------------------+-------+------+---------+
-; PRESERVE_REGISTER ; on    ; -    ; reg3[0] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[7] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[6] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[5] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[4] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[3] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[2] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[1] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg0[0] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[7] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[6] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[5] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[4] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[3] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[2] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[1] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg1[0] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[7] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[6] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[5] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[4] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[3] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[2] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[1] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg2[0] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg3[7] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg3[6] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg3[5] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg3[4] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg3[3] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg3[2] ;
-; PRESERVE_REGISTER ; on    ; -    ; reg3[1] ;
-+-------------------+-------+------+---------+
++------------------------------------------------------------------+
+; Source assignments for datapath:the_datapath|regfile:the_regfile ;
++-------------------+-------+------+-------------------------------+
+; Assignment        ; Value ; From ; To                            ;
++-------------------+-------+------+-------------------------------+
+; PRESERVE_REGISTER ; on    ; -    ; reg3[0]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[7]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[6]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[5]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[4]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[3]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[2]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[1]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg0[0]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[7]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[6]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[5]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[4]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[3]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[2]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[1]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg1[0]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[7]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[6]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[5]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[4]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[3]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[2]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[1]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg2[0]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg3[7]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg3[6]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg3[5]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg3[4]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg3[3]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg3[2]                       ;
+; PRESERVE_REGISTER ; on    ; -    ; reg3[1]                       ;
++-------------------+-------+------+-------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Source assignments for stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated ;
-+---------------------------------+--------------------+------+-----------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                  ;
-+---------------------------------+--------------------+------+-----------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                   ;
-+---------------------------------+--------------------+------+-----------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                        ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                         ;
++---------------------------------+--------------------+------+---------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                          ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                           ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                 ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: control_fsm:the_control_fsm ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; RESET          ; 00000 ; Unsigned Binary                                 ;
+; FETCH          ; 00001 ; Unsigned Binary                                 ;
+; DECODE         ; 00010 ; Unsigned Binary                                 ;
+; BR             ; 00011 ; Unsigned Binary                                 ;
+; BRZ            ; 00100 ; Unsigned Binary                                 ;
+; ADDI           ; 00101 ; Unsigned Binary                                 ;
+; SUBI           ; 00110 ; Unsigned Binary                                 ;
+; SR0            ; 00111 ; Unsigned Binary                                 ;
+; SRH0           ; 01000 ; Unsigned Binary                                 ;
+; CLR            ; 01001 ; Unsigned Binary                                 ;
+; MOV            ; 01010 ; Unsigned Binary                                 ;
+; MOVA           ; 01011 ; Unsigned Binary                                 ;
+; MOVR           ; 01100 ; Unsigned Binary                                 ;
+; MOVRHS         ; 01101 ; Unsigned Binary                                 ;
+; PAUSE          ; 01110 ; Unsigned Binary                                 ;
+; MOVR_STAGE2    ; 01111 ; Unsigned Binary                                 ;
+; MOVR_DELAY     ; 10000 ; Unsigned Binary                                 ;
+; MOVRHS_STAGE2  ; 10001 ; Unsigned Binary                                 ;
+; MOVRHS_DELAY   ; 10010 ; Unsigned Binary                                 ;
+; PAUSE_DELAY    ; 10011 ; Unsigned Binary                                 ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:the_datapath|delay_counter:the_delay_counter ;
++----------------+---------------------+-------------------------------------------------------------+
+; Parameter Name ; Value               ; Type                                                        ;
++----------------+---------------------+-------------------------------------------------------------+
+; BASIC_PERIOD   ; 0000000000000000010 ; Unsigned Binary                                             ;
++----------------+---------------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+--------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                               ;
++------------------------------------+----------------------+--------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                            ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                         ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                       ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                       ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                     ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                            ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                            ;
+; WIDTH_A                            ; 8                    ; Signed Integer                                                     ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer                                                     ;
+; NUMWORDS_A                         ; 32                   ; Signed Integer                                                     ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                                            ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                            ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                            ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                            ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                            ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                            ;
+; WIDTH_B                            ; 1                    ; Untyped                                                            ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                                            ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                                            ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                            ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                            ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                            ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                            ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                            ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                            ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                            ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                            ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                            ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                            ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                            ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                            ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                     ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                            ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                            ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                            ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                            ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                            ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                            ;
+; INIT_FILE                          ; stepper_rom.mif      ; Untyped                                                            ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                            ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                            ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                            ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                            ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                            ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                            ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                            ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                            ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                            ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                            ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                            ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                            ;
+; CBXI_PARAMETER                     ; altsyncram_5uf1      ; Untyped                                                            ;
++------------------------------------+----------------------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: delay_counter:the_delay_counter ;
-+----------------+---------------------+---------------------------------------+
-; Parameter Name ; Value               ; Type                                  ;
-+----------------+---------------------+---------------------------------------+
-; BASIC_PERIOD   ; 0000000000000000010 ; Unsigned Binary                       ;
-+----------------+---------------------+---------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:the_datapath|pc:the_pc ;
++----------------+----------+--------------------------------------------------+
+; Parameter Name ; Value    ; Type                                             ;
++----------------+----------+--------------------------------------------------+
+; RESET_LOCATION ; 00000000 ; Unsigned Binary                                  ;
++----------------+----------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: stepper_rom:the_stepper_rom|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+----------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                         ;
-+------------------------------------+----------------------+----------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                      ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                   ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                 ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                 ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                               ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                      ;
-; OPERATION_MODE                     ; ROM                  ; Untyped                                      ;
-; WIDTH_A                            ; 8                    ; Signed Integer                               ;
-; WIDTHAD_A                          ; 5                    ; Signed Integer                               ;
-; NUMWORDS_A                         ; 32                   ; Signed Integer                               ;
-; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                      ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                      ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                      ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                      ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                      ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                      ;
-; WIDTH_B                            ; 1                    ; Untyped                                      ;
-; WIDTHAD_B                          ; 1                    ; Untyped                                      ;
-; NUMWORDS_B                         ; 1                    ; Untyped                                      ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                      ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                      ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                      ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                      ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                      ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                      ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                      ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                      ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                      ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                      ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                      ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                      ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                               ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                      ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                      ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                      ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                      ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                      ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                      ;
-; INIT_FILE                          ; stepper_rom.mif      ; Untyped                                      ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                      ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                      ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                      ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                      ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                      ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                      ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                      ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                      ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                      ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                      ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                      ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                      ;
-; CBXI_PARAMETER                     ; altsyncram_5uf1      ; Untyped                                      ;
-+------------------------------------+----------------------+----------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                       ;
++------------------------------------+----------------------+----------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                    ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                               ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                             ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                    ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                                                                    ;
+; WIDTH_A                            ; 8                    ; Signed Integer                                                             ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                                                             ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                                                             ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                    ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                    ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                    ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                    ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                    ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                    ;
+; WIDTH_B                            ; 1                    ; Untyped                                                                    ;
+; WIDTHAD_B                          ; 1                    ; Untyped                                                                    ;
+; NUMWORDS_B                         ; 1                    ; Untyped                                                                    ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                    ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                    ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                                    ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                    ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                    ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                    ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                    ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                    ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                    ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                    ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                             ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                    ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                                    ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                    ;
+; INIT_FILE                          ; instruction_rom.mif  ; Untyped                                                                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                                    ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                    ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                                                    ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                                                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                                                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                    ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                    ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                    ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                                                    ;
+; CBXI_PARAMETER                     ; altsyncram_qth1      ; Untyped                                                                    ;
++------------------------------------+----------------------+----------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: pc:the_pc ;
-+----------------+----------+----------------------------+
-; Parameter Name ; Value    ; Type                       ;
-+----------------+----------+----------------------------+
-; RESET_LOCATION ; 00000000 ; Unsigned Binary            ;
-+----------------+----------+----------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                                      ;
++-------------------------------------------+-------------------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                                     ;
++-------------------------------------------+-------------------------------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                                         ;
+; Entity Instance                           ; datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component         ;
+;     -- OPERATION_MODE                     ; ROM                                                                                       ;
+;     -- WIDTH_A                            ; 8                                                                                         ;
+;     -- NUMWORDS_A                         ; 32                                                                                        ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                                                                    ;
+;     -- WIDTH_B                            ; 1                                                                                         ;
+;     -- NUMWORDS_B                         ; 1                                                                                         ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                 ;
+; Entity Instance                           ; datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                                                       ;
+;     -- WIDTH_A                            ; 8                                                                                         ;
+;     -- NUMWORDS_A                         ; 256                                                                                       ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                              ;
+;     -- WIDTH_B                            ; 1                                                                                         ;
+;     -- NUMWORDS_B                         ; 1                                                                                         ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                 ;
++-------------------------------------------+-------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: instruction_rom:the_instruction_rom|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+------------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                 ;
-+------------------------------------+----------------------+------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                              ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                           ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                         ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                         ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                       ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                              ;
-; OPERATION_MODE                     ; ROM                  ; Untyped                                              ;
-; WIDTH_A                            ; 8                    ; Signed Integer                                       ;
-; WIDTHAD_A                          ; 8                    ; Signed Integer                                       ;
-; NUMWORDS_A                         ; 256                  ; Signed Integer                                       ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                              ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                              ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                              ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                              ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                              ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                              ;
-; WIDTH_B                            ; 1                    ; Untyped                                              ;
-; WIDTHAD_B                          ; 1                    ; Untyped                                              ;
-; NUMWORDS_B                         ; 1                    ; Untyped                                              ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                              ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                              ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                              ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                              ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                              ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                              ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                              ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                              ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                              ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                              ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                              ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                              ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                       ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                              ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                              ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                              ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                              ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                              ;
-; INIT_FILE                          ; instruction_rom.mif  ; Untyped                                              ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                              ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                              ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                              ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                              ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                              ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                              ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                              ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                              ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                              ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                              ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                              ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                                              ;
-; CBXI_PARAMETER                     ; altsyncram_qth1      ; Untyped                                              ;
-+------------------------------------+----------------------+------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                                ;
-+-------------------------------------------+---------------------------------------------------------------------+
-; Name                                      ; Value                                                               ;
-+-------------------------------------------+---------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                   ;
-; Entity Instance                           ; stepper_rom:the_stepper_rom|altsyncram:altsyncram_component         ;
-;     -- OPERATION_MODE                     ; ROM                                                                 ;
-;     -- WIDTH_A                            ; 8                                                                   ;
-;     -- NUMWORDS_A                         ; 32                                                                  ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                                              ;
-;     -- WIDTH_B                            ; 1                                                                   ;
-;     -- NUMWORDS_B                         ; 1                                                                   ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                              ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                        ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                           ;
-; Entity Instance                           ; instruction_rom:the_instruction_rom|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                                                 ;
-;     -- WIDTH_A                            ; 8                                                                   ;
-;     -- NUMWORDS_A                         ; 256                                                                 ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                        ;
-;     -- WIDTH_B                            ; 1                                                                   ;
-;     -- NUMWORDS_B                         ; 1                                                                   ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                              ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                        ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                           ;
-+-------------------------------------------+---------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "branch_logic:the_branch_logic"                                                        ;
+; Port Connectivity Checks: "datapath:the_datapath|branch_logic:the_branch_logic"                                  ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port   ; Type   ; Severity ; Details                                                                             ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -784,7 +833,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "immediate_extractor:the_immediate_extractor"                                                                                                               ;
+; Port Connectivity Checks: "datapath:the_datapath|immediate_extractor:the_immediate_extractor"                                                                                         ;
 +-------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port        ; Type   ; Severity ; Details                                                                                                                                             ;
 +-------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -794,7 +843,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "instruction_rom:the_instruction_rom"                                                                                                         ;
+; Port Connectivity Checks: "datapath:the_datapath|instruction_rom:the_instruction_rom"                                                                                   ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
 +-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -803,7 +852,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "stepper_rom:the_stepper_rom"                                                                                                                       ;
+; Port Connectivity Checks: "datapath:the_datapath|stepper_rom:the_stepper_rom"                                                                                                 ;
 +---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                                                                                         ;
 +---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -812,19 +861,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------+
-; Port Connectivity Checks: "delay_counter:the_delay_counter|clk_div:msec10" ;
-+------------------+-------+----------+--------------------------------------+
-; Port             ; Type  ; Severity ; Details                              ;
-+------------------+-------+----------+--------------------------------------+
-; prescaler[18..2] ; Input ; Info     ; Stuck at GND                         ;
-; prescaler[1]     ; Input ; Info     ; Stuck at VCC                         ;
-; prescaler[0]     ; Input ; Info     ; Stuck at GND                         ;
-+------------------+-------+----------+--------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10" ;
++------------------+-------+----------+------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                    ;
++------------------+-------+----------+------------------------------------------------------------+
+; prescaler[18..2] ; Input ; Info     ; Stuck at GND                                               ;
+; prescaler[1]     ; Input ; Info     ; Stuck at VCC                                               ;
+; prescaler[0]     ; Input ; Info     ; Stuck at GND                                               ;
++------------------+-------+----------+------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "op2_mux:the_op2_mux"                                                                                                                                  ;
+; Port Connectivity Checks: "datapath:the_datapath|op2_mux:the_op2_mux"                                                                                                            ;
 +-----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port      ; Type  ; Severity ; Details                                                                                                                                           ;
 +-----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -833,7 +882,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "regfile:the_regfile"                                                                     ;
+; Port Connectivity Checks: "datapath:the_datapath|regfile:the_regfile"                                               ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -842,7 +891,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "decoder:the_decoder"                                                                ;
+; Port Connectivity Checks: "datapath:the_datapath|decoder:the_decoder"                                          ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -850,36 +899,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:the_datapath"                                                                                                                        ;
++-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                                                                            ;
++-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
+; stepper_signals ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "stepper_signals[3..1]" have no fanouts ;
++-----------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 95                          ;
+; arriav_ff             ; 111                         ;
 ;     CLR               ; 16                          ;
 ;     ENA               ; 3                           ;
 ;     ENA CLR           ; 32                          ;
-;     ENA SCLR SLD      ; 24                          ;
-;     SCLR              ; 19                          ;
+;     ENA SCLR SLD      ; 16                          ;
+;     SCLR              ; 33                          ;
+;     SCLR SLD          ; 8                           ;
 ;     SLD               ; 1                           ;
-; arriav_lcell_comb     ; 180                         ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 194                         ;
 ;     arith             ; 52                          ;
-;         1 data inputs ; 37                          ;
-;         2 data inputs ; 7                           ;
+;         1 data inputs ; 36                          ;
+;         2 data inputs ; 8                           ;
 ;         3 data inputs ; 8                           ;
-;     normal            ; 128                         ;
+;     normal            ; 142                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 46                          ;
-;         2 data inputs ; 12                          ;
+;         1 data inputs ; 56                          ;
+;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 18                          ;
-;         4 data inputs ; 7                           ;
-;         5 data inputs ; 10                          ;
-;         6 data inputs ; 34                          ;
-; boundary_port         ; 43                          ;
-; stratixv_ram_block    ; 10                          ;
+;         4 data inputs ; 11                          ;
+;         5 data inputs ; 13                          ;
+;         6 data inputs ; 37                          ;
+; boundary_port         ; 16                          ;
+; stratixv_ram_block    ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.70                        ;
-; Average LUT depth     ; 3.23                        ;
+; Average LUT depth     ; 3.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -888,7 +948,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -898,70 +958,74 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Apr 04 02:05:44 2019
+    Info: Processing started: Thu Apr 04 11:00:56 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
-    Info (12023): Found entity 1: clk_div File: D:/Documents/School/3TB4/Lab5_hank/tutorial/clk_div.v Line: 1
+    Info (12023): Found entity 1: clk_div File: D:/3TB4/Lab5_hank/tutorial/clk_div.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file write_address_select.v
-    Info (12023): Found entity 1: write_address_select File: D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 1
+    Info (12023): Found entity 1: write_address_select File: D:/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file temp_register.v
-    Info (12023): Found entity 1: temp_register File: D:/Documents/School/3TB4/Lab5_hank/tutorial/temp_register.v Line: 2
+    Info (12023): Found entity 1: temp_register File: D:/3TB4/Lab5_hank/tutorial/temp_register.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file result_mux.v
-    Info (12023): Found entity 1: result_mux File: D:/Documents/School/3TB4/Lab5_hank/tutorial/result_mux.v Line: 1
+    Info (12023): Found entity 1: result_mux File: D:/3TB4/Lab5_hank/tutorial/result_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-    Info (12023): Found entity 1: regfile File: D:/Documents/School/3TB4/Lab5_hank/tutorial/regfile.v Line: 5
+    Info (12023): Found entity 1: regfile File: D:/3TB4/Lab5_hank/tutorial/regfile.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file pc.v
-    Info (12023): Found entity 1: pc File: D:/Documents/School/3TB4/Lab5_hank/tutorial/pc.v Line: 1
+    Info (12023): Found entity 1: pc File: D:/3TB4/Lab5_hank/tutorial/pc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op2_mux.v
-    Info (12023): Found entity 1: op2_mux File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 1
+    Info (12023): Found entity 1: op2_mux File: D:/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op1_mux.v
-    Info (12023): Found entity 1: op1_mux File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 1
+    Info (12023): Found entity 1: op1_mux File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab5.v
-    Info (12023): Found entity 1: lab5 File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Info (12023): Found entity 1: lab5 File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file immediate_extractor.v
-    Info (12023): Found entity 1: immediate_extractor File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 1
+    Info (12023): Found entity 1: immediate_extractor File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file delay_counter.v
-    Info (12023): Found entity 1: delay_counter File: D:/Documents/School/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 1
+    Info (12023): Found entity 1: delay_counter File: D:/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
-    Info (12023): Found entity 1: decoder File: D:/Documents/School/3TB4/Lab5_hank/tutorial/decoder.v Line: 1
+    Info (12023): Found entity 1: decoder File: D:/3TB4/Lab5_hank/tutorial/decoder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: datapath File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 1
+    Info (12023): Found entity 1: datapath File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_fsm.v
-    Info (12023): Found entity 1: control_fsm File: D:/Documents/School/3TB4/Lab5_hank/tutorial/control_fsm.v Line: 1
+    Info (12023): Found entity 1: control_fsm File: D:/3TB4/Lab5_hank/tutorial/control_fsm.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file branch_logic.v
-    Info (12023): Found entity 1: branch_logic File: D:/Documents/School/3TB4/Lab5_hank/tutorial/branch_logic.v Line: 1
+    Info (12023): Found entity 1: branch_logic File: D:/3TB4/Lab5_hank/tutorial/branch_logic.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 3
+    Info (12023): Found entity 1: alu File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_rom.v
-    Info (12023): Found entity 1: instruction_rom File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 39
+    Info (12023): Found entity 1: instruction_rom File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file stepper_rom.v
-    Info (12023): Found entity 1: stepper_rom File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at lab5.v(123): created implicit net for "stepper_signals" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 123
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(47): created implicit net for "slr" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 47
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(91): created implicit net for "IM_out" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 91
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(194): created implicit net for "register_is_zero" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 194
-Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Warning (10034): Output port "clr" at datapath.v(12) has no driver File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 12
-Warning (10034): Output port "register0_is_zero" at datapath.v(15) has no driver File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 15
-Info (12128): Elaborating entity "decoder" for hierarchy "decoder:the_decoder" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 53
-Info (12128): Elaborating entity "regfile" for hierarchy "regfile:the_regfile" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 72
-Info (12128): Elaborating entity "op1_mux" for hierarchy "op1_mux:the_op1_mux" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 84
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(8): variable "pc" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 8
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(9): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(10): variable "position" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 10
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(11): variable "register0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 11
-Info (12128): Elaborating entity "op2_mux" for hierarchy "op2_mux:the_op2_mux" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 94
-Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(6): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 6
-Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(7): variable "immediate" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 7
-Info (12128): Elaborating entity "delay_counter" for hierarchy "delay_counter:the_delay_counter" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 105
-Info (12128): Elaborating entity "clk_div" for hierarchy "delay_counter:the_delay_counter|clk_div:msec10" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 8
-Warning (10230): Verilog HDL assignment warning at clk_div.v(11): truncated value with size 32 to match size of target (19) File: D:/Documents/School/3TB4/Lab5_hank/tutorial/clk_div.v Line: 11
-Info (12128): Elaborating entity "stepper_rom" for hierarchy "stepper_rom:the_stepper_rom" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 113
-Info (12128): Elaborating entity "altsyncram" for hierarchy "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
-Info (12130): Elaborated megafunction instantiation "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
-Info (12133): Instantiated megafunction "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
+    Info (12023): Found entity 1: stepper_rom File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at lab5.v(123): created implicit net for "stepper_signals" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 123
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(47): created implicit net for "slr" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(91): created implicit net for "IM_out" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 91
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(194): created implicit net for "register_is_zero" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 194
+Info (12127): Elaborating entity "lab5" for the top level hierarchy
+Warning (10034): Output port "LEDR[9..4]" at lab5.v(2) has no driver File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+Info (12128): Elaborating entity "control_fsm" for hierarchy "control_fsm:the_control_fsm" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 82
+Warning (10763): Verilog HDL warning at control_fsm.v(73): case statement has overlapping case item expressions with non-constant or don't care bits - unable to check case statement for completeness File: D:/3TB4/Lab5_hank/tutorial/control_fsm.v Line: 73
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:the_datapath" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 125
+Warning (10034): Output port "clr" at datapath.v(12) has no driver File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 12
+Warning (10034): Output port "register0_is_zero" at datapath.v(15) has no driver File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 15
+Info (12128): Elaborating entity "decoder" for hierarchy "datapath:the_datapath|decoder:the_decoder" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 53
+Info (12128): Elaborating entity "regfile" for hierarchy "datapath:the_datapath|regfile:the_regfile" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 72
+Info (12128): Elaborating entity "op1_mux" for hierarchy "datapath:the_datapath|op1_mux:the_op1_mux" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 84
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(8): variable "pc" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 8
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(9): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(10): variable "position" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 10
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(11): variable "register0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 11
+Info (12128): Elaborating entity "op2_mux" for hierarchy "datapath:the_datapath|op2_mux:the_op2_mux" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 94
+Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(6): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 6
+Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(7): variable "immediate" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 7
+Info (12128): Elaborating entity "delay_counter" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 105
+Info (12128): Elaborating entity "clk_div" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10" File: D:/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 8
+Warning (10230): Verilog HDL assignment warning at clk_div.v(11): truncated value with size 32 to match size of target (19) File: D:/3TB4/Lab5_hank/tutorial/clk_div.v Line: 11
+Info (12128): Elaborating entity "stepper_rom" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 113
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
+Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
+Info (12133): Instantiated megafunction "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -977,13 +1041,13 @@ Info (12133): Instantiated megafunction "stepper_rom:the_stepper_rom|altsyncram:
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5uf1.tdf
-    Info (12023): Found entity 1: altsyncram_5uf1 File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_5uf1" for hierarchy "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated" File: d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "pc" for hierarchy "pc:the_pc" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 126
-Info (12128): Elaborating entity "instruction_rom" for hierarchy "instruction_rom:the_instruction_rom" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 136
-Info (12128): Elaborating entity "altsyncram" for hierarchy "instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 84
-Info (12130): Elaborated megafunction instantiation "instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 84
-Info (12133): Instantiated megafunction "instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 84
+    Info (12023): Found entity 1: altsyncram_5uf1 File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_5uf1" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "pc" for hierarchy "datapath:the_datapath|pc:the_pc" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 126
+Info (12128): Elaborating entity "instruction_rom" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 136
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 84
+Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 84
+Info (12133): Instantiated megafunction "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 84
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -999,92 +1063,113 @@ Info (12133): Instantiated megafunction "instruction_rom:the_instruction_rom|alt
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qth1.tdf
-    Info (12023): Found entity 1: altsyncram_qth1 File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_qth1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_qth1" for hierarchy "instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated" File: d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "alu" for hierarchy "alu:the_alu" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 147
-Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 8
-Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 8
-Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 12
-Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 12
-Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 13
-Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 13
-Info (12128): Elaborating entity "temp_register" for hierarchy "temp_register:the_temp_register" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 161
-Info (12128): Elaborating entity "immediate_extractor" for hierarchy "immediate_extractor:the_immediate_extractor" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 170
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(5): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 5
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(6): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 6
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(9): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(10): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 10
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(11): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 11
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(12): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 12
-Info (12128): Elaborating entity "write_address_select" for hierarchy "write_address_select:the_write_address_select" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 180
-Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(6): variable "reg_field0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 6
-Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(7): variable "reg_field1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 7
-Info (12128): Elaborating entity "result_mux" for hierarchy "result_mux:the_result_mux" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 187
-Warning (10235): Verilog HDL Always Construct warning at result_mux.v(9): variable "alu_result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/result_mux.v Line: 9
-Info (12128): Elaborating entity "branch_logic" for hierarchy "branch_logic:the_branch_logic" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 195
+    Info (12023): Found entity 1: altsyncram_qth1 File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_qth1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_qth1" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:the_datapath|alu:the_alu" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 147
+Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 8
+Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 8
+Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 13
+Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 13
+Info (12128): Elaborating entity "temp_register" for hierarchy "datapath:the_datapath|temp_register:the_temp_register" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 161
+Info (12128): Elaborating entity "immediate_extractor" for hierarchy "datapath:the_datapath|immediate_extractor:the_immediate_extractor" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 170
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(5): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 5
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(6): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 6
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(9): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(10): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 10
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(11): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 11
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(12): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 12
+Info (12128): Elaborating entity "write_address_select" for hierarchy "datapath:the_datapath|write_address_select:the_write_address_select" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 180
+Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(6): variable "reg_field0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 6
+Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(7): variable "reg_field1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 7
+Info (12128): Elaborating entity "result_mux" for hierarchy "datapath:the_datapath|result_mux:the_result_mux" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 187
+Warning (10235): Verilog HDL Always Construct warning at result_mux.v(9): variable "alu_result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/result_mux.v Line: 9
+Info (12128): Elaborating entity "branch_logic" for hierarchy "datapath:the_datapath|branch_logic:the_branch_logic" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 195
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated|q_a[0]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_qth1.tdf Line: 35
-        Warning (14320): Synthesized away node "instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated|q_a[1]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_qth1.tdf Line: 56
-        Warning (14320): Synthesized away node "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[4]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 122
-        Warning (14320): Synthesized away node "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[5]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 144
-        Warning (14320): Synthesized away node "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[6]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 166
-        Warning (14320): Synthesized away node "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[7]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 188
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+        Warning (14320): Synthesized away node "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[1]" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 56
+        Warning (14320): Synthesized away node "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[2]" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 78
+        Warning (14320): Synthesized away node "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[3]" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 100
+        Warning (14320): Synthesized away node "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[4]" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 122
+        Warning (14320): Synthesized away node "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[5]" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 144
+        Warning (14320): Synthesized away node "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[6]" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 166
+        Warning (14320): Synthesized away node "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|q_a[7]" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 188
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "clr" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 12
-    Warning (13410): Pin "register0_is_zero" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 15
+    Warning (13410): Pin "GPIO_0[1]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "GPIO_0[2]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "GPIO_0[3]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|ALTSYNCRAM" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 31
+Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated|ALTSYNCRAM" File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_5uf1.tdf Line: 31
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "IM_Q[5]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
-    Info (17048): Logic cell "IM_Q[7]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
-    Info (17048): Logic cell "IM_Q[6]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
-    Info (17048): Logic cell "IM_Q[4]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
-    Info (17048): Logic cell "IM_Q[2]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
-    Info (17048): Logic cell "IM_Q[3]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
-    Info (17048): Logic cell "RF_2out[5]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "RF_2out[6]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "RF_2out[7]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "PC_out[0]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "PC_out[1]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "PC_out[2]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "PC_out[3]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "PC_out[4]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "PC_out[5]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "PC_out[6]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "PC_out[7]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-    Info (17048): Logic cell "RF_0out[3]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_0out[1]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_0out[0]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_0out[7]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_0out[6]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_0out[5]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_0out[2]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_0out[4]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-    Info (17048): Logic cell "RF_selected0[7]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected0[6]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected0[2]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected0[1]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected0[0]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected0[5]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected0[4]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected0[3]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-    Info (17048): Logic cell "RF_selected1[0]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-    Info (17048): Logic cell "RF_2out[0]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "RF_selected1[1]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-    Info (17048): Logic cell "RF_2out[1]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "RF_selected1[2]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-    Info (17048): Logic cell "RF_2out[2]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "RF_selected1[3]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-    Info (17048): Logic cell "RF_2out[3]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "RF_2out[4]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-    Info (17048): Logic cell "RF_selected1[4]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-    Info (17048): Logic cell "RF_selected1[5]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-    Info (17048): Logic cell "RF_selected1[6]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-    Info (17048): Logic cell "RF_selected1[7]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[5]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[6]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[7]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[5]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[6]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[7]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[2]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[0]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[3]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[1]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[7]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[6]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[5]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|IM_Q[4]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 32
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[5]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[5]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[5]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[1]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[0]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[1]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[2]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[3]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[4]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[6]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|PC_out[7]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[7]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[6]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[3]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[2]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[0]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[1]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected0[4]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[2]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[6]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[3]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[7]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[5]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[6]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[7]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[4]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[4]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[4]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[1]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[3]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[3]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[3]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[2]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[0]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|RM_out[4]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 35
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[2]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[2]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+    Info (17048): Logic cell "datapath:the_datapath|RF_selected1[0]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[0]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[0]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+    Info (17048): Logic cell "datapath:the_datapath|RF_0out[1]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+    Info (17048): Logic cell "datapath:the_datapath|RF_2out[1]" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -1657,27 +1742,24 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[9] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
-Info (144001): Generated suppressed messages file D:/Documents/School/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg
+Info (144001): Generated suppressed messages file D:/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "select_immediate[0]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "select_immediate[1]" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 9
-Info (21057): Implemented 265 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 22 input pins
-    Info (21059): Implemented 21 output pins
-    Info (21061): Implemented 212 logic cells
-    Info (21064): Implemented 10 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 618 warnings
-    Info: Peak virtual memory: 4916 megabytes
-    Info: Processing ended: Thu Apr 04 02:06:04 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:27
+Info (21057): Implemented 252 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 227 logic cells
+    Info (21064): Implemented 9 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 628 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Thu Apr 04 11:01:12 2019
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/Documents/School/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg.
+The suppressed messages can be found in D:/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg.
 
 
