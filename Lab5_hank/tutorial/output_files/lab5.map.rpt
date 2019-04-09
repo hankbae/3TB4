@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5
-Tue Apr 09 13:14:19 2019
+Tue Apr 09 15:14:32 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Apr 09 13:14:19 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Apr 09 15:14:32 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab5                                        ;
 ; Top-level Entity Name           ; lab5                                        ;
@@ -172,15 +172,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -189,37 +189,37 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
-; clk_div.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/clk_div.v                        ;         ;
-; write_address_select.v           ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v           ;         ;
-; temp_register.v                  ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/temp_register.v                  ;         ;
-; result_mux.v                     ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/result_mux.v                     ;         ;
-; regfile.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/regfile.v                        ;         ;
-; pc.v                             ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/pc.v                             ;         ;
-; op2_mux.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v                        ;         ;
-; op1_mux.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v                        ;         ;
-; lab5.v                           ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v                           ;         ;
-; immediate_extractor.v            ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v            ;         ;
-; delay_counter.v                  ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/delay_counter.v                  ;         ;
-; decoder.v                        ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/decoder.v                        ;         ;
-; datapath.v                       ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v                       ;         ;
-; control_fsm.v                    ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/control_fsm.v                    ;         ;
-; branch_logic.v                   ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/branch_logic.v                   ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File            ; D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v                            ;         ;
-; instruction_rom.mif              ; yes             ; User Memory Initialization File  ; D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.mif              ;         ;
-; instruction_rom.v                ; yes             ; User Wizard-Generated File       ; D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v                ;         ;
-; stepper_rom.mif                  ; yes             ; User Memory Initialization File  ; D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.mif                  ;         ;
-; stepper_rom.v                    ; yes             ; User Wizard-Generated File       ; D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v                    ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_7jg1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_7jg1.tdf           ;         ;
-; db/altsyncram_k4h1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_k4h1.tdf           ;         ;
+; clk_div.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/clk_div.v                                         ;         ;
+; write_address_select.v           ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/write_address_select.v                            ;         ;
+; temp_register.v                  ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/temp_register.v                                   ;         ;
+; result_mux.v                     ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/result_mux.v                                      ;         ;
+; regfile.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/regfile.v                                         ;         ;
+; pc.v                             ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/pc.v                                              ;         ;
+; op2_mux.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/op2_mux.v                                         ;         ;
+; op1_mux.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/op1_mux.v                                         ;         ;
+; lab5.v                           ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/lab5.v                                            ;         ;
+; immediate_extractor.v            ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v                             ;         ;
+; delay_counter.v                  ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/delay_counter.v                                   ;         ;
+; decoder.v                        ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/decoder.v                                         ;         ;
+; datapath.v                       ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/datapath.v                                        ;         ;
+; control_fsm.v                    ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/control_fsm.v                                     ;         ;
+; branch_logic.v                   ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/branch_logic.v                                    ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File            ; D:/3TB4/Lab5_hank/tutorial/alu.v                                             ;         ;
+; instruction_rom.mif              ; yes             ; User Memory Initialization File  ; D:/3TB4/Lab5_hank/tutorial/instruction_rom.mif                               ;         ;
+; instruction_rom.v                ; yes             ; User Wizard-Generated File       ; D:/3TB4/Lab5_hank/tutorial/instruction_rom.v                                 ;         ;
+; stepper_rom.mif                  ; yes             ; User Memory Initialization File  ; D:/3TB4/Lab5_hank/tutorial/stepper_rom.mif                                   ;         ;
+; stepper_rom.v                    ; yes             ; User Wizard-Generated File       ; D:/3TB4/Lab5_hank/tutorial/stepper_rom.v                                     ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc        ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_7jg1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/3TB4/Lab5_hank/tutorial/db/altsyncram_7jg1.tdf                            ;         ;
+; db/altsyncram_k4h1.tdf           ; yes             ; Auto-Generated Megafunction      ; D:/3TB4/Lab5_hank/tutorial/db/altsyncram_k4h1.tdf                            ;         ;
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 
 
@@ -228,14 +228,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 141            ;
+; Estimate of Logic utilization (ALMs needed) ; 131            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 211            ;
+; Combinational ALUT usage for logic          ; 205            ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 67             ;
-;     -- 5 input functions                    ; 33             ;
-;     -- 4 input functions                    ; 26             ;
-;     -- <=3 input functions                  ; 85             ;
+;     -- 6 input functions                    ; 53             ;
+;     -- 5 input functions                    ; 28             ;
+;     -- 4 input functions                    ; 35             ;
+;     -- <=3 input functions                  ; 89             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 135            ;
 ;                                             ;                ;
@@ -247,8 +247,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 147            ;
-; Total fan-out                               ; 1726           ;
-; Average fan-out                             ; 2.62           ;
+; Total fan-out                               ; 1646           ;
+; Average fan-out                             ; 2.52           ;
 +---------------------------------------------+----------------+
 
 
@@ -257,11 +257,11 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                            ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                            ; Entity Name          ; Library Name ;
 +-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |lab5                                                 ; 211 (0)             ; 135 (0)                   ; 2080              ; 0          ; 151  ; 0            ; |lab5                                                                                                                          ; lab5                 ; work         ;
-;    |control_fsm:the_control_fsm|                      ; 62 (62)             ; 40 (40)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|control_fsm:the_control_fsm                                                                                              ; control_fsm          ; work         ;
-;    |datapath:the_datapath|                            ; 149 (0)             ; 95 (0)                    ; 2080              ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath                                                                                                    ; datapath             ; work         ;
+; |lab5                                                 ; 205 (0)             ; 135 (0)                   ; 2080              ; 0          ; 151  ; 0            ; |lab5                                                                                                                          ; lab5                 ; work         ;
+;    |control_fsm:the_control_fsm|                      ; 43 (43)             ; 40 (40)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|control_fsm:the_control_fsm                                                                                              ; control_fsm          ; work         ;
+;    |datapath:the_datapath|                            ; 162 (0)             ; 95 (0)                    ; 2080              ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath                                                                                                    ; datapath             ; work         ;
 ;       |alu:the_alu|                                   ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|alu:the_alu                                                                                        ; alu                  ; work         ;
-;       |branch_logic:the_branch_logic|                 ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|branch_logic:the_branch_logic                                                                      ; branch_logic         ; work         ;
+;       |branch_logic:the_branch_logic|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|branch_logic:the_branch_logic                                                                      ; branch_logic         ; work         ;
 ;       |decoder:the_decoder|                           ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|decoder:the_decoder                                                                                ; decoder              ; work         ;
 ;       |delay_counter:the_delay_counter|               ; 36 (16)             ; 28 (9)                    ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter                                                                    ; delay_counter        ; work         ;
 ;          |clk_div:msec10|                             ; 20 (20)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10                                                     ; clk_div              ; work         ;
@@ -277,7 +277,7 @@ refer to the applicable agreement for further details.
 ;       |stepper_rom:the_stepper_rom|                   ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|stepper_rom:the_stepper_rom                                                                        ; stepper_rom          ; work         ;
 ;          |altsyncram:altsyncram_component|            ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component                                        ; altsyncram           ; work         ;
 ;             |altsyncram_7jg1:auto_generated|          ; 0 (0)               ; 0 (0)                     ; 32                ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_7jg1:auto_generated         ; altsyncram_7jg1      ; work         ;
-;       |temp_register:the_temp_register|               ; 14 (14)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|temp_register:the_temp_register                                                                    ; temp_register        ; work         ;
+;       |temp_register:the_temp_register|               ; 28 (28)             ; 11 (11)                   ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|temp_register:the_temp_register                                                                    ; temp_register        ; work         ;
 ;       |write_address_select:the_write_address_select| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab5|datapath:the_datapath|write_address_select:the_write_address_select                                                      ; write_address_select ; work         ;
 +-------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -394,34 +394,33 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Total registers                              ; 135   ;
 ; Number of registers using Synchronous Clear  ; 48    ;
-; Number of registers using Synchronous Load   ; 25    ;
+; Number of registers using Synchronous Load   ; 17    ;
 ; Number of registers using Asynchronous Clear ; 48    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 51    ;
+; Number of registers using Clock Enable       ; 43    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |lab5|datapath:the_datapath|regfile:the_regfile|selected1[6]                          ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |lab5|datapath:the_datapath|regfile:the_regfile|selected0[0]                          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|pc:the_pc|pc[0]                                           ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10|counter[7] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|temp_register:the_temp_register|temp[7]                   ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|mydelay[3]                ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op1_mux:the_op1_mux|Mux6                                  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op2_mux:the_op2_mux|Mux3                                  ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op2_mux:the_op2_mux|Mux4                                  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|immediate_extractor:the_immediate_extractor|Mux2          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|alu:the_alu|result[7]                                     ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|write_address_select:the_write_address_select|Mux1        ;
-; 19:1               ; 13 bits   ; 156 LEs       ; 130 LEs              ; 26 LEs                 ; No         ; |lab5|control_fsm:the_control_fsm|state                                               ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 22 LEs               ; 6 LEs                  ; No         ; |lab5|control_fsm:the_control_fsm|state                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |lab5|datapath:the_datapath|regfile:the_regfile|selected1[1]                           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |lab5|datapath:the_datapath|regfile:the_regfile|selected0[3]                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|pc:the_pc|pc[0]                                            ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 0 LEs                ; 38 LEs                 ; Yes        ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10|counter[18] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab5|datapath:the_datapath|delay_counter:the_delay_counter|mydelay[1]                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op1_mux:the_op1_mux|Mux6                                   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op2_mux:the_op2_mux|Mux2                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|op2_mux:the_op2_mux|Mux6                                   ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|immediate_extractor:the_immediate_extractor|Mux2           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|alu:the_alu|result[6]                                      ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab5|datapath:the_datapath|write_address_select:the_write_address_select|Mux1         ;
+; 19:1               ; 13 bits   ; 156 LEs       ; 130 LEs              ; 26 LEs                 ; No         ; |lab5|control_fsm:the_control_fsm|state                                                ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 22 LEs               ; 6 LEs                  ; No         ; |lab5|control_fsm:the_control_fsm|state                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------+
@@ -713,29 +712,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 16                          ;
 ;     ENA               ; 3                           ;
 ;     ENA CLR           ; 32                          ;
-;     ENA SCLR SLD      ; 16                          ;
-;     SCLR              ; 24                          ;
+;     ENA SCLR SLD      ; 8                           ;
+;     SCLR              ; 32                          ;
 ;     SCLR SLD          ; 8                           ;
 ;     SLD               ; 1                           ;
 ;     plain             ; 35                          ;
-; arriav_lcell_comb     ; 212                         ;
-;     arith             ; 52                          ;
-;         1 data inputs ; 36                          ;
-;         2 data inputs ; 8                           ;
-;         4 data inputs ; 6                           ;
+; arriav_lcell_comb     ; 206                         ;
+;     arith             ; 60                          ;
+;         1 data inputs ; 43                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 7                           ;
 ;         5 data inputs ; 2                           ;
-;     normal            ; 160                         ;
+;     normal            ; 146                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 26                          ;
-;         4 data inputs ; 20                          ;
-;         5 data inputs ; 31                          ;
-;         6 data inputs ; 67                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 28                          ;
+;         5 data inputs ; 26                          ;
+;         6 data inputs ; 53                          ;
 ; boundary_port         ; 151                         ;
 ; stratixv_ram_block    ; 12                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.70                        ;
-; Average LUT depth     ; 2.27                        ;
+; Max LUT depth         ; 4.70                        ;
+; Average LUT depth     ; 2.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -754,92 +754,92 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Apr 09 13:14:07 2019
+    Info: Processing started: Tue Apr 09 15:14:15 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file clk_div.v
-    Info (12023): Found entity 1: clk_div File: D:/Documents/School/3TB4/Lab5_hank/tutorial/clk_div.v Line: 1
+    Info (12023): Found entity 1: clk_div File: D:/3TB4/Lab5_hank/tutorial/clk_div.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file write_address_select.v
-    Info (12023): Found entity 1: write_address_select File: D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 1
+    Info (12023): Found entity 1: write_address_select File: D:/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file temp_register.v
-    Info (12023): Found entity 1: temp_register File: D:/Documents/School/3TB4/Lab5_hank/tutorial/temp_register.v Line: 2
+    Info (12023): Found entity 1: temp_register File: D:/3TB4/Lab5_hank/tutorial/temp_register.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file result_mux.v
-    Info (12023): Found entity 1: result_mux File: D:/Documents/School/3TB4/Lab5_hank/tutorial/result_mux.v Line: 1
+    Info (12023): Found entity 1: result_mux File: D:/3TB4/Lab5_hank/tutorial/result_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-    Info (12023): Found entity 1: regfile File: D:/Documents/School/3TB4/Lab5_hank/tutorial/regfile.v Line: 5
+    Info (12023): Found entity 1: regfile File: D:/3TB4/Lab5_hank/tutorial/regfile.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file pc.v
-    Info (12023): Found entity 1: pc File: D:/Documents/School/3TB4/Lab5_hank/tutorial/pc.v Line: 1
+    Info (12023): Found entity 1: pc File: D:/3TB4/Lab5_hank/tutorial/pc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op2_mux.v
-    Info (12023): Found entity 1: op2_mux File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 1
+    Info (12023): Found entity 1: op2_mux File: D:/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file op1_mux.v
-    Info (12023): Found entity 1: op1_mux File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 1
-Warning (10890): Verilog HDL Attribute warning at lab5.v(9): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 9
-Warning (10890): Verilog HDL Attribute warning at lab5.v(10): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 10
-Warning (10890): Verilog HDL Attribute warning at lab5.v(11): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 11
-Warning (10890): Verilog HDL Attribute warning at lab5.v(12): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 12
-Warning (10890): Verilog HDL Attribute warning at lab5.v(13): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 13
-Warning (10890): Verilog HDL Attribute warning at lab5.v(14): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 14
-Warning (10890): Verilog HDL Attribute warning at lab5.v(15): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 15
-Warning (10890): Verilog HDL Attribute warning at lab5.v(16): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 16
-Warning (10890): Verilog HDL Attribute warning at lab5.v(17): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 17
-Warning (10890): Verilog HDL Attribute warning at lab5.v(18): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 18
-Warning (10890): Verilog HDL Attribute warning at lab5.v(19): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 19
-Warning (10890): Verilog HDL Attribute warning at lab5.v(20): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 20
+    Info (12023): Found entity 1: op1_mux File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 1
+Warning (10890): Verilog HDL Attribute warning at lab5.v(9): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 9
+Warning (10890): Verilog HDL Attribute warning at lab5.v(10): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 10
+Warning (10890): Verilog HDL Attribute warning at lab5.v(11): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 11
+Warning (10890): Verilog HDL Attribute warning at lab5.v(12): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 12
+Warning (10890): Verilog HDL Attribute warning at lab5.v(13): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 13
+Warning (10890): Verilog HDL Attribute warning at lab5.v(14): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 14
+Warning (10890): Verilog HDL Attribute warning at lab5.v(15): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 15
+Warning (10890): Verilog HDL Attribute warning at lab5.v(16): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 16
+Warning (10890): Verilog HDL Attribute warning at lab5.v(17): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 17
+Warning (10890): Verilog HDL Attribute warning at lab5.v(18): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 18
+Warning (10890): Verilog HDL Attribute warning at lab5.v(19): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 19
+Warning (10890): Verilog HDL Attribute warning at lab5.v(20): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file lab5.v
-    Info (12023): Found entity 1: lab5 File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
+    Info (12023): Found entity 1: lab5 File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file immediate_extractor.v
-    Info (12023): Found entity 1: immediate_extractor File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 1
+    Info (12023): Found entity 1: immediate_extractor File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file delay_counter.v
-    Info (12023): Found entity 1: delay_counter File: D:/Documents/School/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 1
+    Info (12023): Found entity 1: delay_counter File: D:/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.v
-    Info (12023): Found entity 1: decoder File: D:/Documents/School/3TB4/Lab5_hank/tutorial/decoder.v Line: 1
-Warning (10890): Verilog HDL Attribute warning at datapath.v(20): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 20
-Warning (10890): Verilog HDL Attribute warning at datapath.v(21): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 21
-Warning (10890): Verilog HDL Attribute warning at datapath.v(22): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 22
-Warning (10890): Verilog HDL Attribute warning at datapath.v(23): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
-Warning (10890): Verilog HDL Attribute warning at datapath.v(24): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
-Warning (10890): Verilog HDL Attribute warning at datapath.v(25): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
-Warning (10890): Verilog HDL Attribute warning at datapath.v(26): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
-Warning (10890): Verilog HDL Attribute warning at datapath.v(27): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 27
-Warning (10890): Verilog HDL Attribute warning at datapath.v(28): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 28
-Warning (10890): Verilog HDL Attribute warning at datapath.v(29): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 29
-Warning (10890): Verilog HDL Attribute warning at datapath.v(30): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
-Warning (10890): Verilog HDL Attribute warning at datapath.v(31): overriding existing value for attribute "keep" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 31
+    Info (12023): Found entity 1: decoder File: D:/3TB4/Lab5_hank/tutorial/decoder.v Line: 1
+Warning (10890): Verilog HDL Attribute warning at datapath.v(20): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 20
+Warning (10890): Verilog HDL Attribute warning at datapath.v(21): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 21
+Warning (10890): Verilog HDL Attribute warning at datapath.v(22): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 22
+Warning (10890): Verilog HDL Attribute warning at datapath.v(23): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 23
+Warning (10890): Verilog HDL Attribute warning at datapath.v(24): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 24
+Warning (10890): Verilog HDL Attribute warning at datapath.v(25): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 25
+Warning (10890): Verilog HDL Attribute warning at datapath.v(26): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 26
+Warning (10890): Verilog HDL Attribute warning at datapath.v(27): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 27
+Warning (10890): Verilog HDL Attribute warning at datapath.v(28): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 28
+Warning (10890): Verilog HDL Attribute warning at datapath.v(29): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 29
+Warning (10890): Verilog HDL Attribute warning at datapath.v(30): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 30
+Warning (10890): Verilog HDL Attribute warning at datapath.v(31): overriding existing value for attribute "keep" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 31
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: datapath File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 1
+    Info (12023): Found entity 1: datapath File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_fsm.v
-    Info (12023): Found entity 1: control_fsm File: D:/Documents/School/3TB4/Lab5_hank/tutorial/control_fsm.v Line: 1
+    Info (12023): Found entity 1: control_fsm File: D:/3TB4/Lab5_hank/tutorial/control_fsm.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file branch_logic.v
-    Info (12023): Found entity 1: branch_logic File: D:/Documents/School/3TB4/Lab5_hank/tutorial/branch_logic.v Line: 1
+    Info (12023): Found entity 1: branch_logic File: D:/3TB4/Lab5_hank/tutorial/branch_logic.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 3
+    Info (12023): Found entity 1: alu File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file instruction_rom.v
-    Info (12023): Found entity 1: instruction_rom File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 39
+    Info (12023): Found entity 1: instruction_rom File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file stepper_rom.v
-    Info (12023): Found entity 1: stepper_rom File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 39
+    Info (12023): Found entity 1: stepper_rom File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 39
 Info (12127): Elaborating entity "lab5" for the top level hierarchy
-Warning (10034): Output port "LEDR[9..4]" at lab5.v(6) has no driver File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
-Info (12128): Elaborating entity "control_fsm" for hierarchy "control_fsm:the_control_fsm" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 118
-Info (10264): Verilog HDL Case Statement information at control_fsm.v(99): all case item expressions in this case statement are onehot File: D:/Documents/School/3TB4/Lab5_hank/tutorial/control_fsm.v Line: 99
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:the_datapath" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 174
-Info (12128): Elaborating entity "decoder" for hierarchy "datapath:the_datapath|decoder:the_decoder" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 67
-Info (12128): Elaborating entity "regfile" for hierarchy "datapath:the_datapath|regfile:the_regfile" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 86
-Info (12128): Elaborating entity "op1_mux" for hierarchy "datapath:the_datapath|op1_mux:the_op1_mux" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 98
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(7): variable "pc" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 7
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(8): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 8
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(9): variable "position" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(10): variable "register0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 10
-Info (12128): Elaborating entity "op2_mux" for hierarchy "datapath:the_datapath|op2_mux:the_op2_mux" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 108
-Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(7): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 7
-Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(8): variable "immediate" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 8
-Info (12128): Elaborating entity "delay_counter" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 119
-Info (12128): Elaborating entity "clk_div" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 8
-Warning (10230): Verilog HDL assignment warning at clk_div.v(11): truncated value with size 32 to match size of target (19) File: D:/Documents/School/3TB4/Lab5_hank/tutorial/clk_div.v Line: 11
-Info (12128): Elaborating entity "stepper_rom" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 127
-Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
-Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
-Info (12133): Instantiated megafunction "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/Documents/School/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
+Warning (10034): Output port "LEDR[9..4]" at lab5.v(6) has no driver File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
+Info (12128): Elaborating entity "control_fsm" for hierarchy "control_fsm:the_control_fsm" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 118
+Info (10264): Verilog HDL Case Statement information at control_fsm.v(115): all case item expressions in this case statement are onehot File: D:/3TB4/Lab5_hank/tutorial/control_fsm.v Line: 115
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:the_datapath" File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 174
+Info (12128): Elaborating entity "decoder" for hierarchy "datapath:the_datapath|decoder:the_decoder" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 67
+Info (12128): Elaborating entity "regfile" for hierarchy "datapath:the_datapath|regfile:the_regfile" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 86
+Info (12128): Elaborating entity "op1_mux" for hierarchy "datapath:the_datapath|op1_mux:the_op1_mux" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 98
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(7): variable "pc" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 7
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(8): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 8
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(9): variable "position" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at op1_mux.v(10): variable "register0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op1_mux.v Line: 10
+Info (12128): Elaborating entity "op2_mux" for hierarchy "datapath:the_datapath|op2_mux:the_op2_mux" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 108
+Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(7): variable "register" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 7
+Warning (10235): Verilog HDL Always Construct warning at op2_mux.v(8): variable "immediate" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/op2_mux.v Line: 8
+Info (12128): Elaborating entity "delay_counter" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 119
+Info (12128): Elaborating entity "clk_div" for hierarchy "datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10" File: D:/3TB4/Lab5_hank/tutorial/delay_counter.v Line: 8
+Warning (10230): Verilog HDL assignment warning at clk_div.v(11): truncated value with size 32 to match size of target (19) File: D:/3TB4/Lab5_hank/tutorial/clk_div.v Line: 11
+Info (12128): Elaborating entity "stepper_rom" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 127
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
+Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
+Info (12133): Instantiated megafunction "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/3TB4/Lab5_hank/tutorial/stepper_rom.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -855,13 +855,13 @@ Info (12133): Instantiated megafunction "datapath:the_datapath|stepper_rom:the_s
     Info (12134): Parameter "width_a" = "4"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7jg1.tdf
-    Info (12023): Found entity 1: altsyncram_7jg1 File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_7jg1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_7jg1" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_7jg1:auto_generated" File: d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "pc" for hierarchy "datapath:the_datapath|pc:the_pc" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 140
-Info (12128): Elaborating entity "instruction_rom" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 150
-Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 81
-Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 81
-Info (12133): Instantiated megafunction "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/Documents/School/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 81
+    Info (12023): Found entity 1: altsyncram_7jg1 File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_7jg1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_7jg1" for hierarchy "datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_7jg1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "pc" for hierarchy "datapath:the_datapath|pc:the_pc" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 140
+Info (12128): Elaborating entity "instruction_rom" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 150
+Info (12128): Elaborating entity "altsyncram" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 81
+Info (12130): Elaborated megafunction instantiation "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 81
+Info (12133): Instantiated megafunction "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component" with the following parameter: File: D:/3TB4/Lab5_hank/tutorial/instruction_rom.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -877,39 +877,39 @@ Info (12133): Instantiated megafunction "datapath:the_datapath|instruction_rom:t
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_k4h1.tdf
-    Info (12023): Found entity 1: altsyncram_k4h1 File: D:/Documents/School/3TB4/Lab5_hank/tutorial/db/altsyncram_k4h1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_k4h1" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_k4h1:auto_generated" File: d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "alu" for hierarchy "datapath:the_datapath|alu:the_alu" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 161
-Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 8
-Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 8
-Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 12
-Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 12
-Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 13
-Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/alu.v Line: 13
-Info (12128): Elaborating entity "temp_register" for hierarchy "datapath:the_datapath|temp_register:the_temp_register" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 175
-Info (12128): Elaborating entity "immediate_extractor" for hierarchy "datapath:the_datapath|immediate_extractor:the_immediate_extractor" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 184
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(5): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 5
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(6): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 6
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(9): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 9
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(10): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 10
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(11): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 11
-Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(12): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 12
-Info (12128): Elaborating entity "write_address_select" for hierarchy "datapath:the_datapath|write_address_select:the_write_address_select" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 194
-Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(6): variable "reg_field0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 6
-Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(7): variable "reg_field1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 7
-Info (12128): Elaborating entity "result_mux" for hierarchy "datapath:the_datapath|result_mux:the_result_mux" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 201
-Warning (10235): Verilog HDL Always Construct warning at result_mux.v(9): variable "alu_result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Documents/School/3TB4/Lab5_hank/tutorial/result_mux.v Line: 9
-Info (12128): Elaborating entity "branch_logic" for hierarchy "datapath:the_datapath|branch_logic:the_branch_logic" File: D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.v Line: 209
+    Info (12023): Found entity 1: altsyncram_k4h1 File: D:/3TB4/Lab5_hank/tutorial/db/altsyncram_k4h1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_k4h1" for hierarchy "datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_k4h1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:the_datapath|alu:the_alu" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 161
+Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 8
+Warning (10235): Verilog HDL Always Construct warning at alu.v(8): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 8
+Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at alu.v(9): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at alu.v(12): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operanda" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 13
+Warning (10235): Verilog HDL Always Construct warning at alu.v(13): variable "operandb" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/alu.v Line: 13
+Info (12128): Elaborating entity "temp_register" for hierarchy "datapath:the_datapath|temp_register:the_temp_register" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 175
+Info (12128): Elaborating entity "immediate_extractor" for hierarchy "datapath:the_datapath|immediate_extractor:the_immediate_extractor" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 184
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(5): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 5
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(6): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 6
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(9): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 9
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(10): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 10
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(11): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 11
+Warning (10235): Verilog HDL Always Construct warning at immediate_extractor.v(12): variable "instruction" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/immediate_extractor.v Line: 12
+Info (12128): Elaborating entity "write_address_select" for hierarchy "datapath:the_datapath|write_address_select:the_write_address_select" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 194
+Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(6): variable "reg_field0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 6
+Warning (10235): Verilog HDL Always Construct warning at write_address_select.v(7): variable "reg_field1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/write_address_select.v Line: 7
+Info (12128): Elaborating entity "result_mux" for hierarchy "datapath:the_datapath|result_mux:the_result_mux" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 201
+Warning (10235): Verilog HDL Always Construct warning at result_mux.v(9): variable "alu_result" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/3TB4/Lab5_hank/tutorial/result_mux.v Line: 9
+Info (12128): Elaborating entity "branch_logic" for hierarchy "datapath:the_datapath|branch_logic:the_branch_logic" File: D:/3TB4/Lab5_hank/tutorial/datapath.v Line: 209
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: D:/3TB4/Lab5_hank/tutorial/lab5.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
@@ -1484,24 +1484,24 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[9] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_N -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
-Info (144001): Generated suppressed messages file D:/Documents/School/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg
+Info (144001): Generated suppressed messages file D:/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 407 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 413 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 149 output pins
-    Info (21061): Implemented 244 logic cells
+    Info (21061): Implemented 250 logic cells
     Info (21064): Implemented 12 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 630 warnings
-    Info: Peak virtual memory: 4899 megabytes
-    Info: Processing ended: Tue Apr 09 13:14:19 2019
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Tue Apr 09 15:14:32 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in D:/Documents/School/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg.
+The suppressed messages can be found in D:/3TB4/Lab5_hank/tutorial/output_files/lab5.map.smsg.
 
 

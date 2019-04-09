@@ -23,43 +23,43 @@ always @(posedge clk or negedge reset_n)
 begin
 	if (reset_n == 1'b0)
 	begin
-		selected0 <= 8'b0;
-		selected1 <= 8'b0;
-		reg0 		 <= 8'b0;
-		reg1 		 <= 8'b0;
-		reg2 		 <= 8'b0;
-		reg3 		 <= 8'b0;
+		selected0 = 8'b0;
+		selected1 = 8'b0;
+		reg0 		 = 8'b0;
+		reg1 		 = 8'b0;
+		reg2 		 = 8'b0;
+		reg3 		 = 8'b0;
 	end else
 	begin
 		case (select0)
-			2'b0:		selected0 <= reg0;
-			2'b1:		selected0 <= reg1;
-			2'b10:	selected0 <= reg2;
-			2'b11:	selected0 <= reg3;
-			default: selected0 <= 8'b0;
+			2'b0:		selected0 = reg0;
+			2'b1:		selected0 = reg1;
+			2'b10:	selected0 = reg2;
+			2'b11:	selected0 = reg3;
+			default: selected0 = 8'b0;
 		endcase
 		
 		case (select1)
-			2'b0:		selected1 <= reg0;
-			2'b1:		selected1 <= reg1;
-			2'b10:	selected1 <= reg2;
-			2'b11:	selected1 <= reg3;
-			default: selected0 <= 8'b0;
+			2'b0:		selected1 = reg0;
+			2'b1:		selected1 = reg1;
+			2'b10:	selected1 = reg2;
+			2'b11:	selected1 = reg3;
+			default: selected0 = 8'b0;
 		endcase
 		
 		if (write == 1'b1)
 		begin
 			case (wr_select)
-				2'b0:  reg0 <= data;
-				2'b1:  reg1 <= data;
-				2'b10: reg2 <= data;
-				2'b11: reg3 <= data;
+				2'b0:  reg0 = data;
+				2'b1:  reg1 = data;
+				2'b10: reg2 = data;
+				2'b11: reg3 = data;
 				
 				default: begin
-					reg0 <= 8'b0;
-					reg1 <= 8'b0;
-					reg2 <= 8'b0;
-					reg3 <= 8'b0;
+					reg0 = 8'b0;
+					reg1 = 8'b0;
+					reg2 = 8'b0;
+					reg3 = 8'b0;
 				end
 			endcase
 		end

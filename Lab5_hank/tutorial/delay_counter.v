@@ -12,21 +12,21 @@ begin
 
 	if(reset_n == 1'b0)
 	begin
-		mydelay	<= 8'b0;
-		done		<= 1'b1;
+		mydelay	= 8'b0;
+		done		= 1'b1;
 	end else 
 	begin
-		if(start) mydelay<=delay;
+		if(start) mydelay=delay;
 		else
 		if(enable)
 		begin
 			if (counter == 19'b0)
 			begin
-				if(mydelay == 8'b0) done <=1'b1;
+				if(mydelay == 8'b0) done =1'b1;
 				else
 				begin
-					mydelay <= mydelay - 8'b1;
-					done <=1'b0;
+					mydelay = mydelay - 8'b1;
+					done =1'b0;
 				end
 			end
 		end

@@ -90,10 +90,10 @@ def main():
     outfile.write("WIDTH=8;\nDEPTH=256;\n\n")
     outfile.write("ADDRESS_RADIX=UNS;\nDATA_RADIX=BIN;\n\n")
     outfile.write("CONTENT BEGIN\n")
-    outfile.write("\t0    :   00000000;\n")
+##    outfile.write("\t0    :   00000000;\n")
     # content
     line = infile.readline()
-    cntr = 1
+    cntr = 0
     while line != '':
         if line[0] != "#":
             line = str2line(line)
@@ -103,7 +103,7 @@ def main():
             outfile.write("\t"+str(cntr)+(5-len(str(cntr)))*" "+":   "+writeline+";\n")
             cntr+=1
         line = infile.readline()
-    outfile.write("\t["+str(cntr)+"..255]  :   00000000;\n")
+    outfile.write("\t["+str(cntr)+"..255]  :   11111111;\n")
     outfile.write("END;\n")
     outfile.close()
     infile.close()

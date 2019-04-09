@@ -4,11 +4,11 @@ module clk_div (input clk, reset_n, input [18:0] prescaler, output reg [18:0]cou
 
 always @(posedge clk) 
 begin
-	if(~reset_n) counter<=19'b0;
+	if(~reset_n) counter=19'b0;
 	else
 	begin
-		if(counter==prescaler) counter<=0;
-		else counter<=counter+1;
+		if(counter==prescaler) counter=0;
+		else counter=counter+1;
 	end
 end
 endmodule
