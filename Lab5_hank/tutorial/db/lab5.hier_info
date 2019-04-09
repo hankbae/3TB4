@@ -1,4 +1,128 @@
-|datapath
+|lab5
+CLOCK_50 => clk.IN2
+KEY[0] => reset_n.IN2
+GPIO_0[0] <= datapath:the_datapath.stepper_signals
+GPIO_0[1] <= <GND>
+GPIO_0[2] <= <GND>
+GPIO_0[3] <= <GND>
+LEDR[0] <= datapath:the_datapath.stepper_signals
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|lab5|control_fsm:the_control_fsm
+clk => select_write_address[0]~reg0.CLK
+clk => select_write_address[1]~reg0.CLK
+clk => select_immediate[0]~reg0.CLK
+clk => select_immediate[1]~reg0.CLK
+clk => decrement_temp_register~reg0.CLK
+clk => increment_temp_register~reg0.CLK
+clk => load_temp_register~reg0.CLK
+clk => alu_set_high~reg0.CLK
+clk => alu_set_low~reg0.CLK
+clk => alu_add_sub~reg0.CLK
+clk => increment_pc~reg0.CLK
+clk => commit_branch~reg0.CLK
+clk => enable_delay_counter~reg0.CLK
+clk => start_delay_counter~reg0.CLK
+clk => op2_mux_select[0]~reg0.CLK
+clk => op2_mux_select[1]~reg0.CLK
+clk => op1_mux_select[0]~reg0.CLK
+clk => op1_mux_select[1]~reg0.CLK
+clk => result_mux_select~reg0.CLK
+clk => write_reg_file~reg0.CLK
+reset_n => write_reg_file.OUTPUTSELECT
+reset_n => result_mux_select.OUTPUTSELECT
+reset_n => op1_mux_select.OUTPUTSELECT
+reset_n => op1_mux_select.OUTPUTSELECT
+reset_n => op2_mux_select.OUTPUTSELECT
+reset_n => start_delay_counter.OUTPUTSELECT
+reset_n => enable_delay_counter.OUTPUTSELECT
+reset_n => commit_branch.OUTPUTSELECT
+reset_n => increment_pc.OUTPUTSELECT
+reset_n => alu_add_sub.OUTPUTSELECT
+reset_n => alu_set_low.OUTPUTSELECT
+reset_n => alu_set_high.OUTPUTSELECT
+reset_n => load_temp_register.OUTPUTSELECT
+reset_n => increment_temp_register.OUTPUTSELECT
+reset_n => decrement_temp_register.OUTPUTSELECT
+reset_n => select_immediate.OUTPUTSELECT
+reset_n => select_immediate.OUTPUTSELECT
+reset_n => select_write_address.OUTPUTSELECT
+reset_n => select_write_address.OUTPUTSELECT
+br => always0.IN0
+br => WideOr0.IN2
+br => WideOr2.IN10
+br => WideOr4.IN6
+br => WideOr6.IN2
+br => commit_branch.IN1
+br => WideOr8.IN8
+br => WideOr9.IN5
+br => WideOr11.IN3
+br => WideOr13.IN2
+br => always0.IN0
+brz => always0.IN1
+brz => always0.IN1
+addi => always0.IN1
+addi => always0.IN1
+subi => always0.IN1
+subi => always0.IN1
+sr0 => always0.IN1
+sr0 => always0.IN1
+srh0 => always0.IN1
+srh0 => always0.IN1
+clr => always0.IN1
+clr => always0.IN1
+mov => always0.IN1
+mov => always0.IN1
+mova => always0.IN1
+mova => always0.IN1
+movr => always0.IN1
+movr => always0.IN1
+movrhs => always0.IN1
+movrhs => always0.IN1
+pause => always0.IN1
+pause => always0.IN1
+delay_done => increment_pc.DATAA
+temp_is_positive => write_reg_file.OUTPUTSELECT
+temp_is_positive => increment_temp_register.OUTPUTSELECT
+temp_is_positive => increment_pc.OUTPUTSELECT
+temp_is_positive => alu_add_sub.DATAA
+temp_is_negative => increment_pc.OUTPUTSELECT
+temp_is_negative => increment_temp_register.DATAA
+temp_is_negative => write_reg_file.DATAA
+temp_is_zero => increment_pc.DATAA
+register0_is_zero => ~NO_FANOUT~
+write_reg_file <= write_reg_file~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result_mux_select <= result_mux_select~reg0.DB_MAX_OUTPUT_PORT_TYPE
+op1_mux_select[0] <= op1_mux_select[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+op1_mux_select[1] <= op1_mux_select[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+op2_mux_select[0] <= op2_mux_select[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+op2_mux_select[1] <= op2_mux_select[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+start_delay_counter <= start_delay_counter~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable_delay_counter <= enable_delay_counter~reg0.DB_MAX_OUTPUT_PORT_TYPE
+commit_branch <= commit_branch~reg0.DB_MAX_OUTPUT_PORT_TYPE
+increment_pc <= increment_pc~reg0.DB_MAX_OUTPUT_PORT_TYPE
+alu_add_sub <= alu_add_sub~reg0.DB_MAX_OUTPUT_PORT_TYPE
+alu_set_low <= alu_set_low~reg0.DB_MAX_OUTPUT_PORT_TYPE
+alu_set_high <= alu_set_high~reg0.DB_MAX_OUTPUT_PORT_TYPE
+load_temp_register <= load_temp_register~reg0.DB_MAX_OUTPUT_PORT_TYPE
+increment_temp_register <= increment_temp_register~reg0.DB_MAX_OUTPUT_PORT_TYPE
+decrement_temp_register <= decrement_temp_register~reg0.DB_MAX_OUTPUT_PORT_TYPE
+select_immediate[0] <= select_immediate[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+select_immediate[1] <= select_immediate[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+select_write_address[0] <= select_write_address[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+select_write_address[1] <= select_write_address[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab5|datapath:the_datapath
 clk => clk.IN6
 reset_n => reset_n.IN4
 write_reg_file => write_reg_file.IN1
@@ -27,7 +151,7 @@ addi <= decoder:the_decoder.addi
 subi <= decoder:the_decoder.subi
 sr0 <= decoder:the_decoder.sr0
 srh0 <= decoder:the_decoder.srh0
-clr <= decoder:the_decoder.clr
+clr <= <GND>
 mov <= decoder:the_decoder.mov
 mova <= decoder:the_decoder.mova
 movr <= decoder:the_decoder.movr
@@ -37,54 +161,14 @@ delay_done <= delay_counter:the_delay_counter.done
 temp_is_positive <= temp_register:the_temp_register.positive
 temp_is_negative <= temp_register:the_temp_register.negative
 temp_is_zero <= temp_register:the_temp_register.zero
-register0_is_zero <= branch_logic:the_branch_logic.branch
+register0_is_zero <= <GND>
 stepper_signals[0] <= stepper_rom:the_stepper_rom.q
 stepper_signals[1] <= stepper_rom:the_stepper_rom.q
 stepper_signals[2] <= stepper_rom:the_stepper_rom.q
 stepper_signals[3] <= stepper_rom:the_stepper_rom.q
-RF_2out[0] <= RF_2out[0].DB_MAX_OUTPUT_PORT_TYPE
-RF_2out[1] <= RF_2out[1].DB_MAX_OUTPUT_PORT_TYPE
-RF_2out[2] <= RF_2out[2].DB_MAX_OUTPUT_PORT_TYPE
-RF_2out[3] <= RF_2out[3].DB_MAX_OUTPUT_PORT_TYPE
-RF_2out[4] <= RF_2out[4].DB_MAX_OUTPUT_PORT_TYPE
-RF_2out[5] <= RF_2out[5].DB_MAX_OUTPUT_PORT_TYPE
-RF_2out[6] <= RF_2out[6].DB_MAX_OUTPUT_PORT_TYPE
-RF_2out[7] <= RF_2out[7].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[0] <= RM_out[0].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[1] <= RM_out[1].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[2] <= RM_out[2].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[3] <= RM_out[3].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[4] <= RM_out[4].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[5] <= RM_out[5].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[6] <= RM_out[6].DB_MAX_OUTPUT_PORT_TYPE
-RM_out[7] <= RM_out[7].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[0] <= ALU_out[0].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[1] <= ALU_out[1].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[2] <= ALU_out[2].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[3] <= ALU_out[3].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[4] <= ALU_out[4].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[5] <= ALU_out[5].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[6] <= ALU_out[6].DB_MAX_OUTPUT_PORT_TYPE
-ALU_out[7] <= ALU_out[7].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[0] <= Op1mux_out[0].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[1] <= Op1mux_out[1].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[2] <= Op1mux_out[2].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[3] <= Op1mux_out[3].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[4] <= Op1mux_out[4].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[5] <= Op1mux_out[5].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[6] <= Op1mux_out[6].DB_MAX_OUTPUT_PORT_TYPE
-Op1mux_out[7] <= Op1mux_out[7].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[0] <= Op2mux_out[0].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[1] <= Op2mux_out[1].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[2] <= Op2mux_out[2].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[3] <= Op2mux_out[3].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[4] <= Op2mux_out[4].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[5] <= Op2mux_out[5].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[6] <= Op2mux_out[6].DB_MAX_OUTPUT_PORT_TYPE
-Op2mux_out[7] <= Op2mux_out[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|decoder:the_decoder
+|lab5|datapath:the_datapath|decoder:the_decoder
 instruction[2] => Equal6.IN5
 instruction[2] => Equal8.IN5
 instruction[2] => Equal9.IN2
@@ -153,7 +237,7 @@ movrhs <= Equal10.DB_MAX_OUTPUT_PORT_TYPE
 pause <= Equal11.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|regfile:the_regfile
+|lab5|datapath:the_datapath|regfile:the_regfile
 clk => reg3[0].CLK
 clk => reg3[1].CLK
 clk => reg3[2].CLK
@@ -390,7 +474,7 @@ register0[6] <= register0[6].DB_MAX_OUTPUT_PORT_TYPE
 register0[7] <= register0[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|op1_mux:the_op1_mux
+|lab5|datapath:the_datapath|op1_mux:the_op1_mux
 select[0] => Mux0.IN1
 select[0] => Mux1.IN1
 select[0] => Mux2.IN1
@@ -449,7 +533,7 @@ result[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 result[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|op2_mux:the_op2_mux
+|lab5|datapath:the_datapath|op2_mux:the_op2_mux
 select[0] => Mux0.IN3
 select[0] => Mux1.IN3
 select[0] => Mux2.IN3
@@ -492,7 +576,7 @@ result[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 result[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|delay_counter:the_delay_counter
+|lab5|datapath:the_datapath|delay_counter:the_delay_counter
 clk => clk.IN1
 reset_n => reset_n.IN1
 start => mydelay.OUTPUTSELECT
@@ -524,7 +608,7 @@ delay[7] => mydelay.DATAB
 done <= done~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|delay_counter:the_delay_counter|clk_div:msec10
+|lab5|datapath:the_datapath|delay_counter:the_delay_counter|clk_div:msec10
 clk => counter[0]~reg0.CLK
 clk => counter[1]~reg0.CLK
 clk => counter[2]~reg0.CLK
@@ -603,18 +687,24 @@ counter[17] <= counter[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 counter[18] <= counter[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|stepper_rom:the_stepper_rom
+|lab5|datapath:the_datapath|stepper_rom:the_stepper_rom
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
 clock => clock.IN1
 q[0] <= altsyncram:altsyncram_component.q_a
 q[1] <= altsyncram:altsyncram_component.q_a
 q[2] <= altsyncram:altsyncram_component.q_a
 q[3] <= altsyncram:altsyncram_component.q_a
+q[4] <= altsyncram:altsyncram_component.q_a
+q[5] <= altsyncram:altsyncram_component.q_a
+q[6] <= altsyncram:altsyncram_component.q_a
+q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component
+|lab5|datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -623,14 +713,20 @@ data_a[0] => ~NO_FANOUT~
 data_a[1] => ~NO_FANOUT~
 data_a[2] => ~NO_FANOUT~
 data_a[3] => ~NO_FANOUT~
+data_a[4] => ~NO_FANOUT~
+data_a[5] => ~NO_FANOUT~
+data_a[6] => ~NO_FANOUT~
+data_a[7] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_7jg1:auto_generated.address_a[0]
-address_a[1] => altsyncram_7jg1:auto_generated.address_a[1]
-address_a[2] => altsyncram_7jg1:auto_generated.address_a[2]
+address_a[0] => altsyncram_5uf1:auto_generated.address_a[0]
+address_a[1] => altsyncram_5uf1:auto_generated.address_a[1]
+address_a[2] => altsyncram_5uf1:auto_generated.address_a[2]
+address_a[3] => altsyncram_5uf1:auto_generated.address_a[3]
+address_a[4] => altsyncram_5uf1:auto_generated.address_a[4]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_7jg1:auto_generated.clock0
+clock0 => altsyncram_5uf1:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -640,40 +736,80 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_7jg1:auto_generated.q_a[0]
-q_a[1] <= altsyncram_7jg1:auto_generated.q_a[1]
-q_a[2] <= altsyncram_7jg1:auto_generated.q_a[2]
-q_a[3] <= altsyncram_7jg1:auto_generated.q_a[3]
+q_a[0] <= altsyncram_5uf1:auto_generated.q_a[0]
+q_a[1] <= altsyncram_5uf1:auto_generated.q_a[1]
+q_a[2] <= altsyncram_5uf1:auto_generated.q_a[2]
+q_a[3] <= altsyncram_5uf1:auto_generated.q_a[3]
+q_a[4] <= altsyncram_5uf1:auto_generated.q_a[4]
+q_a[5] <= altsyncram_5uf1:auto_generated.q_a[5]
+q_a[6] <= altsyncram_5uf1:auto_generated.q_a[6]
+q_a[7] <= altsyncram_5uf1:auto_generated.q_a[7]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_7jg1:auto_generated
+|lab5|datapath:the_datapath|stepper_rom:the_stepper_rom|altsyncram:altsyncram_component|altsyncram_5uf1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
 address_a[0] => ram_block1a3.PORTAADDR
+address_a[0] => ram_block1a4.PORTAADDR
+address_a[0] => ram_block1a5.PORTAADDR
+address_a[0] => ram_block1a6.PORTAADDR
+address_a[0] => ram_block1a7.PORTAADDR
 address_a[1] => ram_block1a0.PORTAADDR1
 address_a[1] => ram_block1a1.PORTAADDR1
 address_a[1] => ram_block1a2.PORTAADDR1
 address_a[1] => ram_block1a3.PORTAADDR1
+address_a[1] => ram_block1a4.PORTAADDR1
+address_a[1] => ram_block1a5.PORTAADDR1
+address_a[1] => ram_block1a6.PORTAADDR1
+address_a[1] => ram_block1a7.PORTAADDR1
 address_a[2] => ram_block1a0.PORTAADDR2
 address_a[2] => ram_block1a1.PORTAADDR2
 address_a[2] => ram_block1a2.PORTAADDR2
 address_a[2] => ram_block1a3.PORTAADDR2
+address_a[2] => ram_block1a4.PORTAADDR2
+address_a[2] => ram_block1a5.PORTAADDR2
+address_a[2] => ram_block1a6.PORTAADDR2
+address_a[2] => ram_block1a7.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[3] => ram_block1a1.PORTAADDR3
+address_a[3] => ram_block1a2.PORTAADDR3
+address_a[3] => ram_block1a3.PORTAADDR3
+address_a[3] => ram_block1a4.PORTAADDR3
+address_a[3] => ram_block1a5.PORTAADDR3
+address_a[3] => ram_block1a6.PORTAADDR3
+address_a[3] => ram_block1a7.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[4] => ram_block1a1.PORTAADDR4
+address_a[4] => ram_block1a2.PORTAADDR4
+address_a[4] => ram_block1a3.PORTAADDR4
+address_a[4] => ram_block1a4.PORTAADDR4
+address_a[4] => ram_block1a5.PORTAADDR4
+address_a[4] => ram_block1a6.PORTAADDR4
+address_a[4] => ram_block1a7.PORTAADDR4
 clock0 => ram_block1a0.CLK0
 clock0 => ram_block1a1.CLK0
 clock0 => ram_block1a2.CLK0
 clock0 => ram_block1a3.CLK0
+clock0 => ram_block1a4.CLK0
+clock0 => ram_block1a5.CLK0
+clock0 => ram_block1a6.CLK0
+clock0 => ram_block1a7.CLK0
 q_a[0] <= ram_block1a0.PORTADATAOUT
 q_a[1] <= ram_block1a1.PORTADATAOUT
 q_a[2] <= ram_block1a2.PORTADATAOUT
 q_a[3] <= ram_block1a3.PORTADATAOUT
+q_a[4] <= ram_block1a4.PORTADATAOUT
+q_a[5] <= ram_block1a5.PORTADATAOUT
+q_a[6] <= ram_block1a6.PORTADATAOUT
+q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|datapath|pc:the_pc
+|lab5|datapath:the_datapath|pc:the_pc
 clk => pc[0]~reg0.CLK
 clk => pc[1]~reg0.CLK
 clk => pc[2]~reg0.CLK
@@ -724,7 +860,7 @@ pc[6] <= pc[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc[7] <= pc[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|instruction_rom:the_instruction_rom
+|lab5|datapath:the_datapath|instruction_rom:the_instruction_rom
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -733,6 +869,7 @@ address[4] => address[4].IN1
 address[5] => address[5].IN1
 address[6] => address[6].IN1
 address[7] => address[7].IN1
+clken => clken.IN1
 clock => clock.IN1
 q[0] <= altsyncram:altsyncram_component.q_a
 q[1] <= altsyncram:altsyncram_component.q_a
@@ -744,7 +881,7 @@ q[6] <= altsyncram:altsyncram_component.q_a
 q[7] <= altsyncram:altsyncram_component.q_a
 
 
-|datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component
+|lab5|datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -758,20 +895,20 @@ data_a[5] => ~NO_FANOUT~
 data_a[6] => ~NO_FANOUT~
 data_a[7] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_k4h1:auto_generated.address_a[0]
-address_a[1] => altsyncram_k4h1:auto_generated.address_a[1]
-address_a[2] => altsyncram_k4h1:auto_generated.address_a[2]
-address_a[3] => altsyncram_k4h1:auto_generated.address_a[3]
-address_a[4] => altsyncram_k4h1:auto_generated.address_a[4]
-address_a[5] => altsyncram_k4h1:auto_generated.address_a[5]
-address_a[6] => altsyncram_k4h1:auto_generated.address_a[6]
-address_a[7] => altsyncram_k4h1:auto_generated.address_a[7]
+address_a[0] => altsyncram_qth1:auto_generated.address_a[0]
+address_a[1] => altsyncram_qth1:auto_generated.address_a[1]
+address_a[2] => altsyncram_qth1:auto_generated.address_a[2]
+address_a[3] => altsyncram_qth1:auto_generated.address_a[3]
+address_a[4] => altsyncram_qth1:auto_generated.address_a[4]
+address_a[5] => altsyncram_qth1:auto_generated.address_a[5]
+address_a[6] => altsyncram_qth1:auto_generated.address_a[6]
+address_a[7] => altsyncram_qth1:auto_generated.address_a[7]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_k4h1:auto_generated.clock0
+clock0 => altsyncram_qth1:auto_generated.clock0
 clock1 => ~NO_FANOUT~
-clocken0 => ~NO_FANOUT~
+clocken0 => altsyncram_qth1:auto_generated.clocken0
 clocken1 => ~NO_FANOUT~
 clocken2 => ~NO_FANOUT~
 clocken3 => ~NO_FANOUT~
@@ -779,21 +916,21 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_k4h1:auto_generated.q_a[0]
-q_a[1] <= altsyncram_k4h1:auto_generated.q_a[1]
-q_a[2] <= altsyncram_k4h1:auto_generated.q_a[2]
-q_a[3] <= altsyncram_k4h1:auto_generated.q_a[3]
-q_a[4] <= altsyncram_k4h1:auto_generated.q_a[4]
-q_a[5] <= altsyncram_k4h1:auto_generated.q_a[5]
-q_a[6] <= altsyncram_k4h1:auto_generated.q_a[6]
-q_a[7] <= altsyncram_k4h1:auto_generated.q_a[7]
+q_a[0] <= altsyncram_qth1:auto_generated.q_a[0]
+q_a[1] <= altsyncram_qth1:auto_generated.q_a[1]
+q_a[2] <= altsyncram_qth1:auto_generated.q_a[2]
+q_a[3] <= altsyncram_qth1:auto_generated.q_a[3]
+q_a[4] <= altsyncram_qth1:auto_generated.q_a[4]
+q_a[5] <= altsyncram_qth1:auto_generated.q_a[5]
+q_a[6] <= altsyncram_qth1:auto_generated.q_a[6]
+q_a[7] <= altsyncram_qth1:auto_generated.q_a[7]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_k4h1:auto_generated
+|lab5|datapath:the_datapath|instruction_rom:the_instruction_rom|altsyncram:altsyncram_component|altsyncram_qth1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -866,6 +1003,14 @@ clock0 => ram_block1a4.CLK0
 clock0 => ram_block1a5.CLK0
 clock0 => ram_block1a6.CLK0
 clock0 => ram_block1a7.CLK0
+clocken0 => ram_block1a0.ENA0
+clocken0 => ram_block1a1.ENA0
+clocken0 => ram_block1a2.ENA0
+clocken0 => ram_block1a3.ENA0
+clocken0 => ram_block1a4.ENA0
+clocken0 => ram_block1a5.ENA0
+clocken0 => ram_block1a6.ENA0
+clocken0 => ram_block1a7.ENA0
 q_a[0] <= ram_block1a0.PORTADATAOUT
 q_a[1] <= ram_block1a1.PORTADATAOUT
 q_a[2] <= ram_block1a2.PORTADATAOUT
@@ -876,7 +1021,7 @@ q_a[6] <= ram_block1a6.PORTADATAOUT
 q_a[7] <= ram_block1a7.PORTADATAOUT
 
 
-|datapath|alu:the_alu
+|lab5|datapath:the_datapath|alu:the_alu
 add_sub => result.OUTPUTSELECT
 add_sub => result.OUTPUTSELECT
 add_sub => result.OUTPUTSELECT
@@ -959,7 +1104,7 @@ result[6] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[7] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|temp_register:the_temp_register
+|lab5|datapath:the_datapath|temp_register:the_temp_register
 clk => zero~reg0.CLK
 clk => positive~reg0.CLK
 clk => negative~reg0.CLK
@@ -1019,7 +1164,7 @@ positive <= positive~reg0.DB_MAX_OUTPUT_PORT_TYPE
 zero <= zero~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|immediate_extractor:the_immediate_extractor
+|lab5|datapath:the_datapath|immediate_extractor:the_immediate_extractor
 instruction[0] => Mux2.IN2
 instruction[0] => Mux2.IN3
 instruction[1] => Mux1.IN2
@@ -1055,7 +1200,7 @@ immediate[6] <= immediate.DB_MAX_OUTPUT_PORT_TYPE
 immediate[7] <= immediate.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|write_address_select:the_write_address_select
+|lab5|datapath:the_datapath|write_address_select:the_write_address_select
 select[0] => Mux0.IN3
 select[0] => Mux1.IN3
 select[1] => Mux0.IN2
@@ -1068,7 +1213,7 @@ write_address[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 write_address[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|result_mux:the_result_mux
+|lab5|datapath:the_datapath|result_mux:the_result_mux
 select_result => Decoder0.IN0
 alu_result[0] => result.DATAA
 alu_result[1] => result.DATAA
@@ -1088,7 +1233,7 @@ result[6] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[7] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|branch_logic:the_branch_logic
+|lab5|datapath:the_datapath|branch_logic:the_branch_logic
 register0[0] => Equal0.IN7
 register0[1] => Equal0.IN6
 register0[2] => Equal0.IN5

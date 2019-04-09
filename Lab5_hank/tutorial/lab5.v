@@ -20,7 +20,7 @@ wire clk;
 wire reset_n;
 
 //more wires
-wire [3:0] stepper_signals;
+
 
 
 

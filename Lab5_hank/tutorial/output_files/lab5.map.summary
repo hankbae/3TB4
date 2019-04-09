@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Apr 08 23:07:55 2019
+Analysis & Synthesis Status : Successful - Thu Apr 04 11:01:12 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : lab5
-Top-level Entity Name : datapath
+Top-level Entity Name : lab5
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 95
-Total pins : 83
+Total registers : 111
+Total pins : 16
 Total virtual pins : 0
-Total block memory bits : 2,080
+Total block memory bits : 2,056
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -23,22 +23,22 @@ def reg2bin(string):
 def line2bin(line):
     if line[0] == "BR":
         tmp = num2bin(int(line[1]),5)
-        writeline = "100" + (5-len(tmp)) * "0"+tmp +"\n"
+        writeline = "100" + (5-len(tmp[2:])) * "0"+tmp[2:] +"\n"
     elif line[0] == "BRZ":
         tmp = num2bin(int(line[1]),5)
-        writeline = "101" + (5-len(tmp))*"0" + tmp + "\n"
+        writeline = "101" + (5-len(tmp[2:]))*"0" + tmp[2:] + "\n"
     elif line[0] == "ADDI":
         tmp = num2bin(int(line[2]),3)
-        writeline = "000" + (3-len(tmp))*"0" + tmp + reg2bin(line[1]) + "\n"
+        writeline = "000" + (3-len(tmp[2:]))*"0" + tmp[2:] + reg2bin(line[1]) + "\n"
     elif line[0] == "SUBI":
         tmp = num2bin(int(line[2]),3)
-        writeline = "001" + (3-len(tmp))*"0" + tmp + reg2bin(line[1]) + "\n"
+        writeline = "001" + (3-len(tmp[2:]))*"0" + tmp[2:] + reg2bin(line[1]) + "\n"
     elif line[0] == "SR0":
         tmp = num2bin(int(line[1]),4)
-        writeline = "0100" + (4-len(tmp))*"0" + tmp + "\n"
+        writeline = "0100" + (4-len(tmp[2:]))*"0" + tmp[2:] + "\n"
     elif line[0] == "SRH0":
         tmp = num2bin(int(line[1]),4)
-        writeline = "0101" + (4-len(tmp))*"0" + tmp + "\n"
+        writeline = "0101" + (4-len(tmp[2:]))*"0" + tmp[2:] + "\n"
     elif line[0] == "CLR":
         writeline = "011000"+ reg2bin(line[1]) + "\n"
     elif line[0] == "MOV":
@@ -76,9 +76,9 @@ def main():
     while line != ['']:
         line = infile.readline()
         line = str2line(line)
-        print(line)
+##        print(line)
         writeline = line2bin(line)
-        print(writeline)
+##        print(writeline)
         outfile.write(writeline)
     outfile.close()
     infile.close()

@@ -1,5 +1,5 @@
 Flow report for lab5
-Mon Apr 08 23:10:52 2019
+Thu Apr 04 11:15:28 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Apr 08 23:10:52 2019       ;
+; Flow Status                     ; Successful - Thu Apr 04 11:15:28 2019       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; lab5                                        ;
-; Top-level Entity Name           ; datapath                                    ;
+; Top-level Entity Name           ; lab5                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 105 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 95                                          ;
-; Total pins                      ; 83 / 457 ( 18 % )                           ;
+; Logic utilization (in ALMs)     ; 108 / 32,070 ( < 1 % )                      ;
+; Total registers                 ; 112                                         ;
+; Total pins                      ; 16 / 457 ( 4 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 2,080 / 4,065,280 ( < 1 % )                 ;
+; Total block memory bits         ; 2,056 / 4,065,280 ( < 1 % )                 ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/08/2019 23:07:36 ;
+; Start date & time ; 04/04/2019 11:00:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5                ;
 +-------------------+---------------------+
@@ -78,16 +78,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 1096981167352.155477925512836          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 1096981167352.155439005602804          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; datapath    ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; datapath    ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; datapath    ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; datapath                               ; lab5          ; --          ; --         ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
@@ -96,13 +95,19 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4834 MB             ; 00:00:40                           ;
-; Fitter                    ; 00:01:22     ; 1.0                     ; 6378 MB             ; 00:02:10                           ;
-; Assembler                 ; 00:00:13     ; 1.0                     ; 4853 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:12     ; 1.1                     ; 5162 MB             ; 00:00:10                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4733 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4742 MB             ; 00:00:02                           ;
-; Total                     ; 00:02:10     ; --                      ; --                  ; 00:03:14                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 4835 MB             ; 00:00:35                           ;
+; Fitter                    ; 00:00:59     ; 1.0                     ; 6363 MB             ; 00:01:41                           ;
+; Assembler                 ; 00:00:09     ; 1.0                     ; 4855 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.1                     ; 5161 MB             ; 00:00:08                           ;
+; MIF/HEX Update            ; 00:00:04     ; 1.0                     ; 4903 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4849 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4736 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4745 MB             ; 00:00:02                           ;
+; MIF/HEX Update            ; 00:00:03     ; 1.0                     ; 4902 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4858 MB             ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4737 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4745 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:08     ; --                      ; --                  ; 00:03:04                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +120,12 @@ refer to the applicable agreement for further details.
 ; Fitter                    ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler                 ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
+; MIF/HEX Update            ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
+; MIF/HEX Update            ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-TIHQQ08  ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
@@ -127,7 +138,13 @@ quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 quartus_fit --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_sta lab5 -c lab5
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source=D:/3TB4/Lab5_hank/tutorial/datapath.vwf --testbench_file=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/datapath.vwf.vt
+quartus_cdb lab5 -c lab5 --update_mif
+quartus_asm --read_settings_files=on --write_settings_files=off lab5 -c lab5
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source=D:/3TB4/Lab5_hank/tutorial/lab5.vwf --testbench_file=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/lab5.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/ lab5 -c lab5
+quartus_cdb lab5 -c lab5 --update_mif
+quartus_asm --read_settings_files=on --write_settings_files=off lab5 -c lab5
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source=D:/3TB4/Lab5_hank/tutorial/lab5.vwf --testbench_file=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/lab5.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/3TB4/Lab5_hank/tutorial/simulation/qsim/ lab5 -c lab5
 
 

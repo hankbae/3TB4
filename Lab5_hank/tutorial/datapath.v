@@ -14,13 +14,7 @@ module datapath (input clk, reset_n,
 				output temp_is_positive, temp_is_negative, temp_is_zero,
 				output register0_is_zero,
 				// Motor control outputs
-				output [3:0] stepper_signals,
-//				testing
-				output [7:0] RF_2out /*synthesis keep*/,
-				output [7:0] RM_out /*synthesis keep*/,
-				output [7:0] ALU_out /*synthesis keep*/,
-				output [7:0] Op1mux_out /*synthesis keep*/,
-				output [7:0] Op2mux_out /*synthesis keep*/
+				output [3:0] stepper_signals
 );
 // The comment /*synthesis keep*/ after the declaration of a wire
 // prevents Quartus from optimizing it, so that it can be observed in simulation
@@ -28,21 +22,21 @@ module datapath (input clk, reset_n,
 
 wire [7:0] RF_selected0 /*synthesis keep*/;
 wire [7:0] RF_selected1 /*synthesis keep*/;
-//wire [7:0] RF_2out /*synthesis keep*/;
+wire [7:0] RF_2out /*synthesis keep*/;
 wire [7:0] RF_0out /*synthesis keep*/;
 wire [7:0] RF_3out /*synthesis keep*/;
-//wire [7:0] Op1mux_out /*synthesis keep*/;
-//wire [7:0] Op2mux_out /*synthesis keep*/;
+wire [7:0] Op1mux_out /*synthesis keep*/;
+wire [7:0] Op2mux_out /*synthesis keep*/;
 wire [7:0] PC_out /*synthesis keep*/;
-//wire [7:0] ALU_out /*synthesis keep*/;
+wire [7:0] ALU_out /*synthesis keep*/;
 wire [7:0] IM_Q /*synthesis keep*/;
 wire [7:0] IE_out /*synthesis keep*/;
 wire [1:0] WAS_out /*synthesis keep*/;
-//wire [7:0] RM_out /*synthesis keep*/;
+wire [7:0] RM_out /*synthesis keep*/;
 
 decoder the_decoder (
 	// Inputs
-	.instruction (IM_Q[7:2]), // 6 bits
+	.instruction (IM_Q[7:2]), // need an index [7:2] maybe // 6 bits
 	// Outputs
 	.br (br),
 	.brz (brz),
@@ -50,7 +44,7 @@ decoder the_decoder (
 	.subi (subi),
 	.sr0 (sr0),
 	.srh0 (srh0),
-	.clr (clr),
+	.clr (slr),
 	.mov (mov),
 	.mova (mova),
 	.movr (movr),
@@ -66,8 +60,8 @@ regfile the_regfile(
 	.reset_n (reset_n),
 	.write (write_reg_file), // red line from diagram
 	.data (RM_out), // 8 bit 
-	.select0 (IM_Q[1:0]), // 2 bit
-	.select1 (IM_Q[3:2]), // 2 bit
+	.select0 (IM_Q[1:0]), // need to add index // 2 bit
+	.select1 (IM_Q[3:2]), // need to add index // 2 bit
 	.wr_select (WAS_out), // 2 bit
 	// Outputs
 	.selected0 (RF_selected0), // 8 bit
@@ -94,7 +88,7 @@ op2_mux the_op2_mux(
 	// Inputs
 	.select (op2_mux_select),
 	.register (RF_selected1),
-	.immediate (IM_Q),
+	.immediate (IM_out),
 	// Outputs
 	.result (Op2mux_out) // 8 bits
 );
@@ -112,7 +106,7 @@ delay_counter the_delay_counter(
 
 stepper_rom the_stepper_rom(
 	// Inputs
-	.address (RF_2out[2:0]), //need to add index // 3 bits
+	.address (RF_2out[7:5]), //need to add index // 3 bits
 	.clock (clk),
 	// Outputs
 	.q (stepper_signals)
@@ -197,7 +191,7 @@ branch_logic the_branch_logic(
 	// Inputs
 	.register0 (RF_0out),
 	// Outputs
-	.branch (register0_is_zero)
+	.branch (register_is_zero)
 );
 
 endmodule
