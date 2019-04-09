@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/09/2019 06:33:13"
+// Generated on "04/09/2019 12:43:45"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          datapath
 // 
@@ -139,11 +139,19 @@ begin
 end 
 
 // clk
-always
+initial
 begin
-	clk = 1'b0;
-	clk = #10000 1'b1;
-	#10000;
+	clk = 1'b1;
+	clk = #10000 1'b0;
+	# 10000;
+	repeat(48)
+	begin
+		clk = 1'b1;
+		clk = #10000 1'b0;
+		# 10000;
+	end
+	clk = 1'b1;
+	clk = #10000 1'b0;
 end 
 
 // reset_n
@@ -156,8 +164,6 @@ end
 initial
 begin
 	write_reg_file = 1'b0;
-	write_reg_file = #70000 1'b1;
-	write_reg_file = #30000 1'b0;
 end 
 
 // start_delay_counter
@@ -174,8 +180,6 @@ end
 initial
 begin
 	select_write_address[0] = 1'b0;
-	select_write_address[0] = #70000 1'b1;
-	select_write_address[0] = #30000 1'b0;
 end 
 
 // result_mux_select
@@ -202,8 +206,6 @@ end
 initial
 begin
 	op1_mux_select[0] = 1'b0;
-	op1_mux_select[0] = #70000 1'b1;
-	op1_mux_select[0] = #30000 1'b0;
 end 
 // op2_mux_select[ 1 ]
 initial
@@ -214,16 +216,12 @@ end
 initial
 begin
 	op2_mux_select[0] = 1'b0;
-	op2_mux_select[0] = #70000 1'b1;
-	op2_mux_select[0] = #30000 1'b0;
 end 
 
 // alu_add_sub
 initial
 begin
 	alu_add_sub = 1'b0;
-	alu_add_sub = #70000 1'b1;
-	alu_add_sub = #30000 1'b0;
 end 
 
 // alu_set_high
@@ -260,8 +258,6 @@ end
 initial
 begin
 	increment_pc = 1'b0;
-	increment_pc = #110000 1'b1;
-	increment_pc = #20000 1'b0;
 end 
 
 // increment_temp

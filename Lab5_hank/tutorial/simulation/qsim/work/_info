@@ -93,13 +93,13 @@ Z18 !s90 -work|work|delay_counter.vwf.vt|
 R10
 R11
 vcontrol_fsm
-Z19 !s110 1554805826
+Z19 !s110 1554829413
 !i10b 1
-!s100 IP2f[gzni4C`J`^gj24XC2
-IR[PUC:T61_o:=emE2:;Kn2
+!s100 1QTRM_ahR9Xhh^cJ`SQ=j3
+IQ79dfM339Wi@LQRU;@4=Y3
 R2
 Z20 dD:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim
-w1554805825
+w1554829411
 R3
 R4
 R5
@@ -107,7 +107,7 @@ R6
 r1
 !s85 0
 31
-Z21 !s108 1554805826.000000
+Z21 !s108 1554829413.000000
 R8
 R9
 !i113 1
@@ -116,11 +116,11 @@ R11
 vcontrol_fsm_vlg_vec_tst
 R19
 !i10b 1
-!s100 iF^9;:@nRAeWceaEZomC<0
-Ih84OY8OiioS?KdC`P@Y<E0
+!s100 _Y8cPfh`6<`Q8FJg5b_Fk0
+IYC40DNI0M33maYfbzG6QE3
 R2
 R20
-w1554805823
+w1554829410
 8control_fsm.vwf.vt
 Fcontrol_fsm.vwf.vt
 R12
@@ -135,13 +135,13 @@ R21
 R10
 R11
 vdatapath
-Z22 !s110 1554805996
+!s110 1554828228
 !i10b 1
-!s100 :C1lgeB<MOoWRZ`7zdR]o0
-I14=Z^MTL[_5cKcX:Zi;mZ1
+!s100 0C@NaWG0bJXcGI<8MP6NM2
+IJd@TH_ZAn:nCdFS2<5z5X2
 R2
 R20
-w1554805995
+w1554828227
 R3
 R4
 R5
@@ -149,20 +149,20 @@ R6
 r1
 !s85 0
 31
-Z23 !s108 1554805996.000000
+!s108 1554828228.000000
 R8
 R9
 !i113 1
 R10
 R11
 vdatapath_vlg_vec_tst
-R22
+!s110 1554828229
 !i10b 1
-!s100 [?P=Zb5d[K7nkdX:lHH2Z1
-ISfRWV3;R[B_QS>HFZWMcC2
+!s100 h`Dj^M7dnEU8Jj32l>L8R1
+I3zfQ[GF^:Am_JdP:8ghOc2
 R2
 R20
-w1554805993
+w1554828226
 8datapath.vwf.vt
 Fdatapath.vwf.vt
 R12
@@ -170,14 +170,14 @@ R6
 r1
 !s85 0
 31
-R23
+!s108 1554828229.000000
 !s107 datapath.vwf.vt|
 !s90 -work|work|datapath.vwf.vt|
 !i113 1
 R10
 R11
 vdelay_counter
-Z24 !s110 1554343436
+Z22 !s110 1554343436
 !i10b 1
 !s100 gC=40^?Z9S4]32d@=UWUF1
 I7Y`nVC?lWcU[N3`;UI8>U0
@@ -191,14 +191,14 @@ R6
 r1
 !s85 0
 31
-Z25 !s108 1554343436.000000
+Z23 !s108 1554343436.000000
 R8
 R9
 !i113 1
 R10
 R11
 vdelay_counter_vlg_vec_tst
-R24
+R22
 !i10b 1
 !s100 P>SKNZIHA7_P:h9X^OWDT0
 IVi718SaN4@<5b3CXBZ>aF1
@@ -212,14 +212,14 @@ R6
 r1
 !s85 0
 31
-R25
+R23
 R17
 R18
 !i113 1
 R10
 R11
 vinstruction_rom
-Z26 !s110 1554773057
+Z24 !s110 1554773057
 !i10b 1
 !s100 Ai[I7Wc>jjD565DSk5X_52
 I?H1hOm1O]GoSMV8Se88T?1
@@ -233,14 +233,14 @@ R6
 r1
 !s85 0
 31
-Z27 !s108 1554773057.000000
+Z25 !s108 1554773057.000000
 R8
 R9
 !i113 1
 R10
 R11
 vinstruction_rom_vlg_vec_tst
-R26
+R24
 !i10b 1
 !s100 ?TNO7na:>YKDK5LnkiG3d3
 ITn:[ZFc[X?8=Iz74NP0j20
@@ -254,20 +254,20 @@ R6
 r1
 !s85 0
 31
-R27
+R25
 !s107 instruction_rom.vwf.vt|
 !s90 -work|work|instruction_rom.vwf.vt|
 !i113 1
 R10
 R11
 vlab5
-Z28 !s110 1554805602
+!s110 1554830231
 !i10b 1
-!s100 Cz]PMUORYLCBolmczg;HN1
-IVUHY7hD1c2g]E>dj1cI6J0
+!s100 f`GMHOz`R493S:Dnjd;_G2
+I1c?8Ekj_7YFWD4Y7N>dGP3
 R2
 R20
-w1554805601
+w1554830230
 R3
 R4
 R5
@@ -275,20 +275,20 @@ R6
 r1
 !s85 0
 31
-Z29 !s108 1554805602.000000
+Z26 !s108 1554830231.000000
 R8
 R9
 !i113 1
 R10
 R11
 vlab5_vlg_vec_tst
-R28
+!s110 1554830232
 !i10b 1
-!s100 :W@9UHRSji^57Y6`m4aQj0
-IGHbALigP4DoKTWoW9NGMg3
+!s100 [J5FU=lC@5FLKOec^Q@AO0
+I>UK`dhQ0MU`?VMFJm1AAM0
 R2
 R20
-w1554805599
+w1554830228
 8lab5.vwf.vt
 Flab5.vwf.vt
 R12
@@ -296,14 +296,14 @@ R6
 r1
 !s85 0
 31
-R29
+R26
 !s107 lab5.vwf.vt|
 !s90 -work|work|lab5.vwf.vt|
 !i113 1
 R10
 R11
 vregfile
-Z30 !s110 1554324828
+Z27 !s110 1554324828
 !i10b 1
 !s100 _4Sd;WmdD;WjoUCi_Iz;=1
 IQ_oSBzM;YXaR8dk]IA^;Z3
@@ -317,14 +317,14 @@ R6
 r1
 !s85 0
 31
-Z31 !s108 1554324828.000000
+Z28 !s108 1554324828.000000
 R8
 R9
 !i113 1
 R10
 R11
 vregfile_vlg_vec_tst
-R30
+R27
 !i10b 1
 !s100 6=A8PG8GYRie@9?^Ckg=90
 IzH1CKnFK;UF19Ihk_gEe90
@@ -338,14 +338,14 @@ R6
 r1
 !s85 0
 31
-R31
+R28
 !s107 regfile.vwf.vt|
 !s90 -work|work|regfile.vwf.vt|
 !i113 1
 R10
 R11
 vstepper_rom
-Z32 !s110 1554772655
+Z29 !s110 1554772655
 !i10b 1
 !s100 bI_nzj[>DTDGEU9O9dTOM0
 I]NMzKBiS;elQGzmd2U=Tm3
@@ -359,14 +359,14 @@ R6
 r1
 !s85 0
 31
-Z33 !s108 1554772655.000000
+Z30 !s108 1554772655.000000
 R8
 R9
 !i113 1
 R10
 R11
 vstepper_rom_vlg_vec_tst
-R32
+R29
 !i10b 1
 !s100 S<kj[Nf^2[041G>7idhcY3
 IDf5^8L9NM55]C=RKN17?Q2
@@ -380,14 +380,14 @@ R6
 r1
 !s85 0
 31
-R33
+R30
 !s107 stepper_rom.vwf.vt|
 !s90 -work|work|stepper_rom.vwf.vt|
 !i113 1
 R10
 R11
 vtemp_register
-Z34 !s110 1554325447
+Z31 !s110 1554325447
 !i10b 1
 !s100 _1Y8>fX=R9Nk73G4iX?P_0
 IWe7`lIhaNPGQMlDkM7RN92
@@ -408,7 +408,7 @@ R9
 R10
 R11
 vtemp_register_vlg_vec_tst
-R34
+R31
 !i10b 1
 !s100 a@_=aOYD`EHO6VAcAIUXO0
 ISMMDU=YV^dA69@`R1U12`1

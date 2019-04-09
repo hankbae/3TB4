@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -1046,9 +1048,7 @@ TRANSITION_LIST("write_reg_file")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1129,9 +1129,7 @@ TRANSITION_LIST("select_write_address[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1203,9 +1201,7 @@ TRANSITION_LIST("op2_mux_select[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1223,9 +1219,7 @@ TRANSITION_LIST("alu_add_sub")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1270,12 +1264,16 @@ TRANSITION_LIST("clk")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
 		NODE
 		{
-			REPEAT = 50;
-			LEVEL 0 FOR 10.0;
+			REPEAT = 48;
 			LEVEL 1 FOR 10.0;
+			LEVEL 0 FOR 10.0;
 		}
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 10.0;
 	}
 }
 
@@ -1329,9 +1327,7 @@ TRANSITION_LIST("increment_pc")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 110.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 870.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1403,9 +1399,7 @@ TRANSITION_LIST("op1_mux_select[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 

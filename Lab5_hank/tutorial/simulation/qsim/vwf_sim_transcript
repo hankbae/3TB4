@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source="D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.vwf" --testbench_file="D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/datapath.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source="D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.vwf" --testbench_file="D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/lab5.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Apr 09 06:33:12 2019
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source=D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.vwf --testbench_file=D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/datapath.vwf.vt
+    Info: Processing started: Tue Apr 09 13:17:07 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source=D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.vwf --testbench_file=D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/lab5.vwf.vt
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[10] -entity DE1_SoC was ignored
@@ -591,8 +591,8 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[30] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[31] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[3] -entity DE1_SoC was ignored
-    Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3
-_DQ[4] -entity DE1_SoC was ignored
+    Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[4] -
+entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[5] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[6] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name OUTPUT_TERMINATION "SERIES 50 OHM WITH CALIBRATION" -to HPS_DDR3_DQ[7] -entity DE1_SoC was ignored
@@ -602,13 +602,7 @@ _DQ[4] -entity DE1_SoC was ignored
     Warning (20014): Assignment for entity set_instance_assignment -name D5_DELAY 2 -to HPS_DDR3_CK_P -entity DE1_SoC was ignored
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-1005): Ignoring output pin "Op2mux_out[0]" in vector source file when writing test bench files
-Info (201000): Generated Verilog Test Bench File D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/datapath.vwf.vt for simulation
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 640 warnings
-    Info: Peak virtual memory: 4734 megabytes
-    Info: Processing ended: Tue Apr 09 06:33:13 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -634,7 +628,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Apr 09 06:33:14 2019
+    Info: Processing started: Tue Apr 09 13:17:09 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/ lab5 -c lab5
 Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PACKAGE_SKEW_COMPENSATION OFF -to HPS_DDR3_ADDR[0] -entity DE1_SoC was ignored
@@ -1212,8 +1206,8 @@ Warning (20013): Ignored 571 assignments for entity "DE1_SoC" -- entity does not
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file lab5.vo in folder "D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 573 warnings
-    Info: Peak virtual memory: 4743 megabytes
-    Info: Processing ended: Tue Apr 09 06:33:15 2019
+    Info: Peak virtual memory: 4742 megabytes
+    Info: Processing ended: Tue Apr 09 13:17:10 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
@@ -1236,29 +1230,30 @@ Reading D:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # do lab5.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:33:16 on Apr 09,2019
+# Start time: 13:17:11 on Apr 09,2019
 # vlog -work work lab5.vo 
-# -- Compiling module datapath
+# -- Compiling module lab5
 
 # 
 # Top level modules:
-# 	datapath
-# End time: 06:33:16 on Apr 09,2019, Elapsed time: 0:00:00
+# 	lab5
+# End time: 13:17:11 on Apr 09,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:33:16 on Apr 09,2019
-# vlog -work work datapath.vwf.vt 
-# -- Compiling module datapath_vlg_vec_tst
+# Start time: 13:17:11 on Apr 09,2019
+# vlog -work work lab5.vwf.vt 
+
+# -- Compiling module lab5_vlg_vec_tst
 # 
 # Top level modules:
-# 	datapath_vlg_vec_tst
-# End time: 06:33:16 on Apr 09,2019, Elapsed time: 0:00:00
+# 	lab5_vlg_vec_tst
+# End time: 13:17:12 on Apr 09,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.datapath_vlg_vec_tst 
-# Start time: 06:33:16 on Apr 09,2019
+# Start time: 13:17:12 on Apr 09,2019
 # Loading work.datapath_vlg_vec_tst
 # Loading work.datapath
 # Loading altera_ver.dffeas
@@ -1269,23 +1264,326 @@ Reading D:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading altera_lnsim_ver.common_28nm_ram_register
 # Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
+
 # after#25
 # ** Note: $finish    : datapath.vwf.vt(138)
 #    Time: 1 us  Iteration: 0  Instance: /datapath_vlg_vec_tst
-# End time: 06:33:17 on Apr 09,2019, Elapsed time: 0:00:01
+# End time: 13:17:12 on Apr 09,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/Documents/School/3TB4/Lab5_hank/tutorial/datapath.vwf...
+Reading D:/Documents/School/3TB4/Lab5_hank/tutorial/lab5.vwf...
 
 Reading D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/lab5.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/lab5_20190409063317.sim.vwf
+Warning: ALU_out[7] - signal not found in VCD.
+
+Warning: ALU_out[6] - signal not found in VCD.
+
+Warning: ALU_out[5] - signal not found in VCD.
+
+Warning: ALU_out[4] - signal not found in VCD.
+
+Warning: ALU_out[3] - signal not found in VCD.
+
+Warning: ALU_out[2] - signal not found in VCD.
+
+Warning: ALU_out[1] - signal not found in VCD.
+
+Warning: ALU_out[0] - signal not found in VCD.
+
+Warning: GPIO_0[3] - signal not found in VCD.
+
+Warning: GPIO_0[2] - signal not found in VCD.
+
+Warning: GPIO_0[1] - signal not found in VCD.
+
+Warning: GPIO_0[0] - signal not found in VCD.
+
+Warning: CLOCK_50 - signal not found in VCD.
+
+Warning: IE_out[7] - signal not found in VCD.
+
+Warning: IE_out[6] - signal not found in VCD.
+
+Warning: IE_out[5] - signal not found in VCD.
+
+Warning: IE_out[4] - signal not found in VCD.
+
+Warning: IE_out[3] - signal not found in VCD.
+
+Warning: IE_out[2] - signal not found in VCD.
+
+Warning: IE_out[1] - signal not found in VCD.
+
+Warning: IE_out[0] - signal not found in VCD.
+
+Warning: IM_Q[7] - signal not found in VCD.
+
+Warning: IM_Q[6] - signal not found in VCD.
+
+Warning: IM_Q[5] - signal not found in VCD.
+
+Warning: IM_Q[4] - signal not found in VCD.
+
+Warning: IM_Q[3] - signal not found in VCD.
+
+Warning: IM_Q[2] - signal not found in VCD.
+
+Warning: IM_Q[1] - signal not found in VCD.
+
+Warning: IM_Q[0] - signal not found in VCD.
+
+Warning: KEY - signal not found in VCD.
+
+Warning: LEDR[9] - signal not found in VCD.
+
+Warning: LEDR[8] - signal not found in VCD.
+
+Warning: LEDR[7] - signal not found in VCD.
+
+Warning: LEDR[6] - signal not found in VCD.
+
+Warning: LEDR[5] - signal not found in VCD.
+
+Warning: LEDR[4] - signal not found in VCD.
+
+Warning: LEDR[3] - signal not found in VCD.
+
+Warning: LEDR[2] - signal not found in VCD.
+
+Warning: LEDR[1] - signal not found in VCD.
+
+Warning: LEDR[0] - signal not found in VCD.
+
+Warning: Op1mux_out[7] - signal not found in VCD.
+
+Warning: Op1mux_out[6] - signal not found in VCD.
+
+Warning: Op1mux_out[5] - signal not found in VCD.
+
+Warning: Op1mux_out[4] - signal not found in VCD.
+
+Warning: Op1mux_out[3] - signal not found in VCD.
+
+Warning: Op1mux_out[2] - signal not found in VCD.
+
+Warning: Op1mux_out[1] - signal not found in VCD.
+
+Warning: Op1mux_out[0] - signal not found in VCD.
+
+Warning: Op2mux_out[7] - signal not found in VCD.
+
+Warning: Op2mux_out[6] - signal not found in VCD.
+
+Warning: Op2mux_out[5] - signal not found in VCD.
+
+Warning: Op2mux_out[4] - signal not found in VCD.
+
+Warning: Op2mux_out[3] - signal not found in VCD.
+
+Warning: Op2mux_out[2] - signal not found in VCD.
+
+Warning: Op2mux_out[1] - signal not found in VCD.
+
+Warning: Op2mux_out[0] - signal not found in VCD.
+
+Warning: PC_out[7] - signal not found in VCD.
+
+Warning: PC_out[6] - signal not found in VCD.
+
+Warning: PC_out[5] - signal not found in VCD.
+
+Warning: PC_out[4] - signal not found in VCD.
+
+Warning: PC_out[3] - signal not found in VCD.
+
+Warning: PC_out[2] - signal not found in VCD.
+
+Warning: PC_out[1] - signal not found in VCD.
+
+Warning: PC_out[0] - signal not found in VCD.
+
+Warning: RF_0out[7] - signal not found in VCD.
+
+Warning: RF_0out[6] - signal not found in VCD.
+
+Warning: RF_0out[5] - signal not found in VCD.
+
+Warning: RF_0out[4] - signal not found in VCD.
+
+Warning: RF_0out[3] - signal not found in VCD.
+
+Warning: RF_0out[2] - signal not found in VCD.
+
+Warning: RF_0out[1] - signal not found in VCD.
+
+Warning: RF_0out[0] - signal not found in VCD.
+
+Warning: RF_2out[7] - signal not found in VCD.
+
+Warning: RF_2out[6] - signal not found in VCD.
+
+Warning: RF_2out[5] - signal not found in VCD.
+
+Warning: RF_2out[4] - signal not found in VCD.
+
+Warning: RF_2out[3] - signal not found in VCD.
+
+Warning: RF_2out[2] - signal not found in VCD.
+
+Warning: RF_2out[1] - signal not found in VCD.
+
+Warning: RF_2out[0] - signal not found in VCD.
+
+Warning: RF_3out[7] - signal not found in VCD.
+
+Warning: RF_3out[6] - signal not found in VCD.
+
+Warning: RF_3out[5] - signal not found in VCD.
+
+Warning: RF_3out[4] - signal not found in VCD.
+
+Warning: RF_3out[3] - signal not found in VCD.
+
+Warning: RF_3out[2] - signal not found in VCD.
+
+Warning: RF_3out[1] - signal not found in VCD.
+
+Warning: RF_3out[0] - signal not found in VCD.
+
+Warning: RF_selected0[7] - signal not found in VCD.
+
+Warning: RF_selected0[6] - signal not found in VCD.
+
+Warning: RF_selected0[5] - signal not found in VCD.
+
+Warning: RF_selected0[4] - signal not found in VCD.
+
+Warning: RF_selected0[3] - signal not found in VCD.
+
+Warning: RF_selected0[2] - signal not found in VCD.
+
+Warning: RF_selected0[1] - signal not found in VCD.
+
+Warning: RF_selected0[0] - signal not found in VCD.
+
+Warning: RF_selected1[7] - signal not found in VCD.
+
+Warning: RF_selected1[6] - signal not found in VCD.
+
+Warning: RF_selected1[5] - signal not found in VCD.
+
+Warning: RF_selected1[4] - signal not found in VCD.
+
+Warning: RF_selected1[3] - signal not found in VCD.
+
+Warning: RF_selected1[2] - signal not found in VCD.
+
+Warning: RF_selected1[1] - signal not found in VCD.
+
+Warning: RF_selected1[0] - signal not found in VCD.
+
+Warning: RM_out[7] - signal not found in VCD.
+
+Warning: RM_out[6] - signal not found in VCD.
+
+Warning: RM_out[5] - signal not found in VCD.
+
+Warning: RM_out[4] - signal not found in VCD.
+
+Warning: RM_out[3] - signal not found in VCD.
+
+Warning: RM_out[2] - signal not found in VCD.
+
+Warning: RM_out[1] - signal not found in VCD.
+
+Warning: RM_out[0] - signal not found in VCD.
+
+Warning: WAS_out[1] - signal not found in VCD.
+
+Warning: WAS_out[0] - signal not found in VCD.
+
+Warning: sr0 - signal not found in VCD.
+
+Warning: srh0 - signal not found in VCD.
+
+Warning: start_delay_counter - signal not found in VCD.
+
+Warning: subi - signal not found in VCD.
+
+Warning: temp_is_negative - signal not found in VCD.
+
+Warning: temp_is_positive - signal not found in VCD.
+
+Warning: temp_is_zero - signal not found in VCD.
+
+Warning: write_reg_file - signal not found in VCD.
+
+Warning: select_write_address[1] - signal not found in VCD.
+
+Warning: select_write_address[0] - signal not found in VCD.
+
+Warning: addi - signal not found in VCD.
+
+Warning: alu_add_sub - signal not found in VCD.
+
+Warning: alu_set_high - signal not found in VCD.
+
+Warning: alu_set_low - signal not found in VCD.
+
+Warning: br - signal not found in VCD.
+
+Warning: brz - signal not found in VCD.
+
+Warning: clr - signal not found in VCD.
+
+Warning: commit_branch - signal not found in VCD.
+
+Warning: decrement_temp_register - signal not found in VCD.
+
+Warning: delay_done - signal not found in VCD.
+
+Warning: enable_delay_counter - signal not found in VCD.
+
+Warning: increment_pc - signal not found in VCD.
+
+Warning: increment_temp_register - signal not found in VCD.
+
+Warning: load_temp_register - signal not found in VCD.
+
+Warning: mov - signal not found in VCD.
+
+Warning: mova - signal not found in VCD.
+
+Warning: movr - signal not found in VCD.
+
+Warning: movrhs - signal not found in VCD.
+
+Warning: op1_mux_select[1] - signal not found in VCD.
+
+Warning: op1_mux_select[0] - signal not found in VCD.
+
+Warning: op2_mux_select[1] - signal not found in VCD.
+
+Warning: op2_mux_select[0] - signal not found in VCD.
+
+Warning: pause - signal not found in VCD.
+
+Warning: register0_is_zero - signal not found in VCD.
+
+Warning: result_mux_select - signal not found in VCD.
+
+Warning: select_immediate[1] - signal not found in VCD.
+
+Warning: select_immediate[0] - signal not found in VCD.
+
+Writing the resulting VWF to D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/lab5_20190409131712.sim.vwf
 
 Finished VCD to VWF conversion.
 

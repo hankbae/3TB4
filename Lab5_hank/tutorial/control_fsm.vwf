@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -510,9 +512,7 @@ TRANSITION_LIST("sr0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 220.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 750.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -521,9 +521,7 @@ TRANSITION_LIST("srh0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 270.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 700.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -541,9 +539,7 @@ TRANSITION_LIST("subi")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 170.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 800.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -606,9 +602,7 @@ TRANSITION_LIST("pause")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 860.0;
-		LEVEL 1 FOR 130.0;
-		LEVEL 0 FOR 10.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -680,9 +674,7 @@ TRANSITION_LIST("addi")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 120.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 850.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -718,9 +710,9 @@ TRANSITION_LIST("br")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 950.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 940.0;
 	}
 }
 
@@ -729,9 +721,7 @@ TRANSITION_LIST("brz")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 70.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -756,9 +746,7 @@ TRANSITION_LIST("clr")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 310.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 650.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -830,9 +818,7 @@ TRANSITION_LIST("mov")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 360.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 600.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -841,9 +827,7 @@ TRANSITION_LIST("mova")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 410.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 540.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -852,9 +836,7 @@ TRANSITION_LIST("movr")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 470.0;
-		LEVEL 1 FOR 180.0;
-		LEVEL 0 FOR 350.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -863,9 +845,7 @@ TRANSITION_LIST("movrhs")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 650.0;
-		LEVEL 1 FOR 200.0;
-		LEVEL 0 FOR 150.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
