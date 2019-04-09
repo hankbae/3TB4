@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source="D:/3TB4/Lab5_hank/tutorial/control_fsm.vwf" --testbench_file="D:/3TB4/Lab5_hank/tutorial/simulation/qsim/control_fsm.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source="D:/3TB4/Lab5_hank/tutorial/control_fsm.vwf" --testbench_file="D:/3TB4/Lab5_hank/tutorial/simulation/qsim/control_fsm.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Lab5_hank/tutorial/simulation/qsim/" lab5 -c lab5</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/3TB4/Lab5_hank/tutorial/simulation/qsim/" lab5 -c lab5</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source="D:/Documents/School/3TB4/Lab5_hank/tutorial/control_fsm.vwf" --testbench_file="D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/control_fsm.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off lab5 -c lab5 --vector_source="D:/Documents/School/3TB4/Lab5_hank/tutorial/control_fsm.vwf" --testbench_file="D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/control_fsm.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/" lab5 -c lab5</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Documents/School/3TB4/Lab5_hank/tutorial/simulation/qsim/" lab5 -c lab5</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work lab5.vo
@@ -20,7 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -39,7 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -742,12 +740,14 @@ TRANSITION_LIST("clk")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 1 FOR 5.0;
 		NODE
 		{
-			REPEAT = 100;
+			REPEAT = 99;
 			LEVEL 0 FOR 5.0;
 			LEVEL 1 FOR 5.0;
 		}
+		LEVEL 0 FOR 5.0;
 	}
 }
 

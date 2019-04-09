@@ -16,28 +16,36 @@ module datapath (input clk, reset_n,
 				// Motor control outputs
 				output [3:0] stepper_signals,
 //				testing
+				output [7:0] RF_selected0 /*synthesis keep*/,
+				output [7:0] RF_selected1 /*synthesis keep*/,
 				output [7:0] RF_2out /*synthesis keep*/,
-				output [7:0] RM_out /*synthesis keep*/,
-				output [7:0] ALU_out /*synthesis keep*/,
+				output [7:0] RF_0out /*synthesis keep*/,
+				output [7:0] RF_3out /*synthesis keep*/,
 				output [7:0] Op1mux_out /*synthesis keep*/,
-				output [7:0] Op2mux_out /*synthesis keep*/
+				output [7:0] Op2mux_out /*synthesis keep*/,
+				output [7:0] PC_out /*synthesis keep*/,
+				output [7:0] ALU_out /*synthesis keep*/,
+				output [7:0] IM_Q /*synthesis keep*/,
+				output [7:0] IE_out /*synthesis keep*/,
+				output [1:0] WAS_out /*synthesis keep*/,
+				output [7:0] RM_out /*synthesis keep*/
 );
 // The comment /*synthesis keep*/ after the declaration of a wire
 // prevents Quartus from optimizing it, so that it can be observed in simulation
 // It is important that the comment appear before the semicolon
 
-wire [7:0] RF_selected0 /*synthesis keep*/;
-wire [7:0] RF_selected1 /*synthesis keep*/;
+//wire [7:0] RF_selected0 /*synthesis keep*/;
+//wire [7:0] RF_selected1 /*synthesis keep*/;
 //wire [7:0] RF_2out /*synthesis keep*/;
-wire [7:0] RF_0out /*synthesis keep*/;
-wire [7:0] RF_3out /*synthesis keep*/;
+//wire [7:0] RF_0out /*synthesis keep*/;
+//wire [7:0] RF_3out /*synthesis keep*/;
 //wire [7:0] Op1mux_out /*synthesis keep*/;
 //wire [7:0] Op2mux_out /*synthesis keep*/;
-wire [7:0] PC_out /*synthesis keep*/;
+//wire [7:0] PC_out /*synthesis keep*/;
 //wire [7:0] ALU_out /*synthesis keep*/;
-wire [7:0] IM_Q /*synthesis keep*/;
-wire [7:0] IE_out /*synthesis keep*/;
-wire [1:0] WAS_out /*synthesis keep*/;
+//wire [7:0] IM_Q /*synthesis keep*/;
+//wire [7:0] IE_out /*synthesis keep*/;
+//wire [1:0] WAS_out /*synthesis keep*/;
 //wire [7:0] RM_out /*synthesis keep*/;
 
 decoder the_decoder (
@@ -72,9 +80,9 @@ regfile the_regfile(
 	// Outputs
 	.selected0 (RF_selected0), // 8 bit
 	.selected1 (RF_selected1), // 8 bit
-	.delay (RF_2out), // 8 bits
-	.position (RF_0out), // 8 bits
-	.register0 (RF_3out) // 8 bits
+	.delay (RF_3out), // 8 bits
+	.position (RF_2out), // 8 bits
+	.register0 (RF_0out) // 8 bits
 );
 
 
@@ -94,7 +102,7 @@ op2_mux the_op2_mux(
 	// Inputs
 	.select (op2_mux_select),
 	.register (RF_selected1),
-	.immediate (IM_Q),
+	.immediate (IE_out),
 	// Outputs
 	.result (Op2mux_out) // 8 bits
 );
